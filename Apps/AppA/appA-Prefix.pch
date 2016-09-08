@@ -1,0 +1,26 @@
+//
+//  appA-Prefix.pch
+//  Apps
+//
+//  Created by BianYong on 16/8/23.
+//  Copyright © 2016年 BY. All rights reserved.
+//
+
+#ifndef appA_Prefix_pch
+#define appA_Prefix_pch
+
+#ifdef __OBJC__
+
+#import <UMMobClick/MobClick.h>
+#import "Common.h"
+#import "BYUMEvent.h"
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+#endif
+
+#endif /* appA_Prefix_pch */
