@@ -23,6 +23,8 @@
 		684B0AA91D654F5100505A9C /* BYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684B0AA71D654F5100505A9C /* BYMainViewController.m */; };
 		684B0AAC1D655A2C00505A9C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684B0AAB1D655A2C00505A9C /* Media.xcassets */; };
 		684B0AAD1D655A2C00505A9C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684B0AAB1D655A2C00505A9C /* Media.xcassets */; };
+		684CDF9D1D922EB5006316A5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684CDF9C1D922EB5006316A5 /* MapKit.framework */; };
+		684CDF9F1D922FB1006316A5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684CDF9C1D922EB5006316A5 /* MapKit.framework */; };
 		6856B84F1D6A97C700161109 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6856B83C1D6A97C700161109 /* AFAutoPurgingImageCache.m */; };
 		6856B8501D6A97C700161109 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6856B83C1D6A97C700161109 /* AFAutoPurgingImageCache.m */; };
 		6856B8511D6A97C700161109 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6856B83E1D6A97C700161109 /* AFImageDownloader.m */; };
@@ -159,6 +161,9 @@
 		684B0AAA1D6550C700505A9C /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		684B0AAB1D655A2C00505A9C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		684B0AAE1D655A6D00505A9C /* Resume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resume.h; sourceTree = "<group>"; };
+		684CDF9B1D922E94006316A5 /* AppA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppA.entitlements; sourceTree = "<group>"; };
+		684CDF9C1D922EB5006316A5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		684CDF9E1D922FA8006316A5 /* AppB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppB.entitlements; sourceTree = "<group>"; };
 		6856B83B1D6A97C700161109 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAutoPurgingImageCache.h; sourceTree = "<group>"; };
 		6856B83C1D6A97C700161109 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAutoPurgingImageCache.m; sourceTree = "<group>"; };
 		6856B83D1D6A97C700161109 /* AFImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageDownloader.h; sourceTree = "<group>"; };
@@ -259,6 +264,7 @@
 			files = (
 				687F58811D7531AC00C673D8 /* libsqlite3.tbd in Frameworks */,
 				687F587F1D75319500C673D8 /* libz.tbd in Frameworks */,
+				684CDF9D1D922EB5006316A5 /* MapKit.framework in Frameworks */,
 				687F587D1D75317400C673D8 /* CoreTelephony.framework in Frameworks */,
 				687F58831D75351100C673D8 /* UMMobClick.framework in Frameworks */,
 				6856B8661D6A98C400161109 /* SystemConfiguration.framework in Frameworks */,
@@ -287,6 +293,7 @@
 			files = (
 				687F58871D75383500C673D8 /* libsqlite3.tbd in Frameworks */,
 				687F58861D75382B00C673D8 /* libz.tbd in Frameworks */,
+				684CDF9F1D922FB1006316A5 /* MapKit.framework in Frameworks */,
 				687F58851D75380500C673D8 /* CoreTelephony.framework in Frameworks */,
 				6856B8691D6A98E900161109 /* SystemConfiguration.framework in Frameworks */,
 				6856B8681D6A98DE00161109 /* MobileCoreServices.framework in Frameworks */,
@@ -365,6 +372,7 @@
 		684B0A721D654A3B00505A9C /* AppA */ = {
 			isa = PBXGroup;
 			children = (
+				684CDF9B1D922E94006316A5 /* AppA.entitlements */,
 				684B0A731D654A3B00505A9C /* appA-Info.plist */,
 				6856B8E01D6C36A700161109 /* appA-Prefix.pch */,
 			);
@@ -374,6 +382,7 @@
 		684B0A741D654A3B00505A9C /* AppB */ = {
 			isa = PBXGroup;
 			children = (
+				684CDF9E1D922FA8006316A5 /* AppB.entitlements */,
 				684B0AA41D654E7000505A9C /* appB-Info.plist */,
 				6856B8E11D6C36C900161109 /* appB-Prefix.pch */,
 			);
@@ -594,6 +603,7 @@
 		6856B86A1D6A9A4A00161109 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				684CDF9C1D922EB5006316A5 /* MapKit.framework */,
 				687F58821D75351100C673D8 /* UMMobClick.framework */,
 				687F58801D7531AC00C673D8 /* libsqlite3.tbd */,
 				687F587E1D75319500C673D8 /* libz.tbd */,
@@ -750,6 +760,15 @@
 				TargetAttributes = {
 					684B0A3B1D65499700505A9C = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = Z3F649Q24Z;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					684B0A541D65499700505A9C = {
 						CreatedOnToolsVersion = 7.1;
@@ -758,6 +777,17 @@
 					684B0A5F1D65499700505A9C = {
 						CreatedOnToolsVersion = 7.1;
 						TestTargetID = 684B0A3B1D65499700505A9C;
+					};
+					684B0A951D654DD900505A9C = {
+						DevelopmentTeam = Z3F649Q24Z;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -1041,6 +1071,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppAIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppALaunchImage;
+				CODE_SIGN_ENTITLEMENTS = AppA/AppA.entitlements;
+				DEVELOPMENT_TEAM = Z3F649Q24Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -1064,6 +1096,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppAIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppALaunchImage;
+				CODE_SIGN_ENTITLEMENTS = AppA/AppA.entitlements;
+				DEVELOPMENT_TEAM = Z3F649Q24Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -1130,6 +1164,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppBIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppBLaunchImage;
+				CODE_SIGN_ENTITLEMENTS = AppB/AppB.entitlements;
+				DEVELOPMENT_TEAM = Z3F649Q24Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -1152,6 +1188,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppBIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppBLaunchImage;
+				CODE_SIGN_ENTITLEMENTS = AppB/AppB.entitlements;
+				DEVELOPMENT_TEAM = Z3F649Q24Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
