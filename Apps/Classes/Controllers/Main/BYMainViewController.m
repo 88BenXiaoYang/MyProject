@@ -39,7 +39,9 @@
 	
 //	[self checkElement];
 	
-	[self UMStatistics];
+//	[self UMStatistics];
+	
+	[self testQR];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -290,6 +292,55 @@
 - (void)um:(UIButton *)sender
 {
 	[MobClick event:UMEventAfantiMyQuestion];
+}
+
+- (void)testQR
+{
+	//通过滤镜CIFilter生成二维码
+	//创建过滤器
+	CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
+	
+	//恢复默认
+	[filter setDefaults];
+	
+	//给过滤器添加数据（需要生成二维码的数据）数据类型：纯文本、名片、URL
+	NSString *dataString = @"自定义信息";
+	NSData *qrData = [dataString dataUsingEncoding:NSUTF8StringEncoding];
+	//通过KVO设置滤镜数据：inputMessage
+	[filter setValue:qrData forKeyPath:@"inputMessage"];
+	
+	//输出二维码
+	CIImage *outputImage = [filter outputImage];
+	
+	UIImageView *qrImageView = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, 250, 250)];
+	qrImageView.image = [self qrImageWithCIImage:outputImage size:250];
+	[self.view addSubview:qrImageView];
+}
+
+- (UIImage *)qrImageWithCIImage:(CIImage *)ciImage size:(CGFloat)size
+{
+	CGRect extent = CGRectIntegral(ciImage.extent); //二维码的实际大小
+	CGFloat scale = MIN(size / CGRectGetWidth(extent), size / CGRectGetHeight(extent)); //缩放比例
+	
+	//创建bitmap
+	size_t w = CGRectGetWidth(extent) * scale;
+	size_t h = CGRectGetHeight(extent) * scale;
+	
+	CGColorSpaceRef cs = CGColorSpaceCreateDeviceGray(); //颜色通道
+	CGContextRef bitmapRef = CGBitmapContextCreate(nil, w, h, 8, 0, cs, kCGImageAlphaNone); //创建上下文
+	
+	CIContext *context = [CIContext contextWithOptions:nil];
+	CGImageRef bitmapImage = [context createCGImage:ciImage fromRect:extent];
+	CGContextSetInterpolationQuality(bitmapRef, kCGInterpolationNone);
+	CGContextScaleCTM(bitmapRef, scale, scale);
+	CGContextDrawImage(bitmapRef, extent, bitmapImage); //画位图
+	
+	//保存bitmap(位图)到图片
+	CGImageRef scaledImage = CGBitmapContextCreateImage(bitmapRef);
+	CGContextRelease(bitmapRef);
+	CGImageRelease(bitmapImage);
+	
+	return [UIImage imageWithCGImage:scaledImage];
 }
 
 #pragma mark- Setter and getter
