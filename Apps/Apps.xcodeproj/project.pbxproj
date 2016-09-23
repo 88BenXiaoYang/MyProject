@@ -57,6 +57,10 @@
 		684CDFEC1D94DE9B006316A5 /* BYAppStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 684CDFEA1D94DE9B006316A5 /* BYAppStyle.m */; };
 		684CDFEE1D94F6EC006316A5 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684CDFED1D94F6EC006316A5 /* Masonry.framework */; };
 		684CDFEF1D94F6EC006316A5 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684CDFED1D94F6EC006316A5 /* Masonry.framework */; };
+		684CDFF21D9527A0006316A5 /* StarGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 684CDFF01D9527A0006316A5 /* StarGray@2x.png */; };
+		684CDFF31D9527A0006316A5 /* StarGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 684CDFF01D9527A0006316A5 /* StarGray@2x.png */; };
+		684CDFF41D9527A0006316A5 /* StarYellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 684CDFF11D9527A0006316A5 /* StarYellow@2x.png */; };
+		684CDFF51D9527A0006316A5 /* StarYellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 684CDFF11D9527A0006316A5 /* StarYellow@2x.png */; };
 		6856B84F1D6A97C700161109 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6856B83C1D6A97C700161109 /* AFAutoPurgingImageCache.m */; };
 		6856B8501D6A97C700161109 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6856B83C1D6A97C700161109 /* AFAutoPurgingImageCache.m */; };
 		6856B8511D6A97C700161109 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6856B83E1D6A97C700161109 /* AFImageDownloader.m */; };
@@ -223,6 +227,8 @@
 		684CDFE91D94DE9B006316A5 /* BYAppStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYAppStyle.h; sourceTree = "<group>"; };
 		684CDFEA1D94DE9B006316A5 /* BYAppStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYAppStyle.m; sourceTree = "<group>"; };
 		684CDFED1D94F6EC006316A5 /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Masonry.framework; sourceTree = "<group>"; };
+		684CDFF01D9527A0006316A5 /* StarGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StarGray@2x.png"; sourceTree = "<group>"; };
+		684CDFF11D9527A0006316A5 /* StarYellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StarYellow@2x.png"; sourceTree = "<group>"; };
 		6856B83B1D6A97C700161109 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAutoPurgingImageCache.h; sourceTree = "<group>"; };
 		6856B83C1D6A97C700161109 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAutoPurgingImageCache.m; sourceTree = "<group>"; };
 		6856B83D1D6A97C700161109 /* AFImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageDownloader.h; sourceTree = "<group>"; };
@@ -630,6 +636,8 @@
 		684B0A8B1D654A3B00505A9C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				684CDFF01D9527A0006316A5 /* StarGray@2x.png */,
+				684CDFF11D9527A0006316A5 /* StarYellow@2x.png */,
 				684CDFDD1D94D9F6006316A5 /* MISTabOfficeTable@2x.png */,
 				684CDFDE1D94D9F6006316A5 /* MISTabOfficeTable@3x.png */,
 				684CDFDF1D94D9F6006316A5 /* MISTabOfficeTableHL@2x.png */,
@@ -945,6 +953,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				684CDFF41D9527A0006316A5 /* StarYellow@2x.png in Resources */,
 				684CDFE31D94D9F6006316A5 /* MISTabOfficeTable@3x.png in Resources */,
 				684B0A4C1D65499700505A9C /* Assets.xcassets in Resources */,
 				684B0AAC1D655A2C00505A9C /* Media.xcassets in Resources */,
@@ -952,6 +961,7 @@
 				6856B8DE1D6BD9BB00161109 /* MISQuanKTIcon@2x.png in Resources */,
 				6856B8E31D6C57F800161109 /* 123.png in Resources */,
 				684CDFE11D94D9F6006316A5 /* MISTabOfficeTable@2x.png in Resources */,
+				684CDFF21D9527A0006316A5 /* StarGray@2x.png in Resources */,
 				684CDFE51D94D9F6006316A5 /* MISTabOfficeTableHL@2x.png in Resources */,
 				684CDFE71D94D9F6006316A5 /* MISTabOfficeTableHL@3x.png in Resources */,
 			);
@@ -975,6 +985,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				684CDFF51D9527A0006316A5 /* StarYellow@2x.png in Resources */,
 				684CDFE41D94D9F6006316A5 /* MISTabOfficeTable@3x.png in Resources */,
 				684B0AAD1D655A2C00505A9C /* Media.xcassets in Resources */,
 				684B0A9D1D654DD900505A9C /* Assets.xcassets in Resources */,
@@ -982,6 +993,7 @@
 				6856B8DF1D6BD9BB00161109 /* MISQuanKTIcon@2x.png in Resources */,
 				6856B8E41D6C57F800161109 /* 123.png in Resources */,
 				684CDFE21D94D9F6006316A5 /* MISTabOfficeTable@2x.png in Resources */,
+				684CDFF31D9527A0006316A5 /* StarGray@2x.png in Resources */,
 				684CDFE61D94D9F6006316A5 /* MISTabOfficeTableHL@2x.png in Resources */,
 				684CDFE81D94D9F6006316A5 /* MISTabOfficeTableHL@3x.png in Resources */,
 			);
