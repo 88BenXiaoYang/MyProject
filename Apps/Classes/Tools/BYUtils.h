@@ -14,4 +14,7 @@
 
 + (NSString *)md5:(NSString *)str;
 
+//图片处理相关
++ (UIImage *)imageWithRenderingModeCustomStyle:(UIImage *)image;
+
 @end

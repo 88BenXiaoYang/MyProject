@@ -28,6 +28,8 @@
 	self.window.rootViewController = mainVC;
 	[self.window makeKeyAndVisible];
 	
+	[BYAppStyle setupStyle];
+	
 	return YES;
 }
 

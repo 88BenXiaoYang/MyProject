@@ -1,13 +1,13 @@
 //
-//  BYMainViewController.h
+//  BYTabBarController.h
 //  Apps
 //
 //  Created by BianYong on 16/9/23.
 //  Copyright © 2016年 BY. All rights reserved.
 //
 
-#import "BYTabBarController.h"
+#import <UIKit/UIKit.h>
 
-@interface BYMainViewController : BYTabBarController
+@interface BYTabBarController : UITabBarController
 
 @end

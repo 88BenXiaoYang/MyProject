@@ -9,6 +9,9 @@
 #ifndef Common_h
 #define Common_h
 
+//状态栏高
+#define STATUSBAR_HEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height
+
 //屏幕宽、高
 #define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
@@ -31,5 +34,8 @@
 #elif KAppB
 #define UMENG_APP_KEY            @"53c4d9dd56240bda10033520" //parent
 #endif
+
+//控件传值
+#define Image_With_Name(_name) [UIImage imageNamed:_name]
 
 #endif /* Common_h */

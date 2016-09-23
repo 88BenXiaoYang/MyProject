@@ -40,4 +40,10 @@
 			];
 }
 
+//图片处理相关
++ (UIImage *)imageWithRenderingModeCustomStyle:(UIImage *)image
+{
+	return [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+}
+
 @end
