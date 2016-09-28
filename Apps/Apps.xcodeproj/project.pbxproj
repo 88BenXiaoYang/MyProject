@@ -141,8 +141,8 @@
 		6856B8DC1D6AF95300161109 /* UIImage+BYCircleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6856B8DA1D6AF95300161109 /* UIImage+BYCircleImage.m */; };
 		6856B8DE1D6BD9BB00161109 /* MISQuanKTIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6856B8DD1D6BD9BB00161109 /* MISQuanKTIcon@2x.png */; };
 		6856B8DF1D6BD9BB00161109 /* MISQuanKTIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6856B8DD1D6BD9BB00161109 /* MISQuanKTIcon@2x.png */; };
-		6856B8E31D6C57F800161109 /* 123.png in Resources */ = {isa = PBXBuildFile; fileRef = 6856B8E21D6C57F800161109 /* 123.png */; };
-		6856B8E41D6C57F800161109 /* 123.png in Resources */ = {isa = PBXBuildFile; fileRef = 6856B8E21D6C57F800161109 /* 123.png */; };
+		6856B8E31D6C57F800161109 /* twitterIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6856B8E21D6C57F800161109 /* twitterIcon.png */; };
+		6856B8E41D6C57F800161109 /* twitterIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6856B8E21D6C57F800161109 /* twitterIcon.png */; };
 		6856B8E81D6D68FB00161109 /* BYConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 6856B8E71D6D68FB00161109 /* BYConstant.m */; };
 		6856B8E91D6D68FB00161109 /* BYConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 6856B8E71D6D68FB00161109 /* BYConstant.m */; };
 		687F587D1D75317400C673D8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687F587C1D75317400C673D8 /* CoreTelephony.framework */; };
@@ -311,7 +311,7 @@
 		6856B8DD1D6BD9BB00161109 /* MISQuanKTIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MISQuanKTIcon@2x.png"; sourceTree = "<group>"; };
 		6856B8E01D6C36A700161109 /* appA-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "appA-Prefix.pch"; sourceTree = "<group>"; };
 		6856B8E11D6C36C900161109 /* appB-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "appB-Prefix.pch"; sourceTree = "<group>"; };
-		6856B8E21D6C57F800161109 /* 123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 123.png; sourceTree = "<group>"; };
+		6856B8E21D6C57F800161109 /* twitterIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterIcon.png; sourceTree = "<group>"; };
 		6856B8E61D6D68FB00161109 /* BYConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYConstant.h; sourceTree = "<group>"; };
 		6856B8E71D6D68FB00161109 /* BYConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYConstant.m; sourceTree = "<group>"; };
 		687F587C1D75317400C673D8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -643,7 +643,7 @@
 				684CDFDF1D94D9F6006316A5 /* MISTabOfficeTableHL@2x.png */,
 				684CDFE01D94D9F6006316A5 /* MISTabOfficeTableHL@3x.png */,
 				6856B8DD1D6BD9BB00161109 /* MISQuanKTIcon@2x.png */,
-				6856B8E21D6C57F800161109 /* 123.png */,
+				6856B8E21D6C57F800161109 /* twitterIcon.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -959,7 +959,7 @@
 				684B0AAC1D655A2C00505A9C /* Media.xcassets in Resources */,
 				684B0A8F1D654A3B00505A9C /* ReadMe.rtf in Resources */,
 				6856B8DE1D6BD9BB00161109 /* MISQuanKTIcon@2x.png in Resources */,
-				6856B8E31D6C57F800161109 /* 123.png in Resources */,
+				6856B8E31D6C57F800161109 /* twitterIcon.png in Resources */,
 				684CDFE11D94D9F6006316A5 /* MISTabOfficeTable@2x.png in Resources */,
 				684CDFF21D9527A0006316A5 /* StarGray@2x.png in Resources */,
 				684CDFE51D94D9F6006316A5 /* MISTabOfficeTableHL@2x.png in Resources */,
@@ -991,7 +991,7 @@
 				684B0A9D1D654DD900505A9C /* Assets.xcassets in Resources */,
 				684B0A9E1D654DD900505A9C /* ReadMe.rtf in Resources */,
 				6856B8DF1D6BD9BB00161109 /* MISQuanKTIcon@2x.png in Resources */,
-				6856B8E41D6C57F800161109 /* 123.png in Resources */,
+				6856B8E41D6C57F800161109 /* twitterIcon.png in Resources */,
 				684CDFE21D94D9F6006316A5 /* MISTabOfficeTable@2x.png in Resources */,
 				684CDFF31D9527A0006316A5 /* StarGray@2x.png in Resources */,
 				684CDFE61D94D9F6006316A5 /* MISTabOfficeTableHL@2x.png in Resources */,

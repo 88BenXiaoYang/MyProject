@@ -149,13 +149,13 @@
 {
 	UIButton *btn = [[UIButton alloc] init];
 	[btn setTitle:@"111" forState:UIControlStateNormal];
-	[btn setImage:[UIImage imageNamed:@"123"] forState:UIControlStateNormal];
+	[btn setImage:[UIImage imageNamed:@"twitterIcon"] forState:UIControlStateNormal];
 	btn.frame = CGRectMake(0, 0, 100, 100);
 	[btn layoutSubviews];
 	
 	UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(50, 50, 100, 40)];
-//	searchBar.backgroundImage = [UIImage imageNamed:@"123"];
-//	[searchBar setImage:[UIImage imageNamed:@"123"] forSearchBarIcon:nil state:nil];
+//	searchBar.backgroundImage = [UIImage imageNamed:@"twitterIcon"];
+//	[searchBar setImage:[UIImage imageNamed:@"twitterIcon"] forSearchBarIcon:nil state:nil];
 //	[searchBar layoutSubviews];
 	
 	BYLog(@"##### #### : %@", searchBar);
