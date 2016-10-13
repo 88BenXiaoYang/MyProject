@@ -38,7 +38,8 @@
 #pragma mark- Interface methods
 - (void)setCellInfoWithModel:(BYDynamicTreeModel *)dataModel clickBlock:(void (^)(void))clickBlock
 {
-	self.titleLab.text = dataModel.title;
+	_titleLab.text = dataModel.title;
+	_chooseImage.image = dataModel.isSelect ? Image_With_Name(@"MISSendNotifiSelectCkecked") : Image_With_Name(@"MISSendNotifiSelectUnckeck");
 	
 	self.arrowBtnClickBlock = clickBlock;
 }
@@ -179,7 +180,6 @@
 {
 	if (!_chooseImage) {
 		_chooseImage = [UIImageView autoLayoutImageView];
-		_chooseImage.image = [UIImage imageNamed:@"MISSendNotifiSelectUnckeck"];
 		[_chooseImage sizeToFit];
 	}
 	return _chooseImage;

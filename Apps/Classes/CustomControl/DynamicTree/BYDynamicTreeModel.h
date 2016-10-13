@@ -56,6 +56,6 @@ typedef NS_ENUM(NSInteger, BYDynamicTreeNodeType) {
 
 @property (nonatomic, strong) NSMutableArray *itemsArr;       //用于rows
 @property (nonatomic, strong) NSMutableArray *nodesArr;       //用于存储父节点下的子节点数据（数节点）
-@property (nonatomic, strong) NSMutableArray *treeNodesArr;   //树节点数组，用于存储节点的location信息
+@property (nonatomic, strong) NSMutableArray *treeNodesArr;   //树节点数组，用于存储节点的location信息（存放当前界面展示的节点数据）
 
 @end

@@ -134,7 +134,7 @@
 	[BYDynamicTreeData instance].contentArray = dataArray;
 }
 
-//处理数据构造树节点
+//处理数据、构造树节点
 - (void)handleData
 {
 	NSMutableArray *groupDataArr = [NSMutableArray array];
@@ -148,7 +148,7 @@
 		for (NSInteger j = 0; j < groupModel.teamsOfGroupArr.count; j ++) {
 			BYDynamicTreeTeamModel *tmModel = groupModel.teamsOfGroupArr[j];
 			
-			[groupDataModel.nodesArr addObject:tmModel];
+			[groupDataModel.nodesArr addObject:tmModel]; //nodesArr存放当前团体内所有的节点（包括子节点）
 			
 			tmModel.nodeRange = NSMakeRange(j, 1);
 			tmModel.subNodeRange = NSMakeRange(groupDataModel.nodesArr.count - 1, tmModel.membersOfTeamArr.count + 1);
@@ -159,41 +159,12 @@
 				[groupDataModel.nodesArr addObject:mmModel];
 			}
 			
-			[groupDataModel.treeNodesArr addObject:tmModel];
+			[groupDataModel.treeNodesArr addObject:tmModel]; //treeNodesArr存放需绘制到界面上的节点数据
 		}
 		
 		groupDataModel.itemsArr = [groupDataModel.treeNodesArr mutableCopy];
 		
 		[groupDataArr addObject:groupDataModel];
-		
-		/*
-		//构造node、tree数组
-		for (NSInteger i = 0; i < dataModel.groupsArr.count; i ++) {
-			//团体
-			BYDynamicTreeGroupModel *gpModel = dataModel.groupsArr[i];
-//			[dataModel.nodesArr addObject:gpModel];
-			
-			//组
-			for (NSInteger j = 0; j < gpModel.teamsOfGroupArr.count; j ++) {
-				BYDynamicTreeTeamModel *tmModel = gpModel.teamsOfGroupArr[j];
-				
-				[dataModel.nodesArr addObject:tmModel];
-				
-				tmModel.nodeRange = NSMakeRange(j, 1);
-				tmModel.subNodeRange = NSMakeRange(dataModel.nodesArr.count - 1, tmModel.membersOfTeamArr.count + 1);
-				tmModel.nodeIndex = j;
-				
-				//成员
-				for (BYDynamicTreeMemberModel *mmModel in tmModel.membersOfTeamArr) {
-					[dataModel.nodesArr addObject:mmModel];
-				}
-				
-				[dataModel.treeNodesArr addObject:tmModel];
-			}
-			
-			dataModel.itemsArr = [dataModel.treeNodesArr mutableCopy];
-		}
-		 */
 	}
 	
 	[BYDynamicTreeData instance].groupDataArray = groupDataArr;
@@ -236,7 +207,7 @@
 		[cellIndexPathes addObject:[NSIndexPath indexPathForRow:rowIndex++ inSection:indexPath.section]];
 	}
 	
-	//数结构信息控制!!!
+	//树结构信息控制!!!
 	//更改父节点的状态范围
 	NSRange range = NSMakeRange(fatherNode.nodeRange.location, fatherNode.subNodeRange.length);
 	fatherNode.nodeRange = range;

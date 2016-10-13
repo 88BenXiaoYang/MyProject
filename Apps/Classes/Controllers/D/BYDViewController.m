@@ -39,7 +39,7 @@
 - (void)testData
 {
 	NSMutableArray *groupList = [NSMutableArray array]; //团体
-	for (int i = 0; i < 2; i ++) { //团体
+	for (int i = 0; i < 1; i ++) { //团体
 		BYDynamicTreeGroupModel *groupModel = [[BYDynamicTreeGroupModel alloc] init];
 		groupModel.nodeType = BYDynamicTreeNodeTypeGroup;
 		groupModel.title = [NSString stringWithFormat:@"Group:%d", i];
