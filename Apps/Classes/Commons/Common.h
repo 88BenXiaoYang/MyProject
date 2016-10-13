@@ -19,6 +19,11 @@
 //绿色背景
 #define BG_Color [UIColor colorWithRed:143.0/255 green:188.0/255 blue:5.0/255 alpha:1.0]
 #define BG_Color_Sub [UIColor grayColor]
+#define VIEW_BGCOLOR UIColorFromRGB(0xecedf1)
+#define Clear_Color [UIColor clearColor]
+
+// rgb颜色转换（16进制->10进制）
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 //弱引用
 #define BYWeakSelf(type) __weak typeof(type) weak##type = type;

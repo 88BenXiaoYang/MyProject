@@ -14,6 +14,7 @@
 #import <UMMobClick/MobClick.h>
 #import <Masonry/Masonry.h>
 #import "Common.h"
+#import "BYCategories.h"
 #import "BYUMEvent.h"
 #import "BYAppStyle.h"
 
