@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
+	self.title = @"CView";
+	
 	[self.view setBackgroundColor:BG_Color];
 	
 	[self customPicture];

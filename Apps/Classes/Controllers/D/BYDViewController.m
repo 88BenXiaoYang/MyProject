@@ -21,6 +21,8 @@
 #pragma mark- Live circle
 - (void)viewDidLoad {
 	[super viewDidLoad];
+	
+	self.title = @"DView";
 
 	[self testData];
 	[self initWithSetting];

@@ -31,7 +31,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "211"
             endingLineNumber = "211"
-            landmarkName = "-arrowBtnClickWithNode:indexPath:assistData:"
+            landmarkName = "-addSubnodesToFatherNode:atIndex:assistData:indexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -63,7 +63,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "257"
             endingLineNumber = "257"
-            landmarkName = "-addSubnodesToFatherNode:atIndex:assistData:indexPath:"
+            landmarkName = "-minusSubnodesFromFatherNode:assistData:indexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -100,11 +100,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Classes/Controllers/D/BYDViewController.m"
-            timestampString = "498033925.245228"
+            timestampString = "499170981.892704"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "-testData"
             landmarkType = "7">
          </BreakpointContent>
