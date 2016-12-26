@@ -45,11 +45,11 @@
 #if KAppA
 #define UMENG_APP_KEY            @"53c4d96456240b5ded0d409c" //teacher
 //Bugly_AppID
-#define Bugly_AppID @"13e622cb99"
+#define Bugly_AppID @""
 #elif KAppB
 #define UMENG_APP_KEY            @"53c4d9dd56240bda10033520" //parent
 //Bugly_AppID
-#define Bugly_AppID @"9374522bfd"
+#define Bugly_AppID @""
 #endif
 
 //控件传值
