@@ -155,6 +155,10 @@
 		687F58871D75383500C673D8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 687F58801D7531AC00C673D8 /* libsqlite3.tbd */; };
 		687F588A1D75385500C673D8 /* BYUMEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 687F58891D75385500C673D8 /* BYUMEvent.m */; };
 		687F588B1D75385500C673D8 /* BYUMEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 687F58891D75385500C673D8 /* BYUMEvent.m */; };
+		68A167351E10D73A002D0732 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A167341E10D73A002D0732 /* Bugly.framework */; };
+		68A167361E10D73A002D0732 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A167341E10D73A002D0732 /* Bugly.framework */; };
+		68A167381E10D77D002D0732 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A167371E10D77D002D0732 /* libc++.tbd */; };
+		68A167391E10D78E002D0732 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A167371E10D77D002D0732 /* libc++.tbd */; };
 		68BDDE881DAB3DD0005EA1DE /* BYDynamicTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */; };
 		68BDDE891DAB3DD0005EA1DE /* BYDynamicTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */; };
 		68BDDE8C1DAB57C8005EA1DE /* UITableView+BYAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE8B1DAB57C8005EA1DE /* UITableView+BYAutoLayout.m */; };
@@ -348,6 +352,8 @@
 		687F58821D75351100C673D8 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
 		687F58881D75385500C673D8 /* BYUMEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYUMEvent.h; sourceTree = "<group>"; };
 		687F58891D75385500C673D8 /* BYUMEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYUMEvent.m; sourceTree = "<group>"; };
+		68A167341E10D73A002D0732 /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
+		68A167371E10D77D002D0732 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		68BDDE861DAB3DD0005EA1DE /* BYDynamicTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYDynamicTree.h; sourceTree = "<group>"; };
 		68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYDynamicTree.m; sourceTree = "<group>"; };
 		68BDDE8A1DAB57C8005EA1DE /* UITableView+BYAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+BYAutoLayout.h"; sourceTree = "<group>"; };
@@ -379,6 +385,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A167381E10D77D002D0732 /* libc++.tbd in Frameworks */,
+				68A167351E10D73A002D0732 /* Bugly.framework in Frameworks */,
 				687F58811D7531AC00C673D8 /* libsqlite3.tbd in Frameworks */,
 				687F587F1D75319500C673D8 /* libz.tbd in Frameworks */,
 				684CDF9D1D922EB5006316A5 /* MapKit.framework in Frameworks */,
@@ -409,6 +417,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A167391E10D78E002D0732 /* libc++.tbd in Frameworks */,
+				68A167361E10D73A002D0732 /* Bugly.framework in Frameworks */,
 				687F58871D75383500C673D8 /* libsqlite3.tbd in Frameworks */,
 				687F58861D75382B00C673D8 /* libz.tbd in Frameworks */,
 				684CDF9F1D922FB1006316A5 /* MapKit.framework in Frameworks */,
@@ -807,6 +817,8 @@
 		6856B86A1D6A9A4A00161109 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				68A167371E10D77D002D0732 /* libc++.tbd */,
+				68A167341E10D73A002D0732 /* Bugly.framework */,
 				684CDFED1D94F6EC006316A5 /* Masonry.framework */,
 				684CDF9C1D922EB5006316A5 /* MapKit.framework */,
 				687F58821D75351100C673D8 /* UMMobClick.framework */,
@@ -988,7 +1000,8 @@
 				TargetAttributes = {
 					684B0A3B1D65499700505A9C = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = Z3F649Q24Z;
+						DevelopmentTeam = FJ5FELV34L;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -1007,7 +1020,8 @@
 						TestTargetID = 684B0A3B1D65499700505A9C;
 					};
 					684B0A951D654DD900505A9C = {
-						DevelopmentTeam = Z3F649Q24Z;
+						DevelopmentTeam = FJ5FELV34L;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -1362,10 +1376,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppAIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppALaunchImage;
 				CODE_SIGN_ENTITLEMENTS = AppA/AppA.entitlements;
-				DEVELOPMENT_TEAM = Z3F649Q24Z;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kebing Mao (VBN29H3VZJ)";
+				DEVELOPMENT_TEAM = FJ5FELV34L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "AppA/appA-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1376,8 +1392,10 @@
 				INFOPLIST_FILE = "AppA/appA-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.AppA;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aspire.lnyxt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "73ef515e-79e8-4c34-b372-dd2ea0ec85d7";
+				PROVISIONING_PROFILE_SPECIFIER = LNYXTDevelopment;
 			};
 			name = Debug;
 		};
@@ -1387,17 +1405,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppAIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppALaunchImage;
 				CODE_SIGN_ENTITLEMENTS = AppA/AppA.entitlements;
-				DEVELOPMENT_TEAM = Z3F649Q24Z;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Aspire Information Technology (Beijing) Co., Ltd.";
+				DEVELOPMENT_TEAM = FJ5FELV34L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "AppA/appA-Prefix.pch";
 				INFOPLIST_FILE = "AppA/appA-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.AppA;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aspire.lnyxt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "807cf653-76d3-42a6-8d9d-11ac203e8d31";
+				PROVISIONING_PROFILE_SPECIFIER = LNYXTInhouse;
 			};
 			name = Release;
 		};
@@ -1455,10 +1477,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppBIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppBLaunchImage;
 				CODE_SIGN_ENTITLEMENTS = AppB/AppB.entitlements;
-				DEVELOPMENT_TEAM = Z3F649Q24Z;
+				DEVELOPMENT_TEAM = FJ5FELV34L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "AppB/appB-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1470,6 +1493,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.AppB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "24ce677a-bbcc-4c82-95a3-01dbdf1c5968";
+				PROVISIONING_PROFILE_SPECIFIER = XcodeWildcardDevelopment;
 			};
 			name = Debug;
 		};
@@ -1479,16 +1504,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppBIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppBLaunchImage;
 				CODE_SIGN_ENTITLEMENTS = AppB/AppB.entitlements;
-				DEVELOPMENT_TEAM = Z3F649Q24Z;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = FJ5FELV34L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "AppB/appB-Prefix.pch";
 				INFOPLIST_FILE = "AppB/appB-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.AppB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b4df0898-36d1-419c-bbce-0faa5b77e24b";
+				PROVISIONING_PROFILE_SPECIFIER = XcodeWildcardInHouse;
 			};
 			name = Release;
 		};

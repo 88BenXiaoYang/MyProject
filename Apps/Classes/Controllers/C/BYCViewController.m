@@ -8,7 +8,11 @@
 
 #import "BYCViewController.h"
 
-@interface BYCViewController ()
+#define limitCount 10
+
+@interface BYCViewController () <UITextViewDelegate>
+
+@property (nonatomic, strong) UITextView *tView;
 
 @end
 
@@ -17,11 +21,7 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
-	self.title = @"CView";
-	
-	[self.view setBackgroundColor:BG_Color];
-	
-	[self customPicture];
+	[self initWithSetting];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,11 +29,41 @@
 }
 
 #pragma mark- Delegate
+//UITextViewDelegate
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+{
+//	if (limitCount <= 0)
+//		return NO;
+//	
+//	UITextRange *selectedRange = [self.tView markedTextRange];
+//	//获取高亮部分
+//	UITextPosition *position = [self.tView positionFromPosition:selectedRange.start offset:0];
+//	
+//	//不是联想输入状态
+//	if (!position) {
+//		if (self.tView.text.length > limitCount) {
+//			self.tView.text = [self.tView.text substringToIndex:limitCount];
+//		}
+//	}
+	
+	return YES;
+}
+
 #pragma mark- Notification methods
 #pragma mark- Interface methods
 #pragma mark- Event Response methods
 #pragma mark- Net request
 #pragma mark- Private methods
+- (void)initWithSetting
+{
+	self.title = @"CView";
+	
+	[self.view setBackgroundColor:BG_Color];
+	
+	[self.view addSubview:self.tView];
+	[self customPicture];
+}
+
 - (void)customPicture
 {
 	//配合paintCode获取图片路径
@@ -124,6 +154,15 @@
 }
 
 #pragma mark- Setter and getter
+- (UITextView *)tView
+{
+	if (!_tView) {
+		_tView = [[UITextView alloc] initWithFrame:CGRectMake(10, 190, 200, 30)];
+		_tView.delegate = self;
+	}
+	return _tView;
+}
+
 #pragma mark- Square area
 
 @end

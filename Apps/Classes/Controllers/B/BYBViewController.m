@@ -16,24 +16,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 	
 	self.title = @"BView";
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+	[super viewWillAppear:animated];
+	
+//	[self testBugly];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)testBugly
+{
+	MISLogFunc;
+	NSString *str = @"ddddd";
+	MISLog(@"%@", str);
+	str = nil;
+	
+	if (str.length > 0) {
+		MISLog(@"%@", str);
+	}
+	
+	NSArray *array = [NSArray arrayWithObjects:@"0", @"1", @"2", nil];
+	for (NSString *st in array) {
+		MISLog(@"%@", st);
+	}
+	
+	MISLog(@"%@", [array objectAtIndex:100]);
 }
-*/
 
 @end

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BYMainViewController.h"
+#import <Bugly/Bugly.h>
 
 @interface AppDelegate ()
 
@@ -22,6 +23,11 @@
 	UMConfigInstance.appKey = UMENG_APP_KEY;
 	[MobClick startWithConfigure:UMConfigInstance];
 //	[MobClick setLogEnabled:YES]; //默认是 NO  前置条件：要配合注册测试设备
+	
+	/*
+	 *初始化Bugly --- 注：是否有使用具有捕获Crash功能的其他第三方组件，若有将bugly的初始化放在该组件后面
+	 */
+	[Bugly startWithAppId:Bugly_AppID];
 	
 	self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 	BYMainViewController *mainVC = [[BYMainViewController alloc] init];

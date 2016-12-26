@@ -32,12 +32,24 @@
 #define BYLog(...) NSLog(__VA_ARGS__);
 #define BYLogFunc  BYLog(@"%s", __FUNCTION__);
 #define BYLogLine  BYLog(@"Line : %d", __LINE__);
+#pragma mark- log
+//---
+#define MISLog(...) NSLog(__VA_ARGS__);
+#define MISLogFunc  MISLog(@"%s", __FUNCTION__);
+#define MISLogLine  MISLog(@"Line:%d", __LINE__);
+#define MISLogFile  MISLog(@"%s", __FILE__);
+#define MISLogObj(__OBJ)     MISLog(@"%s, %@", __FUNCTION__, __OBJ);
+#define MISLogError(__ERROR) MISLog(@"%s, Error:%@", __FUNCTION__, __ERROR);
 
 //友盟统计
 #if KAppA
 #define UMENG_APP_KEY            @"53c4d96456240b5ded0d409c" //teacher
+//Bugly_AppID
+#define Bugly_AppID @"13e622cb99"
 #elif KAppB
 #define UMENG_APP_KEY            @"53c4d9dd56240bda10033520" //parent
+//Bugly_AppID
+#define Bugly_AppID @"9374522bfd"
 #endif
 
 //控件传值
