@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BYMainViewController.h"
+#import "BYMViewController.h"
 #import <Bugly/Bugly.h>
 
 @interface AppDelegate ()
@@ -31,6 +32,7 @@
 	
 	self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 	BYMainViewController *mainVC = [[BYMainViewController alloc] init];
+//	BYMViewController *mainVC = [[BYMViewController alloc] init];
 	self.window.rootViewController = mainVC;
 	[self.window makeKeyAndVisible];
 	

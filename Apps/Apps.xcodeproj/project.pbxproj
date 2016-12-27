@@ -159,6 +159,8 @@
 		68A167361E10D73A002D0732 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A167341E10D73A002D0732 /* Bugly.framework */; };
 		68A167381E10D77D002D0732 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A167371E10D77D002D0732 /* libc++.tbd */; };
 		68A167391E10D78E002D0732 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A167371E10D77D002D0732 /* libc++.tbd */; };
+		68A1673D1E125CE8002D0732 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A1673C1E125CE8002D0732 /* UIPlaceHolderTextView.m */; };
+		68A1673E1E125CE8002D0732 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A1673C1E125CE8002D0732 /* UIPlaceHolderTextView.m */; };
 		68BDDE881DAB3DD0005EA1DE /* BYDynamicTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */; };
 		68BDDE891DAB3DD0005EA1DE /* BYDynamicTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */; };
 		68BDDE8C1DAB57C8005EA1DE /* UITableView+BYAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE8B1DAB57C8005EA1DE /* UITableView+BYAutoLayout.m */; };
@@ -354,6 +356,8 @@
 		687F58891D75385500C673D8 /* BYUMEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYUMEvent.m; sourceTree = "<group>"; };
 		68A167341E10D73A002D0732 /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
 		68A167371E10D77D002D0732 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		68A1673B1E125CE8002D0732 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
+		68A1673C1E125CE8002D0732 /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
 		68BDDE861DAB3DD0005EA1DE /* BYDynamicTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYDynamicTree.h; sourceTree = "<group>"; };
 		68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYDynamicTree.m; sourceTree = "<group>"; };
 		68BDDE8A1DAB57C8005EA1DE /* UITableView+BYAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+BYAutoLayout.h"; sourceTree = "<group>"; };
@@ -521,6 +525,7 @@
 		684B0A751D654A3B00505A9C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				68A1673A1E125C9A002D0732 /* CustomView */,
 				68BDDE841DAB3D4C005EA1DE /* CustomControl */,
 				684CDFB41D94D1DD006316A5 /* BaseControllers */,
 				684B0A781D654A3B00505A9C /* Categories */,
@@ -892,6 +897,15 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		68A1673A1E125C9A002D0732 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				68A1673B1E125CE8002D0732 /* UIPlaceHolderTextView.h */,
+				68A1673C1E125CE8002D0732 /* UIPlaceHolderTextView.m */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		68BDDE841DAB3D4C005EA1DE /* CustomControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -1139,6 +1153,7 @@
 				6856B8571D6A97C700161109 /* UIButton+AFNetworking.m in Sources */,
 				6856B87B1D6A9AE200161109 /* AFNetworkReachabilityManager.m in Sources */,
 				6856B8D31D6AF34900161109 /* UIImageView+HighlightedWebCache.m in Sources */,
+				68A1673D1E125CE8002D0732 /* UIPlaceHolderTextView.m in Sources */,
 				684CDFBF1D94D346006316A5 /* BYTabBarController.m in Sources */,
 				68BDDE991DAB602D005EA1DE /* BYCategories.m in Sources */,
 				68BDDE9D1DAB78B0005EA1DE /* BYDynamicTreeData.m in Sources */,
@@ -1225,6 +1240,7 @@
 				6856B8581D6A97C700161109 /* UIButton+AFNetworking.m in Sources */,
 				6856B87C1D6A9AE200161109 /* AFNetworkReachabilityManager.m in Sources */,
 				6856B8D41D6AF34900161109 /* UIImageView+HighlightedWebCache.m in Sources */,
+				68A1673E1E125CE8002D0732 /* UIPlaceHolderTextView.m in Sources */,
 				684CDFC01D94D346006316A5 /* BYTabBarController.m in Sources */,
 				68BDDE9A1DAB602D005EA1DE /* BYCategories.m in Sources */,
 				68BDDE9E1DAB78B0005EA1DE /* BYDynamicTreeData.m in Sources */,
@@ -1392,10 +1408,10 @@
 				INFOPLIST_FILE = "AppA/appA-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.aspire.lnyxt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AppA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "73ef515e-79e8-4c34-b372-dd2ea0ec85d7";
-				PROVISIONING_PROFILE_SPECIFIER = LNYXTDevelopment;
+				PROVISIONING_PROFILE = "24ce677a-bbcc-4c82-95a3-01dbdf1c5968";
+				PROVISIONING_PROFILE_SPECIFIER = XcodeWildcardDevelopment;
 			};
 			name = Debug;
 		};
@@ -1416,10 +1432,10 @@
 				INFOPLIST_FILE = "AppA/appA-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.aspire.lnyxt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AppA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "807cf653-76d3-42a6-8d9d-11ac203e8d31";
-				PROVISIONING_PROFILE_SPECIFIER = LNYXTInhouse;
+				PROVISIONING_PROFILE = "b4df0898-36d1-419c-bbce-0faa5b77e24b";
+				PROVISIONING_PROFILE_SPECIFIER = XcodeWildcardInHouse;
 			};
 			name = Release;
 		};

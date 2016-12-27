@@ -7,12 +7,14 @@
 //
 
 #import "BYCViewController.h"
+#import "UIPlaceHolderTextView.h"
 
 #define limitCount 10
 
 @interface BYCViewController () <UITextViewDelegate>
 
 @property (nonatomic, strong) UITextView *tView;
+@property (nonatomic, strong) UIPlaceHolderTextView *placeHolderTextView;
 
 @end
 
@@ -22,6 +24,12 @@
 	[super viewDidLoad];
 	
 	[self initWithSetting];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+	[super viewWillAppear:animated];
+	MISLogFunc
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,6 +54,14 @@
 //		}
 //	}
 	
+	if ([textView isKindOfClass:[UIPlaceHolderTextView class]]) {
+		//隐藏键盘，实现UITextViewDelegate
+		if ([text isEqualToString:@"\n"]) {
+			[_placeHolderTextView resignFirstResponder];
+			return NO;
+		}
+	}
+	
 	return YES;
 }
 
@@ -61,7 +77,8 @@
 	[self.view setBackgroundColor:BG_Color];
 	
 	[self.view addSubview:self.tView];
-	[self customPicture];
+	[self.view addSubview:self.placeHolderTextView];
+//	[self customPicture];
 }
 
 - (void)customPicture
@@ -161,6 +178,17 @@
 		_tView.delegate = self;
 	}
 	return _tView;
+}
+
+- (UIPlaceHolderTextView *)placeHolderTextView
+{
+	if (!_placeHolderTextView) {
+		_placeHolderTextView = [[UIPlaceHolderTextView alloc] initWithFrame:CGRectMake(10, 250, 200, 100)];
+		_placeHolderTextView.delegate = self;
+		_placeHolderTextView.placeHolder = @"placeHolder测试";
+		_placeHolderTextView.placeHolderColor = [UIColor orangeColor];
+	}
+	return _placeHolderTextView;
 }
 
 #pragma mark- Square area

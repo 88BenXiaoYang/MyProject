@@ -246,10 +246,14 @@
 	
 	//保存bitmap(位图)到图片
 	CGImageRef scaledImage = CGBitmapContextCreateImage(bitmapRef);
-	CGContextRelease(bitmapRef);
-	CGImageRelease(bitmapImage);
+	UIImage *qrImage = [UIImage imageWithCGImage:scaledImage];
 	
-	return [UIImage imageWithCGImage:scaledImage];
+	CGImageRelease(bitmapImage);
+	CGImageRelease(scaledImage);
+	CGContextRelease(bitmapRef);
+	CGColorSpaceRelease(cs);
+	
+	return qrImage;
 }
 
 #pragma mark- Setter and getter
