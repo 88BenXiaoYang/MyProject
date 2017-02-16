@@ -155,6 +155,8 @@
 		687F58871D75383500C673D8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 687F58801D7531AC00C673D8 /* libsqlite3.tbd */; };
 		687F588A1D75385500C673D8 /* BYUMEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 687F58891D75385500C673D8 /* BYUMEvent.m */; };
 		687F588B1D75385500C673D8 /* BYUMEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 687F58891D75385500C673D8 /* BYUMEvent.m */; };
+		6899C7901E55508900FEFAB2 /* tickblue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6899C78F1E55508900FEFAB2 /* tickblue@2x.png */; };
+		6899C7911E55508900FEFAB2 /* tickblue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6899C78F1E55508900FEFAB2 /* tickblue@2x.png */; };
 		68A167351E10D73A002D0732 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A167341E10D73A002D0732 /* Bugly.framework */; };
 		68A167361E10D73A002D0732 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A167341E10D73A002D0732 /* Bugly.framework */; };
 		68A167381E10D77D002D0732 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A167371E10D77D002D0732 /* libc++.tbd */; };
@@ -354,6 +356,7 @@
 		687F58821D75351100C673D8 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
 		687F58881D75385500C673D8 /* BYUMEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYUMEvent.h; sourceTree = "<group>"; };
 		687F58891D75385500C673D8 /* BYUMEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYUMEvent.m; sourceTree = "<group>"; };
+		6899C78F1E55508900FEFAB2 /* tickblue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tickblue@2x.png"; sourceTree = "<group>"; };
 		68A167341E10D73A002D0732 /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
 		68A167371E10D77D002D0732 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		68A1673B1E125CE8002D0732 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
@@ -726,6 +729,7 @@
 				684CDFE01D94D9F6006316A5 /* MISTabOfficeTableHL@3x.png */,
 				6856B8DD1D6BD9BB00161109 /* MISQuanKTIcon@2x.png */,
 				6856B8E21D6C57F800161109 /* twitterIcon.png */,
+				6899C78F1E55508900FEFAB2 /* tickblue@2x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1017,6 +1021,9 @@
 						DevelopmentTeam = FJ5FELV34L;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
 							com.apple.Keychain = {
 								enabled = 1;
 							};
@@ -1088,6 +1095,7 @@
 				684CDFE51D94D9F6006316A5 /* MISTabOfficeTableHL@2x.png in Resources */,
 				68BDDEC51DAF6E52005EA1DE /* MISSendNotifiSelectUnckeck@2x.png in Resources */,
 				684CDFE71D94D9F6006316A5 /* MISTabOfficeTableHL@3x.png in Resources */,
+				6899C7901E55508900FEFAB2 /* tickblue@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1124,6 +1132,7 @@
 				684CDFE61D94D9F6006316A5 /* MISTabOfficeTableHL@2x.png in Resources */,
 				68BDDEC61DAF6E52005EA1DE /* MISSendNotifiSelectUnckeck@2x.png in Resources */,
 				684CDFE81D94D9F6006316A5 /* MISTabOfficeTableHL@3x.png in Resources */,
+				6899C7911E55508900FEFAB2 /* tickblue@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

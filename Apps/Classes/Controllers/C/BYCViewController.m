@@ -9,14 +9,16 @@
 #import "BYCViewController.h"
 #import "UIPlaceHolderTextView.h"
 #import "UIKit+AFNetworking.h"
+#import <StoreKit/StoreKit.h>
 
 #define limitCount 10
 
-@interface BYCViewController () <UITextViewDelegate>
+@interface BYCViewController () <UITextViewDelegate, SKStoreProductViewControllerDelegate>
 
 @property (nonatomic, strong) UITextView *tView;
 @property (nonatomic, strong) UIPlaceHolderTextView *placeHolderTextView;
 @property (nonatomic, strong) UIImageView *gifImageView;
+@property (nonatomic, strong) UIButton *testButton;
 
 @end
 
@@ -71,9 +73,44 @@
 	return YES;
 }
 
+#pragma mark - 评分取消按钮监听
+//取消按钮监听
+- (void)productViewControllerDidFinish:(SKStoreProductViewController *)viewController{
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
 #pragma mark- Notification methods
 #pragma mark- Interface methods
 #pragma mark- Event Response methods
+- (void)btn:(UIButton *)btn{
+	if (btn.tag == 1) {
+		//第一种方法  直接跳转
+		//itms-apps://itunes.apple.com/cn/app/zhong-qing-he-jiao-yu-jia/id899039388?mt=8
+		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://itunes.apple.com/cn/app/zhong-qing-he-jiao-yu-jia/id899039388"]];
+	}else{
+		//第二中方法  应用内跳转
+		//1:导入StoreKit.framework,控制器里面添加框架#import <StoreKit/StoreKit.h>
+		//2:实现代理SKStoreProductViewControllerDelegate
+		SKStoreProductViewController *storeProductViewContorller = [[SKStoreProductViewController alloc] init];
+		storeProductViewContorller.delegate = self;
+		//        ViewController *viewc = [[ViewController alloc]init];
+		//        __weak typeof(viewc) weakViewController = viewc;
+		
+		//加载一个新的视图展示
+		[storeProductViewContorller loadProductWithParameters:
+		 //appId
+		 @{SKStoreProductParameterITunesItemIdentifier : @"899039388"} completionBlock:^(BOOL result, NSError *error) {
+			 //回调
+			 if(error){
+				 NSLog(@"错误%@",error);
+			 }else{
+				 //AS应用界面
+				 [self presentViewController:storeProductViewContorller animated:YES completion:nil];
+			 }
+		 }];
+	}
+}
+
 #pragma mark- Net request
 #pragma mark- Private methods
 - (void)initWithSetting
@@ -86,6 +123,8 @@
 	[self.view addSubview:self.placeHolderTextView];
 	[self.view addSubview:self.gifImageView];
 //	[self customPicture];
+	[self testLayoutButtonElements];
+	[self testJumpToAppStore];
 }
 
 - (void)customPicture
@@ -177,6 +216,33 @@
 	[self.view addSubview:customImageView];
 }
 
+- (void)testLayoutButtonElements
+{
+	[self.view addSubview:self.testButton];
+	_testButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+	_testButton.contentVerticalAlignment = UIControlContentVerticalAlignmentTop;
+	[_testButton setTitleEdgeInsets:UIEdgeInsetsMake(30, ((220 - 100)/2 - 26), 0, 0)];
+	[_testButton setImageEdgeInsets:UIEdgeInsetsMake(5, (220 - 26)/2, 0, 0)];
+}
+
+- (void)testJumpToAppStore
+{
+	//第一种方法  直接跳转
+	UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(220, 250, 100, 50)];
+	btn.backgroundColor = [UIColor redColor];
+	[btn setTitle:@"直接跳转" forState:UIControlStateNormal];
+	btn.tag = 1;
+	[btn addTarget:self action:@selector(btn:) forControlEvents:UIControlEventTouchUpInside];
+	//第二中方法  应用内跳转
+	UIButton *btnT = [[UIButton alloc]initWithFrame:CGRectMake(220, 310, 100, 50)];
+	btnT.backgroundColor = [UIColor purpleColor];
+	btnT.tag = 2;
+	[btnT setTitle:@"应用内跳转" forState:UIControlStateNormal];
+	[btnT addTarget:self action:@selector(btn:) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:btn];
+	[self.view addSubview:btnT];
+}
+
 #pragma mark- Setter and getter
 - (UITextView *)tView
 {
@@ -204,6 +270,18 @@
 		_gifImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 360, 100, 100)];
 	}
 	return _gifImageView;
+}
+
+- (UIButton *)testButton
+{
+	if (!_testButton) {
+		_testButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 70, 220, 80)];
+		_testButton.backgroundColor = [UIColor whiteColor];
+		[_testButton setTitle:@"按钮元素布局" forState:UIControlStateNormal];
+		[_testButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+		[_testButton setImage:[UIImage imageNamed:@"tickblue"] forState:UIControlStateNormal];
+	}
+	return _testButton;
 }
 
 #pragma mark- Square area
