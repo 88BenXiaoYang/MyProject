@@ -8,6 +8,7 @@
 
 #import "BYCViewController.h"
 #import "UIPlaceHolderTextView.h"
+#import "UIKit+AFNetworking.h"
 
 #define limitCount 10
 
@@ -15,6 +16,7 @@
 
 @property (nonatomic, strong) UITextView *tView;
 @property (nonatomic, strong) UIPlaceHolderTextView *placeHolderTextView;
+@property (nonatomic, strong) UIImageView *gifImageView;
 
 @end
 
@@ -29,6 +31,10 @@
 - (void)viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
+	
+	NSURL *gifUrl = [NSURL URLWithString:@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1483511554654&di=94a4d5e47b0a2c3e43246aca113a2646&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01686256fe374032f875a9449ee89e.gif"];
+	//https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1483516950271&di=87c6cd414786503e53314f60f6507cb7&imgtype=0&src=http%3A%2F%2Fsc.jb51.net%2Fuploads%2Fallimg%2F150629%2F10-15062Z9524NO.jpg
+	[_gifImageView setImageWithURL:gifUrl placeholderImage:[UIImage imageNamed:@"twitterIcon"]];
 	MISLogFunc
 }
 
@@ -78,6 +84,7 @@
 	
 	[self.view addSubview:self.tView];
 	[self.view addSubview:self.placeHolderTextView];
+	[self.view addSubview:self.gifImageView];
 //	[self customPicture];
 }
 
@@ -189,6 +196,14 @@
 		_placeHolderTextView.placeHolderColor = [UIColor orangeColor];
 	}
 	return _placeHolderTextView;
+}
+
+- (UIImageView *)gifImageView
+{
+	if (!_gifImageView) {
+		_gifImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 360, 100, 100)];
+	}
+	return _gifImageView;
 }
 
 #pragma mark- Square area
