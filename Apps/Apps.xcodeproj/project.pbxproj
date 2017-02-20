@@ -191,6 +191,8 @@
 		68BDDECC1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68BDDEC91DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@2x.png */; };
 		68BDDECD1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68BDDECA1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@3x.png */; };
 		68BDDECE1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68BDDECA1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@3x.png */; };
+		68D119A91E5ABF3300424749 /* BYJSBridgeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D119A81E5ABF3300424749 /* BYJSBridgeTestViewController.m */; };
+		68D119AA1E5ABF3300424749 /* BYJSBridgeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D119A81E5ABF3300424749 /* BYJSBridgeTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -385,6 +387,8 @@
 		68BDDEC41DAF6E52005EA1DE /* MISSendNotifiSelectUnckeck@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MISSendNotifiSelectUnckeck@3x.png"; sourceTree = "<group>"; };
 		68BDDEC91DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MISSendNotifiSelectCkecked@2x.png"; sourceTree = "<group>"; };
 		68BDDECA1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MISSendNotifiSelectCkecked@3x.png"; sourceTree = "<group>"; };
+		68D119A71E5ABF3300424749 /* BYJSBridgeTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYJSBridgeTestViewController.h; sourceTree = "<group>"; };
+		68D119A81E5ABF3300424749 /* BYJSBridgeTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYJSBridgeTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -748,6 +752,8 @@
 			children = (
 				684CDFCD1D94D3C6006316A5 /* BYCViewController.h */,
 				684CDFCE1D94D3C6006316A5 /* BYCViewController.m */,
+				68D119A71E5ABF3300424749 /* BYJSBridgeTestViewController.h */,
+				68D119A81E5ABF3300424749 /* BYJSBridgeTestViewController.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -1191,6 +1197,7 @@
 				6856B8C31D6AF34900161109 /* SDWebImageDownloader.m in Sources */,
 				684CDFB71D94D204006316A5 /* BYTableViewController.m in Sources */,
 				684CDFC31D94D36A006316A5 /* BYMainViewController.m in Sources */,
+				68D119A91E5ABF3300424749 /* BYJSBridgeTestViewController.m in Sources */,
 				6856B8CB1D6AF34900161109 /* UIButton+WebCache.m in Sources */,
 				6856B8E81D6D68FB00161109 /* BYConstant.m in Sources */,
 				684CDFC71D94D39C006316A5 /* BYAViewController.m in Sources */,
@@ -1278,6 +1285,7 @@
 				6856B8C41D6AF34900161109 /* SDWebImageDownloader.m in Sources */,
 				684CDFB81D94D204006316A5 /* BYTableViewController.m in Sources */,
 				684CDFC41D94D36A006316A5 /* BYMainViewController.m in Sources */,
+				68D119AA1E5ABF3300424749 /* BYJSBridgeTestViewController.m in Sources */,
 				6856B8CC1D6AF34900161109 /* UIButton+WebCache.m in Sources */,
 				6856B8E91D6D68FB00161109 /* BYConstant.m in Sources */,
 				684CDFC81D94D39C006316A5 /* BYAViewController.m in Sources */,

@@ -87,7 +87,7 @@
 		//第一种方法  直接跳转
 		//itms-apps://itunes.apple.com/cn/app/zhong-qing-he-jiao-yu-jia/id899039388?mt=8
 		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://itunes.apple.com/cn/app/zhong-qing-he-jiao-yu-jia/id899039388"]];
-	}else{
+	}else if (btn.tag == 2){
 		//第二中方法  应用内跳转
 		//1:导入StoreKit.framework,控制器里面添加框架#import <StoreKit/StoreKit.h>
 		//2:实现代理SKStoreProductViewControllerDelegate
@@ -108,6 +108,8 @@
 				 [self presentViewController:storeProductViewContorller animated:YES completion:nil];
 			 }
 		 }];
+	} else {
+		
 	}
 }
 
@@ -241,6 +243,16 @@
 	[btnT addTarget:self action:@selector(btn:) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:btn];
 	[self.view addSubview:btnT];
+}
+
+- (void)testJSBridge
+{
+	UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(220, 310, 100, 50)];
+	btn.backgroundColor = [UIColor redColor];
+	[btn setTitle:@"JSBridge" forState:UIControlStateNormal];
+	btn.tag = 3;
+	[btn addTarget:self action:@selector(btn:) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:btn];
 }
 
 #pragma mark- Setter and getter
