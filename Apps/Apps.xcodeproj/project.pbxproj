@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		681FDE991E60084D00DD548B /* BYCheckBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDE981E60084D00DD548B /* BYCheckBoxViewController.m */; };
+		681FDE9A1E60084D00DD548B /* BYCheckBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDE981E60084D00DD548B /* BYCheckBoxViewController.m */; };
 		684B0A471D65499700505A9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684B0A461D65499700505A9C /* ViewController.m */; };
 		684B0A4C1D65499700505A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684B0A4B1D65499700505A9C /* Assets.xcassets */; };
 		684B0A5A1D65499700505A9C /* AppsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 684B0A591D65499700505A9C /* AppsTests.m */; };
@@ -213,6 +215,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		681FDE971E60084D00DD548B /* BYCheckBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCheckBoxViewController.h; sourceTree = "<group>"; };
+		681FDE981E60084D00DD548B /* BYCheckBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCheckBoxViewController.m; sourceTree = "<group>"; };
 		684B0A3C1D65499700505A9C /* AppA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		684B0A451D65499700505A9C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		684B0A461D65499700505A9C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -754,6 +758,8 @@
 				684CDFCE1D94D3C6006316A5 /* BYCViewController.m */,
 				68D119A71E5ABF3300424749 /* BYJSBridgeTestViewController.h */,
 				68D119A81E5ABF3300424749 /* BYJSBridgeTestViewController.m */,
+				681FDE971E60084D00DD548B /* BYCheckBoxViewController.h */,
+				681FDE981E60084D00DD548B /* BYCheckBoxViewController.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -1207,6 +1213,7 @@
 				684CDFCF1D94D3C6006316A5 /* BYCViewController.m in Sources */,
 				684CDFEB1D94DE9B006316A5 /* BYAppStyle.m in Sources */,
 				6856B8531D6A97C700161109 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				681FDE991E60084D00DD548B /* BYCheckBoxViewController.m in Sources */,
 				6856B8551D6A97C700161109 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				687F588A1D75385500C673D8 /* BYUMEvent.m in Sources */,
 				6856B8BD1D6AF34900161109 /* SDImageCache.m in Sources */,
@@ -1295,6 +1302,7 @@
 				684CDFD01D94D3C6006316A5 /* BYCViewController.m in Sources */,
 				684CDFEC1D94DE9B006316A5 /* BYAppStyle.m in Sources */,
 				6856B8541D6A97C700161109 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				681FDE9A1E60084D00DD548B /* BYCheckBoxViewController.m in Sources */,
 				6856B8561D6A97C700161109 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				687F588B1D75385500C673D8 /* BYUMEvent.m in Sources */,
 				6856B8BE1D6AF34900161109 /* SDImageCache.m in Sources */,

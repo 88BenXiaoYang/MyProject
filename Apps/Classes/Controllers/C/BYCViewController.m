@@ -10,6 +10,7 @@
 #import "UIPlaceHolderTextView.h"
 #import "UIKit+AFNetworking.h"
 #import <StoreKit/StoreKit.h>
+#import "BYCheckBoxViewController.h"
 
 #define limitCount 10
 
@@ -86,7 +87,11 @@
 	if (btn.tag == 1) {
 		//第一种方法  直接跳转
 		//itms-apps://itunes.apple.com/cn/app/zhong-qing-he-jiao-yu-jia/id899039388?mt=8
-		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://itunes.apple.com/cn/app/zhong-qing-he-jiao-yu-jia/id899039388"]];
+//		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://itunes.apple.com/cn/app/zhong-qing-he-jiao-yu-jia/id899039388"]];
+		
+		//CheckBox
+		BYCheckBoxViewController *checkBoxVC = [[BYCheckBoxViewController alloc] init];
+		[self.navigationController pushViewController:checkBoxVC animated:YES];
 	}else if (btn.tag == 2){
 		//第二中方法  应用内跳转
 		//1:导入StoreKit.framework,控制器里面添加框架#import <StoreKit/StoreKit.h>
