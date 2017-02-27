@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		681FDE991E60084D00DD548B /* BYCheckBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDE981E60084D00DD548B /* BYCheckBoxViewController.m */; };
 		681FDE9A1E60084D00DD548B /* BYCheckBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDE981E60084D00DD548B /* BYCheckBoxViewController.m */; };
+		681FDE9C1E640C8900DD548B /* RM.html in Resources */ = {isa = PBXBuildFile; fileRef = 681FDE9B1E640C8900DD548B /* RM.html */; };
+		681FDE9D1E640C8900DD548B /* RM.html in Resources */ = {isa = PBXBuildFile; fileRef = 681FDE9B1E640C8900DD548B /* RM.html */; };
 		684B0A471D65499700505A9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684B0A461D65499700505A9C /* ViewController.m */; };
 		684B0A4C1D65499700505A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684B0A4B1D65499700505A9C /* Assets.xcassets */; };
 		684B0A5A1D65499700505A9C /* AppsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 684B0A591D65499700505A9C /* AppsTests.m */; };
@@ -217,6 +219,7 @@
 /* Begin PBXFileReference section */
 		681FDE971E60084D00DD548B /* BYCheckBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCheckBoxViewController.h; sourceTree = "<group>"; };
 		681FDE981E60084D00DD548B /* BYCheckBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCheckBoxViewController.m; sourceTree = "<group>"; };
+		681FDE9B1E640C8900DD548B /* RM.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RM.html; sourceTree = "<group>"; };
 		684B0A3C1D65499700505A9C /* AppA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		684B0A451D65499700505A9C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		684B0A461D65499700505A9C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -452,6 +455,7 @@
 		684B0A331D65499600505A9C = {
 			isa = PBXGroup;
 			children = (
+				681FDE9B1E640C8900DD548B /* RM.html */,
 				684B0A721D654A3B00505A9C /* AppA */,
 				684B0A741D654A3B00505A9C /* AppB */,
 				684B0A751D654A3B00505A9C /* Classes */,
@@ -1103,6 +1107,7 @@
 				6856B8E31D6C57F800161109 /* twitterIcon.png in Resources */,
 				684CDFE11D94D9F6006316A5 /* MISTabOfficeTable@2x.png in Resources */,
 				684CDFF21D9527A0006316A5 /* StarGray@2x.png in Resources */,
+				681FDE9C1E640C8900DD548B /* RM.html in Resources */,
 				68BDDECD1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@3x.png in Resources */,
 				684CDFE51D94D9F6006316A5 /* MISTabOfficeTableHL@2x.png in Resources */,
 				68BDDEC51DAF6E52005EA1DE /* MISSendNotifiSelectUnckeck@2x.png in Resources */,
@@ -1140,6 +1145,7 @@
 				6856B8E41D6C57F800161109 /* twitterIcon.png in Resources */,
 				684CDFE21D94D9F6006316A5 /* MISTabOfficeTable@2x.png in Resources */,
 				684CDFF31D9527A0006316A5 /* StarGray@2x.png in Resources */,
+				681FDE9D1E640C8900DD548B /* RM.html in Resources */,
 				68BDDECE1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@3x.png in Resources */,
 				684CDFE61D94D9F6006316A5 /* MISTabOfficeTableHL@2x.png in Resources */,
 				68BDDEC61DAF6E52005EA1DE /* MISSendNotifiSelectUnckeck@2x.png in Resources */,
