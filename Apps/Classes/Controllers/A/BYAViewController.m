@@ -7,33 +7,108 @@
 //
 
 #import "BYAViewController.h"
+#import "BYDemoListCell.h"
+#import "BYLayoutViewController.h"
+#import "BYAppSkipViewController.h"
+#import "BYCheckBoxViewController.h"
 
 @interface BYAViewController ()
+
+@property (nonatomic, strong) NSMutableArray *demoList;
 
 @end
 
 @implementation BYAViewController
+#pragma mark- Live circle
+- (id)init {
+	if (self = [super init]) {
+	}
+	return self;
+}
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+	[super viewDidLoad];
 	
-	self.title = @"AView";
+	self.title = @"DemoList"; //set tabBarItem.title and con.title
+	
+	[self initSettingData];
 }
 
 - (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+	[super didReceiveMemoryWarning];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark- Overwrite
+#pragma mark- Delegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+	return _demoList.count;
 }
-*/
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[BYDemoListCell reuseIdentifier]];
+	
+	NSString *demoName = [_demoList objectAtIndex:indexPath.row];
+	
+	cell.textLabel.text = demoName;
+	
+	return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	if (indexPath.row == 0) {
+		[self goLayoutElementVC];
+	} else if (indexPath.row == 1) {
+		[self goSkipToAppStore];
+	} else if (indexPath.row == 2) {
+		[self goCheckBox];
+	}
+}
+
+#pragma mark- Notification methods
+#pragma mark- Interface methods
+#pragma mark- Event Response methods
+#pragma mark- Net request
+#pragma mark- Private methods
+- (void)initSettingData
+{
+	self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore",@"CheckBox", nil];
+	
+	[self.table registerClass:[BYDemoListCell class] forCellReuseIdentifier:[BYDemoListCell reuseIdentifier]];
+}
+
+- (void)goLayoutElementVC
+{
+	BYLayoutViewController *layoutVC = [[BYLayoutViewController alloc] init];
+	layoutVC.hidesBottomBarWhenPushed = YES;
+	[self.navigationController pushViewController:layoutVC animated:YES];
+}
+
+- (void)goSkipToAppStore
+{
+	BYAppSkipViewController *appSkipVC = [[BYAppSkipViewController alloc] init];
+	appSkipVC.hidesBottomBarWhenPushed = YES;
+	[self.navigationController pushViewController:appSkipVC animated:YES];
+}
+
+- (void)goCheckBox
+{
+	BYCheckBoxViewController *checkBoxVC = [[BYCheckBoxViewController alloc] init];
+	checkBoxVC.hidesBottomBarWhenPushed = YES;
+	[self.navigationController pushViewController:checkBoxVC animated:YES];
+}
+
+#pragma mark- Setter and getter
+- (NSMutableArray *)demoList
+{
+	if (!_demoList) {
+		_demoList = [NSMutableArray array];
+	}
+	return _demoList;
+}
+
+#pragma mark- Square area
 
 @end

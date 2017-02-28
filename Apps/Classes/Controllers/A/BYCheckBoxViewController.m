@@ -14,10 +14,18 @@
 
 @implementation BYCheckBoxViewController
 #pragma mark- Live circle
+- (id)init
+{
+	if (self = [super init]) {
+		[self initSetting];
+	}
+	return self;
+}
+
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
-	[self initSetting];
+	[self layoutCheckBox];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,14 +41,13 @@
 #pragma mark- Private methods
 - (void)initSetting
 {
-	self.view.backgroundColor = [UIColor orangeColor];
-	
-	[self layoutCheckBox];
+	self.title = @"CheckBox";
+	self.view.backgroundColor = BG_Color;
 }
 
 - (void)layoutCheckBox
 {
-	NSInteger count = 9;
+	NSInteger count = 5;
 	
 	CGFloat marginH = 15.0f;
 	CGFloat marginV = 15.0f;
@@ -48,7 +55,6 @@
 	CGFloat pointX = marginH;
 	
 	pointY += marginV;
-	pointY += 55;
 	
 	if (count == 0) {
 		return;
@@ -56,7 +62,7 @@
 	
 	// btn layout
 	CGFloat btnW = (SCREEN_WIDTH - marginH * 3) / 2.0f;
-	CGFloat btnH = 30.0f;
+	CGFloat btnH = btnW;
 	
 	for (NSInteger i = 0; i < count; i++) {
 		UIButton *btn = [self createCustomButton];
@@ -82,9 +88,9 @@
 - (UIButton *)createCustomButton
 {
 	UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+	btn.backgroundColor = WHITE_COLOR;
 	btn.layer.cornerRadius = 8;
 	btn.layer.masksToBounds = YES;
-	[btn setBackgroundColor:[UIColor lightGrayColor]];
 	
 	return btn;
 }

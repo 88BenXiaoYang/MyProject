@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		681FDE991E60084D00DD548B /* BYCheckBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDE981E60084D00DD548B /* BYCheckBoxViewController.m */; };
-		681FDE9A1E60084D00DD548B /* BYCheckBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDE981E60084D00DD548B /* BYCheckBoxViewController.m */; };
 		681FDE9C1E640C8900DD548B /* RM.html in Resources */ = {isa = PBXBuildFile; fileRef = 681FDE9B1E640C8900DD548B /* RM.html */; };
 		681FDE9D1E640C8900DD548B /* RM.html in Resources */ = {isa = PBXBuildFile; fileRef = 681FDE9B1E640C8900DD548B /* RM.html */; };
+		681FDEB81E65542A00DD548B /* BYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDEB71E65542A00DD548B /* BYTableViewController.m */; };
+		681FDEB91E65542A00DD548B /* BYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDEB71E65542A00DD548B /* BYTableViewController.m */; };
+		681FDEBD1E655E9C00DD548B /* BYDemoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDEBC1E655E9C00DD548B /* BYDemoListCell.m */; };
+		681FDEBE1E655E9C00DD548B /* BYDemoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDEBC1E655E9C00DD548B /* BYDemoListCell.m */; };
+		681FDEC11E6561B800DD548B /* BYLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDEC01E6561B800DD548B /* BYLayoutViewController.m */; };
+		681FDEC21E6561B800DD548B /* BYLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDEC01E6561B800DD548B /* BYLayoutViewController.m */; };
+		681FDEC51E6569ED00DD548B /* BYAppSkipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDEC41E6569ED00DD548B /* BYAppSkipViewController.m */; };
+		681FDEC61E6569ED00DD548B /* BYAppSkipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDEC41E6569ED00DD548B /* BYAppSkipViewController.m */; };
 		684B0A471D65499700505A9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684B0A461D65499700505A9C /* ViewController.m */; };
 		684B0A4C1D65499700505A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684B0A4B1D65499700505A9C /* Assets.xcassets */; };
 		684B0A5A1D65499700505A9C /* AppsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 684B0A591D65499700505A9C /* AppsTests.m */; };
@@ -29,8 +35,6 @@
 		684B0AAD1D655A2C00505A9C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684B0AAB1D655A2C00505A9C /* Media.xcassets */; };
 		684CDF9D1D922EB5006316A5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684CDF9C1D922EB5006316A5 /* MapKit.framework */; };
 		684CDF9F1D922FB1006316A5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684CDF9C1D922EB5006316A5 /* MapKit.framework */; };
-		684CDFB71D94D204006316A5 /* BYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684CDFB61D94D204006316A5 /* BYTableViewController.m */; };
-		684CDFB81D94D204006316A5 /* BYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684CDFB61D94D204006316A5 /* BYTableViewController.m */; };
 		684CDFBB1D94D217006316A5 /* BYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684CDFBA1D94D217006316A5 /* BYViewController.m */; };
 		684CDFBC1D94D217006316A5 /* BYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684CDFBA1D94D217006316A5 /* BYViewController.m */; };
 		684CDFBF1D94D346006316A5 /* BYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684CDFBE1D94D346006316A5 /* BYTabBarController.m */; };
@@ -159,6 +163,8 @@
 		687F58871D75383500C673D8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 687F58801D7531AC00C673D8 /* libsqlite3.tbd */; };
 		687F588A1D75385500C673D8 /* BYUMEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 687F58891D75385500C673D8 /* BYUMEvent.m */; };
 		687F588B1D75385500C673D8 /* BYUMEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 687F58891D75385500C673D8 /* BYUMEvent.m */; };
+		68966A481E657F25008BE2D9 /* BYCheckBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68966A471E657F25008BE2D9 /* BYCheckBoxViewController.m */; };
+		68966A491E657F25008BE2D9 /* BYCheckBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68966A471E657F25008BE2D9 /* BYCheckBoxViewController.m */; };
 		6899C7901E55508900FEFAB2 /* tickblue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6899C78F1E55508900FEFAB2 /* tickblue@2x.png */; };
 		6899C7911E55508900FEFAB2 /* tickblue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6899C78F1E55508900FEFAB2 /* tickblue@2x.png */; };
 		68A167351E10D73A002D0732 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A167341E10D73A002D0732 /* Bugly.framework */; };
@@ -217,9 +223,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		681FDE971E60084D00DD548B /* BYCheckBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCheckBoxViewController.h; sourceTree = "<group>"; };
-		681FDE981E60084D00DD548B /* BYCheckBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCheckBoxViewController.m; sourceTree = "<group>"; };
 		681FDE9B1E640C8900DD548B /* RM.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RM.html; sourceTree = "<group>"; };
+		681FDEB61E65542A00DD548B /* BYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYTableViewController.h; sourceTree = "<group>"; };
+		681FDEB71E65542A00DD548B /* BYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYTableViewController.m; sourceTree = "<group>"; };
+		681FDEBB1E655E9C00DD548B /* BYDemoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYDemoListCell.h; sourceTree = "<group>"; };
+		681FDEBC1E655E9C00DD548B /* BYDemoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYDemoListCell.m; sourceTree = "<group>"; };
+		681FDEBF1E6561B800DD548B /* BYLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYLayoutViewController.h; sourceTree = "<group>"; };
+		681FDEC01E6561B800DD548B /* BYLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYLayoutViewController.m; sourceTree = "<group>"; };
+		681FDEC31E6569ED00DD548B /* BYAppSkipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYAppSkipViewController.h; sourceTree = "<group>"; };
+		681FDEC41E6569ED00DD548B /* BYAppSkipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYAppSkipViewController.m; sourceTree = "<group>"; };
 		684B0A3C1D65499700505A9C /* AppA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		684B0A451D65499700505A9C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		684B0A461D65499700505A9C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -245,8 +257,6 @@
 		684CDF9B1D922E94006316A5 /* AppA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppA.entitlements; sourceTree = "<group>"; };
 		684CDF9C1D922EB5006316A5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		684CDF9E1D922FA8006316A5 /* AppB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppB.entitlements; sourceTree = "<group>"; };
-		684CDFB51D94D204006316A5 /* BYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYTableViewController.h; sourceTree = "<group>"; };
-		684CDFB61D94D204006316A5 /* BYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYTableViewController.m; sourceTree = "<group>"; };
 		684CDFB91D94D217006316A5 /* BYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYViewController.h; sourceTree = "<group>"; };
 		684CDFBA1D94D217006316A5 /* BYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYViewController.m; sourceTree = "<group>"; };
 		684CDFBD1D94D346006316A5 /* BYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYTabBarController.h; sourceTree = "<group>"; };
@@ -365,6 +375,8 @@
 		687F58821D75351100C673D8 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
 		687F58881D75385500C673D8 /* BYUMEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYUMEvent.h; sourceTree = "<group>"; };
 		687F58891D75385500C673D8 /* BYUMEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYUMEvent.m; sourceTree = "<group>"; };
+		68966A461E657F25008BE2D9 /* BYCheckBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCheckBoxViewController.h; sourceTree = "<group>"; };
+		68966A471E657F25008BE2D9 /* BYCheckBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCheckBoxViewController.m; sourceTree = "<group>"; };
 		6899C78F1E55508900FEFAB2 /* tickblue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tickblue@2x.png"; sourceTree = "<group>"; };
 		68A167341E10D73A002D0732 /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
 		68A167371E10D77D002D0732 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -452,6 +464,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		681FDEBA1E655E6200DD548B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				681FDEBB1E655E9C00DD548B /* BYDemoListCell.h */,
+				681FDEBC1E655E9C00DD548B /* BYDemoListCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		684B0A331D65499600505A9C = {
 			isa = PBXGroup;
 			children = (
@@ -553,6 +574,7 @@
 				684B0A851D654A3B00505A9C /* ThirdSupports */,
 				684B0A861D654A3B00505A9C /* Tools */,
 				684B0A871D654A3B00505A9C /* Views */,
+				681FDEBA1E655E6200DD548B /* Cells */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -751,6 +773,12 @@
 			children = (
 				684CDFC51D94D39C006316A5 /* BYAViewController.h */,
 				684CDFC61D94D39C006316A5 /* BYAViewController.m */,
+				681FDEBF1E6561B800DD548B /* BYLayoutViewController.h */,
+				681FDEC01E6561B800DD548B /* BYLayoutViewController.m */,
+				681FDEC31E6569ED00DD548B /* BYAppSkipViewController.h */,
+				681FDEC41E6569ED00DD548B /* BYAppSkipViewController.m */,
+				68966A461E657F25008BE2D9 /* BYCheckBoxViewController.h */,
+				68966A471E657F25008BE2D9 /* BYCheckBoxViewController.m */,
 			);
 			path = A;
 			sourceTree = "<group>";
@@ -762,8 +790,6 @@
 				684CDFCE1D94D3C6006316A5 /* BYCViewController.m */,
 				68D119A71E5ABF3300424749 /* BYJSBridgeTestViewController.h */,
 				68D119A81E5ABF3300424749 /* BYJSBridgeTestViewController.m */,
-				681FDE971E60084D00DD548B /* BYCheckBoxViewController.h */,
-				681FDE981E60084D00DD548B /* BYCheckBoxViewController.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -789,8 +815,6 @@
 		684CDFB41D94D1DD006316A5 /* BaseControllers */ = {
 			isa = PBXGroup;
 			children = (
-				684CDFB51D94D204006316A5 /* BYTableViewController.h */,
-				684CDFB61D94D204006316A5 /* BYTableViewController.m */,
 				684CDFB91D94D217006316A5 /* BYViewController.h */,
 				684CDFBA1D94D217006316A5 /* BYViewController.m */,
 				684CDFBD1D94D346006316A5 /* BYTabBarController.h */,
@@ -799,6 +823,8 @@
 				684CDFDA1D94D539006316A5 /* BYNavigationViewController.m */,
 				68BDDEAF1DAC90CB005EA1DE /* BYTableViewCell.h */,
 				68BDDEB01DAC90CB005EA1DE /* BYTableViewCell.m */,
+				681FDEB61E65542A00DD548B /* BYTableViewController.h */,
+				681FDEB71E65542A00DD548B /* BYTableViewController.m */,
 			);
 			path = BaseControllers;
 			sourceTree = "<group>";
@@ -1165,6 +1191,7 @@
 				6856B8D71D6AF34900161109 /* UIView+WebCacheOperation.m in Sources */,
 				6856B8931D6ADFFD00161109 /* NSData+BYJSONData.m in Sources */,
 				6856B8C71D6AF34900161109 /* SDWebImageManager.m in Sources */,
+				68966A481E657F25008BE2D9 /* BYCheckBoxViewController.m in Sources */,
 				68BDDEBD1DAF37D0005EA1DE /* UIButton+AutoLayout.m in Sources */,
 				6856B84F1D6A97C700161109 /* AFAutoPurgingImageCache.m in Sources */,
 				6856B8591D6A97C700161109 /* UIImageView+AFNetworking.m in Sources */,
@@ -1202,13 +1229,14 @@
 				68BDDEB11DAC90CB005EA1DE /* BYTableViewCell.m in Sources */,
 				6856B8811D6A9AE200161109 /* AFURLResponseSerialization.m in Sources */,
 				684CDFBB1D94D217006316A5 /* BYViewController.m in Sources */,
+				681FDEC51E6569ED00DD548B /* BYAppSkipViewController.m in Sources */,
 				6856B85F1D6A97C700161109 /* UIWebView+AFNetworking.m in Sources */,
 				684B0A471D65499700505A9C /* ViewController.m in Sources */,
 				6856B8B91D6AF34900161109 /* MKAnnotationView+WebCache.m in Sources */,
 				6856B87F1D6A9AE200161109 /* AFURLRequestSerialization.m in Sources */,
 				6856B8C31D6AF34900161109 /* SDWebImageDownloader.m in Sources */,
-				684CDFB71D94D204006316A5 /* BYTableViewController.m in Sources */,
 				684CDFC31D94D36A006316A5 /* BYMainViewController.m in Sources */,
+				681FDEC11E6561B800DD548B /* BYLayoutViewController.m in Sources */,
 				68D119A91E5ABF3300424749 /* BYJSBridgeTestViewController.m in Sources */,
 				6856B8CB1D6AF34900161109 /* UIButton+WebCache.m in Sources */,
 				6856B8E81D6D68FB00161109 /* BYConstant.m in Sources */,
@@ -1216,10 +1244,11 @@
 				6856B87D1D6A9AE200161109 /* AFSecurityPolicy.m in Sources */,
 				68BDDEC11DAF68FD005EA1DE /* UIImageView+AutoLayout.m in Sources */,
 				6856B8BB1D6AF34900161109 /* NSData+ImageContentType.m in Sources */,
+				681FDEB81E65542A00DD548B /* BYTableViewController.m in Sources */,
 				684CDFCF1D94D3C6006316A5 /* BYCViewController.m in Sources */,
 				684CDFEB1D94DE9B006316A5 /* BYAppStyle.m in Sources */,
 				6856B8531D6A97C700161109 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				681FDE991E60084D00DD548B /* BYCheckBoxViewController.m in Sources */,
+				681FDEBD1E655E9C00DD548B /* BYDemoListCell.m in Sources */,
 				6856B8551D6A97C700161109 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				687F588A1D75385500C673D8 /* BYUMEvent.m in Sources */,
 				6856B8BD1D6AF34900161109 /* SDImageCache.m in Sources */,
@@ -1254,6 +1283,7 @@
 				6856B8D81D6AF34900161109 /* UIView+WebCacheOperation.m in Sources */,
 				6856B8941D6ADFFD00161109 /* NSData+BYJSONData.m in Sources */,
 				6856B8C81D6AF34900161109 /* SDWebImageManager.m in Sources */,
+				68966A491E657F25008BE2D9 /* BYCheckBoxViewController.m in Sources */,
 				68BDDEBE1DAF37D0005EA1DE /* UIButton+AutoLayout.m in Sources */,
 				6856B8501D6A97C700161109 /* AFAutoPurgingImageCache.m in Sources */,
 				6856B85A1D6A97C700161109 /* UIImageView+AFNetworking.m in Sources */,
@@ -1291,13 +1321,14 @@
 				68BDDEB21DAC90CB005EA1DE /* BYTableViewCell.m in Sources */,
 				6856B8821D6A9AE200161109 /* AFURLResponseSerialization.m in Sources */,
 				684CDFBC1D94D217006316A5 /* BYViewController.m in Sources */,
+				681FDEC61E6569ED00DD548B /* BYAppSkipViewController.m in Sources */,
 				6856B8601D6A97C700161109 /* UIWebView+AFNetworking.m in Sources */,
 				684B0A991D654DD900505A9C /* ViewController.m in Sources */,
 				6856B8BA1D6AF34900161109 /* MKAnnotationView+WebCache.m in Sources */,
 				6856B8801D6A9AE200161109 /* AFURLRequestSerialization.m in Sources */,
 				6856B8C41D6AF34900161109 /* SDWebImageDownloader.m in Sources */,
-				684CDFB81D94D204006316A5 /* BYTableViewController.m in Sources */,
 				684CDFC41D94D36A006316A5 /* BYMainViewController.m in Sources */,
+				681FDEC21E6561B800DD548B /* BYLayoutViewController.m in Sources */,
 				68D119AA1E5ABF3300424749 /* BYJSBridgeTestViewController.m in Sources */,
 				6856B8CC1D6AF34900161109 /* UIButton+WebCache.m in Sources */,
 				6856B8E91D6D68FB00161109 /* BYConstant.m in Sources */,
@@ -1305,10 +1336,11 @@
 				6856B87E1D6A9AE200161109 /* AFSecurityPolicy.m in Sources */,
 				68BDDEC21DAF68FD005EA1DE /* UIImageView+AutoLayout.m in Sources */,
 				6856B8BC1D6AF34900161109 /* NSData+ImageContentType.m in Sources */,
+				681FDEB91E65542A00DD548B /* BYTableViewController.m in Sources */,
 				684CDFD01D94D3C6006316A5 /* BYCViewController.m in Sources */,
 				684CDFEC1D94DE9B006316A5 /* BYAppStyle.m in Sources */,
 				6856B8541D6A97C700161109 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				681FDE9A1E60084D00DD548B /* BYCheckBoxViewController.m in Sources */,
+				681FDEBE1E655E9C00DD548B /* BYDemoListCell.m in Sources */,
 				6856B8561D6A97C700161109 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				687F588B1D75385500C673D8 /* BYUMEvent.m in Sources */,
 				6856B8BE1D6AF34900161109 /* SDImageCache.m in Sources */,

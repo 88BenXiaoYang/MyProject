@@ -74,7 +74,7 @@
 	selectedImage5 = [BYUtils imageWithRenderingModeCustomStyle:selectedImage5];
 	
 	//tabBarItemTitle
-	vc1.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"AView" image:normalImage1 selectedImage:selectedImage1];
+	vc1.tabBarItem = [[UITabBarItem alloc] initWithTitle:nil image:normalImage1 selectedImage:selectedImage1];
 	vc2.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"BView" image:normalImage2 selectedImage:selectedImage2];
 	vc3.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"CView" image:normalImage3 selectedImage:selectedImage3];
 	vc4.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"DView" image:normalImage4 selectedImage:selectedImage4];

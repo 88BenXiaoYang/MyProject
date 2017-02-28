@@ -9,12 +9,28 @@
 #ifndef Common_h
 #define Common_h
 
+#define IOS7 (([[[UIDevice currentDevice]systemVersion] floatValue] >= 7.0) ? YES : NO)
+
 //状态栏高
 #define STATUSBAR_HEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height
+//NavBar高度
+#define NavigationBar_HEIGHT 44.0f
+//TabBar高度
+#define TabBar_HEIGHT 49.0f
+//ToolsBar高度
+#define ToolsBar_HEIGHT 44.0f
 
 //屏幕宽、高
 #define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define VIEW_HEIGHT (SCREEN_HEIGHT - STATUSBAR_HEIGHT - NavigationBar_HEIGHT)
+#define VIEW_WIDTH SCREEN_WIDTH
+
+//常用颜色
+#define CLEAR_COLOR [UIColor clearColor] //clear color
+#define BLACK_COLOR [UIColor blackColor] //black color
+#define WHITE_COLOR [UIColor whiteColor] //white color
+#define GRAY_COLOR  [UIColor grayColor]  //grayColor color
 
 //绿色背景
 #define BG_Color [UIColor colorWithRed:143.0/255 green:188.0/255 blue:5.0/255 alpha:1.0]
@@ -40,6 +56,12 @@
 #define MISLogFile  MISLog(@"%s", __FILE__);
 #define MISLogObj(__OBJ)     MISLog(@"%s, %@", __FUNCTION__, __OBJ);
 #define MISLogError(__ERROR) MISLog(@"%s, Error:%@", __FUNCTION__, __ERROR);
+
+//字体
+#define NFont(__SIZE) [UIFont systemFontOfSize:__SIZE] //system font with size
+#define IFont(__SIZE) [UIFont italicSystemFontOfSize:__SIZE] //system font with size
+#define BFont(__SIZE) [UIFont boldSystemFontOfSize:__SIZE]//system bold font with size
+#define Font(__NAME, __SIZE) [UIFont fontWithName:__NAME size:__SIZE] //font with name and size
 
 //友盟统计
 #if KAppA

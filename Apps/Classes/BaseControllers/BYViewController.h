@@ -10,4 +10,16 @@
 
 @interface BYViewController : UIViewController
 
+//支持滑动返回
+- (BOOL)canDragBack;
+
+//左健
+- (UIBarButtonItem *)leftBarButtonItem;
+
+//右健
+- (UIBarButtonItem *)rightBarButtonItem;
+
+//返回
+- (void)goBack;
+
 @end

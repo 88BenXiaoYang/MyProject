@@ -48,7 +48,7 @@
 	BYDynamicTreeModel *nodeModel = groupDataModel.itemsArr[indexPath.row];
 	
 	BYDynamicTreeCell *cell;
-	cell = [tableView dequeueReusableCellWithIdentifier:[BYDynamicTreeCell reuseIdentifer]];
+	cell = [tableView dequeueReusableCellWithIdentifier:[BYDynamicTreeCell reuseIdentifier]];
 	
 	if (!cell) {
 		cell = [[BYDynamicTreeCell alloc] initWithCellType:nodeModel.nodeType];
