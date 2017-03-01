@@ -31,6 +31,7 @@
 	[Bugly startWithAppId:Bugly_AppID];
 	
 	self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+	self.window.backgroundColor = WHITE_COLOR;
 	BYMainViewController *mainVC = [[BYMainViewController alloc] init];
 //	BYMViewController *mainVC = [[BYMViewController alloc] init];
 	self.window.rootViewController = mainVC;

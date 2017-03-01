@@ -11,6 +11,8 @@
 #import "BYLayoutViewController.h"
 #import "BYAppSkipViewController.h"
 #import "BYCheckBoxViewController.h"
+#import "BYDrawImageViewController.h"
+#import "BYSwitchAViewController.h"
 
 @interface BYAViewController ()
 
@@ -64,6 +66,10 @@
 		[self goSkipToAppStore];
 	} else if (indexPath.row == 2) {
 		[self goCheckBox];
+	} else if (indexPath.row == 3) {
+		[self goDrawImgVC];
+	} else if (indexPath.row == 4) {
+		[self goSwitchAVC];
 	}
 }
 
@@ -74,7 +80,7 @@
 #pragma mark- Private methods
 - (void)initSettingData
 {
-	self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore",@"CheckBox", nil];
+	self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", nil];
 	
 	[self.table registerClass:[BYDemoListCell class] forCellReuseIdentifier:[BYDemoListCell reuseIdentifier]];
 }
@@ -98,6 +104,20 @@
 	BYCheckBoxViewController *checkBoxVC = [[BYCheckBoxViewController alloc] init];
 	checkBoxVC.hidesBottomBarWhenPushed = YES;
 	[self.navigationController pushViewController:checkBoxVC animated:YES];
+}
+
+- (void)goDrawImgVC
+{
+	BYDrawImageViewController *drawImgVC = [[BYDrawImageViewController alloc] init];
+	drawImgVC.hidesBottomBarWhenPushed = YES;
+	[self.navigationController pushViewController:drawImgVC animated:YES];
+}
+
+- (void)goSwitchAVC
+{
+	BYSwitchAViewController *switchAVC = [[BYSwitchAViewController alloc] init];
+	switchAVC.hidesBottomBarWhenPushed = YES;
+	[self.navigationController pushViewController:switchAVC animated:YES];
 }
 
 #pragma mark- Setter and getter
