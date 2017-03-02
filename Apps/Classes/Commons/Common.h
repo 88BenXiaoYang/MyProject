@@ -11,6 +11,10 @@
 
 #define IOS7 (([[[UIDevice currentDevice]systemVersion] floatValue] >= 7.0) ? YES : NO)
 
+#define IOS8 (([[[UIDevice currentDevice]systemVersion] floatValue] >= 8.0) ? YES : NO)
+
+#define IOS10 (([[[UIDevice currentDevice]systemVersion] floatValue] >= 10.0) ? YES : NO)
+
 //状态栏高
 #define STATUSBAR_HEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height
 //NavBar高度

@@ -1,14 +1,14 @@
 //
-//  UITableView+BYAutoLayout.m
-//  Apps
+//  UITableView+AutoLayout.m
+//  EDU
 //
-//  Created by BianYong on 16/10/10.
-//  Copyright © 2016年 BY. All rights reserved.
+//  Created by mao on 1/25/15.
+//  Copyright (c) 2015 JXT. All rights reserved.
 //
 
-#import "UITableView+BYAutoLayout.h"
+#import "UITableView+AutoLayout.h"
 
-@implementation UITableView (BYAutoLayout)
+@implementation UITableView(AutoLayout)
 
 + (UITableView *)autoLayoutGroupedTableView {
 	UITableView* tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
@@ -21,5 +21,6 @@
 	tableView.translatesAutoresizingMaskIntoConstraints = NO;
 	return tableView;
 }
+
 
 @end

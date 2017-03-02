@@ -13,6 +13,7 @@
 #import "BYCheckBoxViewController.h"
 #import "BYDrawImageViewController.h"
 #import "BYSwitchAViewController.h"
+#import "BYScrollPagerContentViewController.h"
 
 @interface BYAViewController ()
 
@@ -70,6 +71,8 @@
 		[self goDrawImgVC];
 	} else if (indexPath.row == 4) {
 		[self goSwitchAVC];
+	} else if (indexPath.row == 5) {
+		[self goScrollPagerView];
 	}
 }
 
@@ -80,7 +83,7 @@
 #pragma mark- Private methods
 - (void)initSettingData
 {
-	self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", nil];
+	self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", nil];
 	
 	[self.table registerClass:[BYDemoListCell class] forCellReuseIdentifier:[BYDemoListCell reuseIdentifier]];
 }
@@ -118,6 +121,13 @@
 	BYSwitchAViewController *switchAVC = [[BYSwitchAViewController alloc] init];
 	switchAVC.hidesBottomBarWhenPushed = YES;
 	[self.navigationController pushViewController:switchAVC animated:YES];
+}
+
+- (void)goScrollPagerView
+{
+	BYScrollPagerContentViewController *scrollPagerVC = [[BYScrollPagerContentViewController alloc] init];
+	scrollPagerVC.hidesBottomBarWhenPushed = YES;
+	[self.navigationController pushViewController:scrollPagerVC animated:YES];
 }
 
 #pragma mark- Setter and getter

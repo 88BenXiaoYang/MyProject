@@ -8,7 +8,7 @@
 
 #import "BYMViewController.h"
 #import "BYHttpEngine.h"
-#import "NSData+BYJSONData.h"
+#import "NSArray+MISJSON.h"
 #import "UIImageView+WebCache.h"
 #import "UIImage+BYCircleImage.h"
 
@@ -67,7 +67,7 @@
 - (void)getTest
 {
 	[BYHttpEngine obtainTokenWithParamDict:nil completionHandler:^(NSData *responseData) {
-		NSDictionary *json = [responseData JSONData];
+		NSDictionary *json = [responseData JSONObject];
 		NSLog(@"obtain token result : %@", json);
 		
 	} errorHandler:^(NSError *error) {
@@ -133,7 +133,7 @@
 {
 	NSString *interfacePath = @"http://itunes.apple.com/lookup?id=899039323";
 	[BYHttpEngine getRequestWithInterfacePath:interfacePath params:nil completionHandler:^(NSData *responseData) {
-		NSDictionary *jsonDic = [responseData JSONData];
+		NSDictionary *jsonDic = [responseData JSONObject];
 		NSArray *resultArray = jsonDic[@"results"];
 		NSDictionary *resultDic = [resultArray lastObject];
 		
