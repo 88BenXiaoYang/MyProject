@@ -7,21 +7,19 @@
 //
 
 #import "NSString+MISPinyin.h"
+#import "MISPinyin.h"
+
+/***
+ 注！！！
+ 引入MISPinyin.h文件时
+ 要包含Array.c、SearchCore.c文件
+ ***/
 
 @implementation NSString(MISPinyin)
 
 - (NSString *)pinyin {
-/*
-	NSMutableString *mString = [self mutableCopy];
-	if (CFStringTransform((__bridge CFMutableStringRef)mString, NULL, kCFStringTransformMandarinLatin, NO)) {
-		if (CFStringTransform((__bridge CFMutableStringRef)mString, NULL, kCFStringTransformStripDiacritics, NO)) {
-			return [mString stringByReplacingOccurrencesOfString:@" " withString:@""];
-		}
-	}
-	return @"";
- */
  
-	return @"";//[MISPinyin pinyinWithHanzi:self];
+	return [MISPinyin pinyinWithHanzi:self];
 }
 
 

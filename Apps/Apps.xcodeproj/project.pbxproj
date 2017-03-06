@@ -217,6 +217,12 @@
 		6892DE801E67B8AE00BB9D84 /* UILabel+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6892DE7E1E67B8AE00BB9D84 /* UILabel+AutoLayout.m */; };
 		6892DE831E67B95B00BB9D84 /* UIImage+BYCircleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6892DE821E67B95B00BB9D84 /* UIImage+BYCircleImage.m */; };
 		6892DE841E67B95B00BB9D84 /* UIImage+BYCircleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6892DE821E67B95B00BB9D84 /* UIImage+BYCircleImage.m */; };
+		6892DE931E6D343600BB9D84 /* SearchCore.c in Sources */ = {isa = PBXBuildFile; fileRef = 6892DE911E6D343600BB9D84 /* SearchCore.c */; };
+		6892DE941E6D343600BB9D84 /* SearchCore.c in Sources */ = {isa = PBXBuildFile; fileRef = 6892DE911E6D343600BB9D84 /* SearchCore.c */; };
+		6892DE971E6D34B200BB9D84 /* Array.c in Sources */ = {isa = PBXBuildFile; fileRef = 6892DE951E6D34B200BB9D84 /* Array.c */; };
+		6892DE981E6D34B200BB9D84 /* Array.c in Sources */ = {isa = PBXBuildFile; fileRef = 6892DE951E6D34B200BB9D84 /* Array.c */; };
+		6892DE9B1E6D34F200BB9D84 /* MISPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6892DE9A1E6D34F200BB9D84 /* MISPinyin.m */; };
+		6892DE9C1E6D34F200BB9D84 /* MISPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6892DE9A1E6D34F200BB9D84 /* MISPinyin.m */; };
 		68966A481E657F25008BE2D9 /* BYCheckBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68966A471E657F25008BE2D9 /* BYCheckBoxViewController.m */; };
 		68966A491E657F25008BE2D9 /* BYCheckBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68966A471E657F25008BE2D9 /* BYCheckBoxViewController.m */; };
 		68966A4C1E665A97008BE2D9 /* BYDrawImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68966A4B1E665A97008BE2D9 /* BYDrawImageViewController.m */; };
@@ -477,6 +483,12 @@
 		6892DE7E1E67B8AE00BB9D84 /* UILabel+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AutoLayout.m"; sourceTree = "<group>"; };
 		6892DE811E67B95B00BB9D84 /* UIImage+BYCircleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BYCircleImage.h"; sourceTree = "<group>"; };
 		6892DE821E67B95B00BB9D84 /* UIImage+BYCircleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BYCircleImage.m"; sourceTree = "<group>"; };
+		6892DE911E6D343600BB9D84 /* SearchCore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SearchCore.c; sourceTree = "<group>"; };
+		6892DE921E6D343600BB9D84 /* SearchCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCore.h; sourceTree = "<group>"; };
+		6892DE951E6D34B200BB9D84 /* Array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Array.c; sourceTree = "<group>"; };
+		6892DE961E6D34B200BB9D84 /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
+		6892DE991E6D34F200BB9D84 /* MISPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MISPinyin.h; sourceTree = "<group>"; };
+		6892DE9A1E6D34F200BB9D84 /* MISPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MISPinyin.m; sourceTree = "<group>"; };
 		68966A461E657F25008BE2D9 /* BYCheckBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCheckBoxViewController.h; sourceTree = "<group>"; };
 		68966A471E657F25008BE2D9 /* BYCheckBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCheckBoxViewController.m; sourceTree = "<group>"; };
 		68966A4A1E665A97008BE2D9 /* BYDrawImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYDrawImageViewController.h; sourceTree = "<group>"; };
@@ -694,6 +706,12 @@
 				6892DE221E67B60B00BB9D84 /* NSString+MISEmoji.m */,
 				6892DE231E67B60B00BB9D84 /* NSString+MISJSON.h */,
 				6892DE241E67B60B00BB9D84 /* NSString+MISJSON.m */,
+				6892DE951E6D34B200BB9D84 /* Array.c */,
+				6892DE961E6D34B200BB9D84 /* Array.h */,
+				6892DE911E6D343600BB9D84 /* SearchCore.c */,
+				6892DE921E6D343600BB9D84 /* SearchCore.h */,
+				6892DE991E6D34F200BB9D84 /* MISPinyin.h */,
+				6892DE9A1E6D34F200BB9D84 /* MISPinyin.m */,
 				6892DE251E67B60B00BB9D84 /* NSString+MISPinyin.h */,
 				6892DE261E67B60B00BB9D84 /* NSString+MISPinyin.m */,
 				6892DE271E67B60B00BB9D84 /* UIActionSheet+Block.h */,
@@ -1329,7 +1347,9 @@
 				6892DE4D1E67B60B00BB9D84 /* NSDictionary+MISSafe.m in Sources */,
 				6892DE0F1E67B06F00BB9D84 /* BYScrollPagerView.m in Sources */,
 				68966A4C1E665A97008BE2D9 /* BYDrawImageViewController.m in Sources */,
+				6892DE9B1E6D34F200BB9D84 /* MISPinyin.m in Sources */,
 				6856B8C71D6AF34900161109 /* SDWebImageManager.m in Sources */,
+				6892DE971E6D34B200BB9D84 /* Array.c in Sources */,
 				68966A481E657F25008BE2D9 /* BYCheckBoxViewController.m in Sources */,
 				6892DE831E67B95B00BB9D84 /* UIImage+BYCircleImage.m in Sources */,
 				6856B84F1D6A97C700161109 /* AFAutoPurgingImageCache.m in Sources */,
@@ -1389,6 +1409,7 @@
 				6892DE511E67B60B00BB9D84 /* NSString+MISEmoji.m in Sources */,
 				6892DE571E67B60B00BB9D84 /* UIActionSheet+Block.m in Sources */,
 				6892DE5D1E67B60B00BB9D84 /* UIImage+MISScale.m in Sources */,
+				6892DE931E6D343600BB9D84 /* SearchCore.c in Sources */,
 				6856B8C31D6AF34900161109 /* SDWebImageDownloader.m in Sources */,
 				684CDFC31D94D36A006316A5 /* BYMainViewController.m in Sources */,
 				681FDEC11E6561B800DD548B /* BYLayoutViewController.m in Sources */,
@@ -1445,7 +1466,9 @@
 				6892DE4E1E67B60B00BB9D84 /* NSDictionary+MISSafe.m in Sources */,
 				6892DE101E67B06F00BB9D84 /* BYScrollPagerView.m in Sources */,
 				68966A4D1E665A97008BE2D9 /* BYDrawImageViewController.m in Sources */,
+				6892DE9C1E6D34F200BB9D84 /* MISPinyin.m in Sources */,
 				6856B8C81D6AF34900161109 /* SDWebImageManager.m in Sources */,
+				6892DE981E6D34B200BB9D84 /* Array.c in Sources */,
 				68966A491E657F25008BE2D9 /* BYCheckBoxViewController.m in Sources */,
 				6892DE841E67B95B00BB9D84 /* UIImage+BYCircleImage.m in Sources */,
 				6856B8501D6A97C700161109 /* AFAutoPurgingImageCache.m in Sources */,
@@ -1505,6 +1528,7 @@
 				6892DE521E67B60B00BB9D84 /* NSString+MISEmoji.m in Sources */,
 				6892DE581E67B60B00BB9D84 /* UIActionSheet+Block.m in Sources */,
 				6892DE5E1E67B60B00BB9D84 /* UIImage+MISScale.m in Sources */,
+				6892DE941E6D343600BB9D84 /* SearchCore.c in Sources */,
 				6856B8C41D6AF34900161109 /* SDWebImageDownloader.m in Sources */,
 				684CDFC41D94D36A006316A5 /* BYMainViewController.m in Sources */,
 				681FDEC21E6561B800DD548B /* BYLayoutViewController.m in Sources */,

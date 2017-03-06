@@ -35,6 +35,7 @@
 	self.title = @"DemoList"; //set tabBarItem.title and con.title
 	
 	[self initSettingData];
+	[self testHanZiToPinYin];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -128,6 +129,13 @@
 	BYScrollPagerContentViewController *scrollPagerVC = [[BYScrollPagerContentViewController alloc] init];
 	scrollPagerVC.hidesBottomBarWhenPushed = YES;
 	[self.navigationController pushViewController:scrollPagerVC animated:YES];
+}
+
+- (void)testHanZiToPinYin
+{
+	NSString *hanziStr = @"拼音测试";
+	NSString *pinyinStr = [hanziStr pinyin];
+	NSLog(@"汉字转拼音\n汉字：%@\n拼音：%@", hanziStr, pinyinStr);
 }
 
 #pragma mark- Setter and getter
