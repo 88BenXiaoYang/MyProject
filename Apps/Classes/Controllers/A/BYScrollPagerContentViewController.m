@@ -29,6 +29,7 @@
 	[super viewDidLoad];
 	
 	[self layoutScrollPagerContentView];
+	[self setScrollPagerContent];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,12 +54,19 @@
 	[self.view addSubview:self.scrollPagerView];
 }
 
+- (void)setScrollPagerContent
+{
+	NSArray *titles = @[@"一", @"二", @"三", @"四", @"五", @"六", @"七", @"八", @"九", @"十", @"十一", @"十二"];
+	self.scrollPagerView.selectedTitleIndex = 5;
+	[self.scrollPagerView setScrollPagerTitles:titles contents:titles];
+}
+
 #pragma mark- Setter and getter
 - (BYScrollPagerView *)scrollPagerView
 {
 	if (!_scrollPagerView) {
 		_scrollPagerView = [[BYScrollPagerView alloc] initWithFrame:self.view.bounds];
-		_scrollPagerView.backgroundColor = WHITE_COLOR;
+		_scrollPagerView.backgroundColor = [UIColor orangeColor];
 	}
 	return _scrollPagerView;
 }

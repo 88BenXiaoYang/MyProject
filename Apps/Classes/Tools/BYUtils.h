@@ -17,4 +17,6 @@
 //图片处理相关
 + (UIImage *)imageWithRenderingModeCustomStyle:(UIImage *)image;
 
++ (UIImage *)imageWithColor:(UIColor *)color;
+
 @end

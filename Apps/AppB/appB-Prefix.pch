@@ -17,6 +17,7 @@
 #import "MISCategories.h"
 #import "BYUMEvent.h"
 #import "BYAppStyle.h"
+#import "BYUtils.h"
 
 #ifndef __OPTIMIZE__
 #define NSLog(...) NSLog(__VA_ARGS__)

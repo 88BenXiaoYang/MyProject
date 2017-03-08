@@ -10,4 +10,9 @@
 
 @interface BYScrollPagerView : UIView
 
+@property (nonatomic, assign) NSTimeInterval animationDuration; //default 0.2s. set animation time
+@property (nonatomic, assign) NSInteger selectedTitleIndex;
+
+- (void)setScrollPagerTitles:(NSArray *)titles contents:(NSArray *)contents;
+
 @end
