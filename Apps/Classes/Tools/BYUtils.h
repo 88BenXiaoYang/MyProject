@@ -19,4 +19,15 @@
 
 + (UIImage *)imageWithColor:(UIColor *)color;
 
+//获取当前日期所在一周的日期
++ (NSDictionary *)getTheWeekOfCurrentDate;
+
+//获取当前日期所在的星期
++ (NSString *)getWeekDayWithCurrentDate:(NSDate *)currentDate;
+
+//date to string use fmt eg. fmt:@"yyyy-MM-dd" NSDate -> 2012-01-01
++ (NSString *)stringFromDate:(NSDate *)date withFmt:(NSString *)fmt;
+//string to date use fmt eg. fmt:@"yyyy-MM-dd" 2012-01-01 ->NSDate
++ (NSDate *)dateFromString:(NSString *)str withFmt:(NSString *)fmt;
+
 @end

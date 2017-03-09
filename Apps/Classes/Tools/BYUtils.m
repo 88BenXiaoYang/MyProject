@@ -60,4 +60,94 @@
 	return image;
 }
 
++ (NSDictionary *)getTheWeekOfCurrentDate
+{
+	NSMutableDictionary *dateDict = [NSMutableDictionary dictionary];
+	NSMutableArray *dateArr = [NSMutableArray array];
+	
+	NSDate *now = [NSDate date];
+	NSCalendar *calendar = [NSCalendar currentCalendar];
+	NSDateComponents *comp = [calendar components:
+							  NSCalendarUnitYear |
+							  NSCalendarUnitMonth |
+							  NSCalendarUnitDay |
+							  NSCalendarUnitWeekday fromDate:now];
+	
+	// 1(星期天) 2(星期一) 3(星期二) 4(星期三) 5(星期四) 6(星期五) 7(星期六)
+	NSInteger weekDay = [comp weekday]; //current weekday
+	NSInteger day = [comp day]; //current day
+	
+	// 计算当前日期和这周的星期天和星期六差的天数（每周从周天开始，周六结束）
+	NSInteger firstDiff, lastDiff;
+	firstDiff = [calendar firstWeekday] - weekDay;
+	lastDiff = 7 - weekDay;
+	
+	//获取一周内的时间
+	if (firstDiff != 0) {
+		for (NSInteger i = firstDiff; i < 0; i++) {
+			[comp setDay:day + i];
+			NSDate *dayOfWeek= [calendar dateFromComponents:comp];
+			[dateArr addObject:dayOfWeek];
+		}
+		
+		if (lastDiff != 0) {
+			[dateArr addObject:now];
+		}
+		
+	} else {
+		[dateArr addObject:now];
+	}
+	
+	if (lastDiff != 0) {
+		for (NSInteger j = 1; j <= lastDiff; j++) {
+			[comp setDay:day + j];
+			NSDate *dayOfWeek= [calendar dateFromComponents:comp];
+			[dateArr addObject:dayOfWeek];
+		}
+	} else {
+		[dateArr addObject:now];
+	}
+	
+	dateDict[@"dateArray"] = dateArr; //dateArr include NSDate elements
+	dateDict[@"currentWeekDay"] = @(weekDay);
+	
+	return dateDict;
+}
+
++ (NSString *)getWeekDayWithCurrentDate:(NSDate *)currentDate
+{
+	NSCalendar *calendar = [NSCalendar currentCalendar];
+	NSDateComponents *comp = [calendar components:
+							  NSCalendarUnitYear |
+							  NSCalendarUnitMonth |
+							  NSCalendarUnitDay |
+							  NSCalendarUnitWeekday fromDate:currentDate];
+	
+	NSInteger weekDay = [comp weekday]; //current weekday
+	
+	NSArray *weekDayList = @[@"周日", @"周一", @"周二", @"周三", @"周四", @"周五", @"周六"];
+	NSString *currentWeekDay = [weekDayList objectAtIndex:weekDay-1];
+	return currentWeekDay;
+}
+
++ (NSString *)stringFromDate:(NSDate *)date withFmt:(NSString *)fmt{
+	if (date == nil)
+	{
+		return @"";
+	}
+	NSDateFormatter* format = [[NSDateFormatter alloc] init];
+	[format setDateFormat:fmt];
+	return [format stringFromDate:date];
+}
+
++ (NSDate *)dateFromString:(NSString *)str withFmt:(NSString *)fmt{
+	if (str == nil || str.length == 0)
+	{
+		return nil;
+	}
+	NSDateFormatter* format = [[NSDateFormatter alloc] init];
+	[format setDateFormat:fmt];
+	return [format dateFromString:str];
+}
+
 @end
