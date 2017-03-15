@@ -14,6 +14,7 @@
 #import "BYDrawImageViewController.h"
 #import "BYSwitchAViewController.h"
 #import "BYScrollPagerContentViewController.h"
+#import "BYChartViewController.h"
 
 @interface BYAViewController ()
 
@@ -32,7 +33,7 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
-	self.title = @"DemoList"; //set tabBarItem.title and con.title
+	self.title = @"List"; //set tabBarItem.title and con.title
 	
 	[self initSettingData];
 	[self testHanZiToPinYin];
@@ -74,6 +75,8 @@
 		[self goSwitchAVC];
 	} else if (indexPath.row == 5) {
 		[self goScrollPagerView];
+	} else if (indexPath.row == 6) {
+		[self goChartView];
 	}
 }
 
@@ -84,7 +87,7 @@
 #pragma mark- Private methods
 - (void)initSettingData
 {
-	self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", nil];
+	self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", nil];
 	
 	[self.table registerClass:[BYDemoListCell class] forCellReuseIdentifier:[BYDemoListCell reuseIdentifier]];
 }
@@ -129,6 +132,13 @@
 	BYScrollPagerContentViewController *scrollPagerVC = [[BYScrollPagerContentViewController alloc] init];
 	scrollPagerVC.hidesBottomBarWhenPushed = YES;
 	[self.navigationController pushViewController:scrollPagerVC animated:YES];
+}
+
+- (void)goChartView
+{
+	BYChartViewController *chartVC = [[BYChartViewController alloc] init];
+	chartVC.hidesBottomBarWhenPushed = YES;
+	[self.navigationController pushViewController:chartVC animated:YES];
 }
 
 - (void)testHanZiToPinYin

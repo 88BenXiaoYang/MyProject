@@ -17,6 +17,14 @@
 		681FDEC21E6561B800DD548B /* BYLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDEC01E6561B800DD548B /* BYLayoutViewController.m */; };
 		681FDEC51E6569ED00DD548B /* BYAppSkipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDEC41E6569ED00DD548B /* BYAppSkipViewController.m */; };
 		681FDEC61E6569ED00DD548B /* BYAppSkipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDEC41E6569ED00DD548B /* BYAppSkipViewController.m */; };
+		6844C46E1E766E1800AA6D0E /* BYBaseCoordinateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6844C46D1E766E1800AA6D0E /* BYBaseCoordinateView.m */; };
+		6844C46F1E766E1800AA6D0E /* BYBaseCoordinateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6844C46D1E766E1800AA6D0E /* BYBaseCoordinateView.m */; };
+		6844C4721E766EBA00AA6D0E /* BYChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6844C4711E766EBA00AA6D0E /* BYChartViewController.m */; };
+		6844C4731E766EBA00AA6D0E /* BYChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6844C4711E766EBA00AA6D0E /* BYChartViewController.m */; };
+		6844C4761E76712C00AA6D0E /* BYCoordinateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6844C4751E76712C00AA6D0E /* BYCoordinateItem.m */; };
+		6844C4771E76712C00AA6D0E /* BYCoordinateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6844C4751E76712C00AA6D0E /* BYCoordinateItem.m */; };
+		6844C47A1E76925D00AA6D0E /* BYLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6844C4791E76925D00AA6D0E /* BYLineChartView.m */; };
+		6844C47B1E76925D00AA6D0E /* BYLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6844C4791E76925D00AA6D0E /* BYLineChartView.m */; };
 		684B0A471D65499700505A9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684B0A461D65499700505A9C /* ViewController.m */; };
 		684B0A4C1D65499700505A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684B0A4B1D65499700505A9C /* Assets.xcassets */; };
 		684B0A5A1D65499700505A9C /* AppsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 684B0A591D65499700505A9C /* AppsTests.m */; };
@@ -286,6 +294,14 @@
 		681FDEC01E6561B800DD548B /* BYLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYLayoutViewController.m; sourceTree = "<group>"; };
 		681FDEC31E6569ED00DD548B /* BYAppSkipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYAppSkipViewController.h; sourceTree = "<group>"; };
 		681FDEC41E6569ED00DD548B /* BYAppSkipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYAppSkipViewController.m; sourceTree = "<group>"; };
+		6844C46C1E766E1800AA6D0E /* BYBaseCoordinateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYBaseCoordinateView.h; sourceTree = "<group>"; };
+		6844C46D1E766E1800AA6D0E /* BYBaseCoordinateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYBaseCoordinateView.m; sourceTree = "<group>"; };
+		6844C4701E766EBA00AA6D0E /* BYChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYChartViewController.h; sourceTree = "<group>"; };
+		6844C4711E766EBA00AA6D0E /* BYChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYChartViewController.m; sourceTree = "<group>"; };
+		6844C4741E76712C00AA6D0E /* BYCoordinateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCoordinateItem.h; sourceTree = "<group>"; };
+		6844C4751E76712C00AA6D0E /* BYCoordinateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCoordinateItem.m; sourceTree = "<group>"; };
+		6844C4781E76925D00AA6D0E /* BYLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYLineChartView.h; sourceTree = "<group>"; };
+		6844C4791E76925D00AA6D0E /* BYLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYLineChartView.m; sourceTree = "<group>"; };
 		684B0A3C1D65499700505A9C /* AppA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		684B0A451D65499700505A9C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		684B0A461D65499700505A9C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -831,6 +847,8 @@
 		684B0A811D654A3B00505A9C /* A */ = {
 			isa = PBXGroup;
 			children = (
+				6844C4741E76712C00AA6D0E /* BYCoordinateItem.h */,
+				6844C4751E76712C00AA6D0E /* BYCoordinateItem.m */,
 			);
 			path = A;
 			sourceTree = "<group>";
@@ -885,6 +903,10 @@
 			children = (
 				6892DE0D1E67B06F00BB9D84 /* BYScrollPagerView.h */,
 				6892DE0E1E67B06F00BB9D84 /* BYScrollPagerView.m */,
+				6844C46C1E766E1800AA6D0E /* BYBaseCoordinateView.h */,
+				6844C46D1E766E1800AA6D0E /* BYBaseCoordinateView.m */,
+				6844C4781E76925D00AA6D0E /* BYLineChartView.h */,
+				6844C4791E76925D00AA6D0E /* BYLineChartView.m */,
 			);
 			path = A;
 			sourceTree = "<group>";
@@ -935,6 +957,8 @@
 				68966A531E66612B008BE2D9 /* BYSwitchBViewController.m */,
 				6892DE111E67B0AB00BB9D84 /* BYScrollPagerContentViewController.h */,
 				6892DE121E67B0AB00BB9D84 /* BYScrollPagerContentViewController.m */,
+				6844C4701E766EBA00AA6D0E /* BYChartViewController.h */,
+				6844C4711E766EBA00AA6D0E /* BYChartViewController.m */,
 			);
 			path = A;
 			sourceTree = "<group>";
@@ -1350,6 +1374,7 @@
 				6892DE9B1E6D34F200BB9D84 /* MISPinyin.m in Sources */,
 				6856B8C71D6AF34900161109 /* SDWebImageManager.m in Sources */,
 				6892DE971E6D34B200BB9D84 /* Array.c in Sources */,
+				6844C4761E76712C00AA6D0E /* BYCoordinateItem.m in Sources */,
 				68966A481E657F25008BE2D9 /* BYCheckBoxViewController.m in Sources */,
 				6892DE831E67B95B00BB9D84 /* UIImage+BYCircleImage.m in Sources */,
 				6856B84F1D6A97C700161109 /* AFAutoPurgingImageCache.m in Sources */,
@@ -1372,9 +1397,11 @@
 				6856B8791D6A9AE200161109 /* AFHTTPSessionManager.m in Sources */,
 				6892DE471E67B60B00BB9D84 /* NSArray+MISJSON.m in Sources */,
 				684CDFDB1D94D539006316A5 /* BYNavigationViewController.m in Sources */,
+				6844C47A1E76925D00AA6D0E /* BYLineChartView.m in Sources */,
 				6856B8571D6A97C700161109 /* UIButton+AFNetworking.m in Sources */,
 				6856B87B1D6A9AE200161109 /* AFNetworkReachabilityManager.m in Sources */,
 				6892DE651E67B60B00BB9D84 /* UISearchBar+AutoLayout.m in Sources */,
+				6844C4721E766EBA00AA6D0E /* BYChartViewController.m in Sources */,
 				6892DE4B1E67B60B00BB9D84 /* NSDictionary+MISJSON.m in Sources */,
 				6856B8D31D6AF34900161109 /* UIImageView+HighlightedWebCache.m in Sources */,
 				68A1673D1E125CE8002D0732 /* UIPlaceHolderTextView.m in Sources */,
@@ -1415,6 +1442,7 @@
 				681FDEC11E6561B800DD548B /* BYLayoutViewController.m in Sources */,
 				6856B8CB1D6AF34900161109 /* UIButton+WebCache.m in Sources */,
 				6856B8E81D6D68FB00161109 /* BYConstant.m in Sources */,
+				6844C46E1E766E1800AA6D0E /* BYBaseCoordinateView.m in Sources */,
 				6892DE491E67B60B00BB9D84 /* NSData+MISJSON.m in Sources */,
 				6892DE731E67B60B00BB9D84 /* UIWebView+AutoLayout.m in Sources */,
 				684CDFC71D94D39C006316A5 /* BYAViewController.m in Sources */,
@@ -1469,6 +1497,7 @@
 				6892DE9C1E6D34F200BB9D84 /* MISPinyin.m in Sources */,
 				6856B8C81D6AF34900161109 /* SDWebImageManager.m in Sources */,
 				6892DE981E6D34B200BB9D84 /* Array.c in Sources */,
+				6844C4771E76712C00AA6D0E /* BYCoordinateItem.m in Sources */,
 				68966A491E657F25008BE2D9 /* BYCheckBoxViewController.m in Sources */,
 				6892DE841E67B95B00BB9D84 /* UIImage+BYCircleImage.m in Sources */,
 				6856B8501D6A97C700161109 /* AFAutoPurgingImageCache.m in Sources */,
@@ -1491,9 +1520,11 @@
 				6856B87A1D6A9AE200161109 /* AFHTTPSessionManager.m in Sources */,
 				6892DE481E67B60B00BB9D84 /* NSArray+MISJSON.m in Sources */,
 				684CDFDC1D94D539006316A5 /* BYNavigationViewController.m in Sources */,
+				6844C47B1E76925D00AA6D0E /* BYLineChartView.m in Sources */,
 				6856B8581D6A97C700161109 /* UIButton+AFNetworking.m in Sources */,
 				6856B87C1D6A9AE200161109 /* AFNetworkReachabilityManager.m in Sources */,
 				6892DE661E67B60B00BB9D84 /* UISearchBar+AutoLayout.m in Sources */,
+				6844C4731E766EBA00AA6D0E /* BYChartViewController.m in Sources */,
 				6892DE4C1E67B60B00BB9D84 /* NSDictionary+MISJSON.m in Sources */,
 				6856B8D41D6AF34900161109 /* UIImageView+HighlightedWebCache.m in Sources */,
 				68A1673E1E125CE8002D0732 /* UIPlaceHolderTextView.m in Sources */,
@@ -1534,6 +1565,7 @@
 				681FDEC21E6561B800DD548B /* BYLayoutViewController.m in Sources */,
 				6856B8CC1D6AF34900161109 /* UIButton+WebCache.m in Sources */,
 				6856B8E91D6D68FB00161109 /* BYConstant.m in Sources */,
+				6844C46F1E766E1800AA6D0E /* BYBaseCoordinateView.m in Sources */,
 				6892DE4A1E67B60B00BB9D84 /* NSData+MISJSON.m in Sources */,
 				6892DE741E67B60B00BB9D84 /* UIWebView+AutoLayout.m in Sources */,
 				684CDFC81D94D39C006316A5 /* BYAViewController.m in Sources */,
