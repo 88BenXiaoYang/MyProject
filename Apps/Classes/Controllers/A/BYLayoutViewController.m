@@ -61,6 +61,10 @@
 	[self.view addSubview:self.btn];
 	_btn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
 	_btn.contentVerticalAlignment = UIControlContentVerticalAlignmentTop;
+	NSString *btnTitStr = _btn.currentTitle;
+	UIImage *btnImg = _btn.currentImage;
+	CGSize btnTitleSize = [btnTitStr mis_sizeWithFont:NFont(14) constrainedToSize:CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX)];
+	CGSize btnImgSize = btnImg.size;
 	[_btn setTitleEdgeInsets:UIEdgeInsetsMake(30, ((220 - 100)/2 - 26), 0, 0)];
 	[_btn setImageEdgeInsets:UIEdgeInsetsMake(5, (220 - 26)/2, 0, 0)];
 }
@@ -69,7 +73,7 @@
 {
 	[self.view addSubview:self.gifBgView];
 	NSURL *gifUrl = [NSURL URLWithString:@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1483511554654&di=94a4d5e47b0a2c3e43246aca113a2646&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01686256fe374032f875a9449ee89e.gif"];
-	NSURL *imgUrl = [NSURL URLWithString:@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1483516950271&di=87c6cd414786503e53314f60f6507cb7&imgtype=0&src=http%3A%2F%2Fsc.jb51.net%2Fuploads%2Fallimg%2F150629%2F10-15062Z9524NO.jpg"];
+//	NSURL *imgUrl = [NSURL URLWithString:@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1483516950271&di=87c6cd414786503e53314f60f6507cb7&imgtype=0&src=http%3A%2F%2Fsc.jb51.net%2Fuploads%2Fallimg%2F150629%2F10-15062Z9524NO.jpg"];
 	
 	[_gifImageView setImageWithURL:gifUrl placeholderImage:[UIImage imageNamed:@"twitterIcon"]];
 }
