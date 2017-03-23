@@ -30,6 +30,9 @@
 	
 	self.title = @"BView";
 	
+//	self.navigationController.navigationBar.translucent = YES;
+//	self.navigationController.navigationBar.translucent = NO;
+	
 	_dataList = [NSMutableArray array];
 	_searchList = [NSMutableArray array];
 	
@@ -40,11 +43,11 @@
 		[self.dataList addObject:[NSString stringWithFormat:@"%ld%@",(long)i,[self shuffledAlphabet]]];
 	}
 	
-	_tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0,[UIScreen  mainScreen].bounds.size.width ,[UIScreen  mainScreen].bounds.size.height)];
+	_tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, VIEW_WIDTH, SCREEN_HEIGHT)];
 	
 	_tableView.delegate = self;
 	_tableView.dataSource = self;
-	_tableView.separatorStyle = UITableViewCellSelectionStyleNone;
+	_tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
 	
 	//创建UISearchController
 	_searchController = [[UISearchController alloc]initWithSearchResultsController:nil];
@@ -131,7 +134,9 @@
 		cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:flag];
 	}
 	if (self.searchController.active) {
-		[cell.textLabel setText:self.searchList[indexPath.row]];
+		if (self.searchList.count > 0) {
+			[cell.textLabel setText:self.searchList[indexPath.row]];
+		}
 	}
 	else{
 		[cell.textLabel setText:self.dataList[indexPath.row]];
@@ -143,20 +148,29 @@
 #pragma mark - UISearchControllerDelegate代理
 
 //测试UISearchController的执行过程
-
 - (void)willPresentSearchController:(UISearchController *)searchController
 {
 	NSLog(@"willPresentSearchController");
+//	self.navigationController.navigationBar.translucent = YES;
 }
 
 - (void)didPresentSearchController:(UISearchController *)searchController
 {
 	NSLog(@"didPresentSearchController");
+	CGRect frame = self.tableView.frame;
+	frame.origin.y = 20;
+	self.tableView.frame = frame;
 }
 
 - (void)willDismissSearchController:(UISearchController *)searchController
 {
 	NSLog(@"willDismissSearchController");
+	
+	CGRect frame = self.tableView.frame;
+	frame.origin.y = 0;
+	self.tableView.frame = frame;
+	
+//	self.navigationController.navigationBar.translucent = NO;
 }
 
 - (void)didDismissSearchController:(UISearchController *)searchController
@@ -169,19 +183,20 @@
 	NSLog(@"presentSearchController");
 }
 
-
 -(void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+	
+//	self.edgesForExtendedLayout = UIRectEdgeNone;
 	
 	NSLog(@"updateSearchResultsForSearchController");
 	NSString *searchString = [self.searchController.searchBar text];
 	NSPredicate *preicate = [NSPredicate predicateWithFormat:@"SELF CONTAINS[c] %@", searchString];
-	if (self.searchList!= nil) {
+	if (self.searchList!= nil && searchString.length > 0) {
 		[self.searchList removeAllObjects];
+		//过滤数据
+		self.searchList= [NSMutableArray arrayWithArray:[_dataList filteredArrayUsingPredicate:preicate]];
+		//刷新表格
+		[self.tableView reloadData];
 	}
-	//过滤数据
-	self.searchList= [NSMutableArray arrayWithArray:[_dataList filteredArrayUsingPredicate:preicate]];
-	//刷新表格
-	[self.tableView reloadData];
 }
 
 @end
