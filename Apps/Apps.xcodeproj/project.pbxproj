@@ -1232,7 +1232,7 @@
 		684B0A341D65499600505A9C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = BY;
+				CLASSPREFIX = BXY;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = BY;
 				TargetAttributes = {
