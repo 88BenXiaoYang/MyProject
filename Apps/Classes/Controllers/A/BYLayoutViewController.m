@@ -64,9 +64,13 @@
 	NSString *btnTitStr = _btn.currentTitle;
 	UIImage *btnImg = _btn.currentImage;
 	CGSize btnTitleSize = [btnTitStr mis_sizeWithFont:NFont(14) constrainedToSize:CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX)];
+	btnTitleSize.width += 24;
 	CGSize btnImgSize = btnImg.size;
-	[_btn setTitleEdgeInsets:UIEdgeInsetsMake(30, ((220 - 100)/2 - 26), 0, 0)];
-	[_btn setImageEdgeInsets:UIEdgeInsetsMake(5, (220 - 26)/2, 0, 0)];
+	CGSize btnSize = _btn.frame.size;
+	CGFloat marginV = 5;
+	_btn.titleLabel.backgroundColor = [UIColor orangeColor];
+	[_btn setTitleEdgeInsets:UIEdgeInsetsMake(btnImgSize.height + marginV*2, ((btnSize.width - btnTitleSize.width)/2 - btnImgSize.width), 0, 0)];
+	[_btn setImageEdgeInsets:UIEdgeInsetsMake(marginV, (btnSize.width - btnImgSize.width)/2, 0, 0)];
 }
 
 - (void)loadGifImage
