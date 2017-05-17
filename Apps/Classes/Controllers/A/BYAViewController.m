@@ -15,6 +15,7 @@
 #import "BYSwitchAViewController.h"
 #import "BYScrollPagerContentViewController.h"
 #import "BYChartViewController.h"
+#import "BYLoadLocalDBDataViewController.h"
 
 @interface BYAViewController ()
 
@@ -77,6 +78,8 @@
 		[self goScrollPagerView];
 	} else if (indexPath.row == 6) {
 		[self goChartView];
+	} else if (indexPath.row == 7) {
+		[self goLoadLocalDBData];
 	}
 }
 
@@ -87,7 +90,7 @@
 #pragma mark- Private methods
 - (void)initSettingData
 {
-	self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", nil];
+	self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", nil];
 	
 	[self.table registerClass:[BYDemoListCell class] forCellReuseIdentifier:[BYDemoListCell reuseIdentifier]];
 }
@@ -141,6 +144,14 @@
 	[self.navigationController pushViewController:chartVC animated:YES];
 }
 
+- (void)goLoadLocalDBData
+{
+	BYLoadLocalDBDataViewController *loadLocalDBDataVC = [[BYLoadLocalDBDataViewController alloc] init];
+	loadLocalDBDataVC.hidesBottomBarWhenPushed = YES;
+	[self.navigationController pushViewController:loadLocalDBDataVC animated:YES];
+}
+
+#pragma mark- common test methods
 - (void)testHanZiToPinYin
 {
 	NSString *hanziStr = @"拼音测试";

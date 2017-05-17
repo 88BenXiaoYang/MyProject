@@ -265,6 +265,12 @@
 		68BDDECC1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68BDDEC91DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@2x.png */; };
 		68BDDECD1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68BDDECA1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@3x.png */; };
 		68BDDECE1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68BDDECA1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@3x.png */; };
+		68E1F0E61ECBE313002B6B13 /* foods.db in Resources */ = {isa = PBXBuildFile; fileRef = 68E1F0E51ECBE313002B6B13 /* foods.db */; };
+		68E1F0E71ECBE313002B6B13 /* foods.db in Resources */ = {isa = PBXBuildFile; fileRef = 68E1F0E51ECBE313002B6B13 /* foods.db */; };
+		68E1F0EA1ECBE3CF002B6B13 /* BYLoadLocalDBDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E1F0E91ECBE3CF002B6B13 /* BYLoadLocalDBDataViewController.m */; };
+		68E1F0EB1ECBE3CF002B6B13 /* BYLoadLocalDBDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E1F0E91ECBE3CF002B6B13 /* BYLoadLocalDBDataViewController.m */; };
+		68E1F0EE1ECBE76E002B6B13 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E1F0ED1ECBE76E002B6B13 /* Food.m */; };
+		68E1F0EF1ECBE76E002B6B13 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E1F0ED1ECBE76E002B6B13 /* Food.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -532,6 +538,11 @@
 		68BDDEC41DAF6E52005EA1DE /* MISSendNotifiSelectUnckeck@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MISSendNotifiSelectUnckeck@3x.png"; sourceTree = "<group>"; };
 		68BDDEC91DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MISSendNotifiSelectCkecked@2x.png"; sourceTree = "<group>"; };
 		68BDDECA1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MISSendNotifiSelectCkecked@3x.png"; sourceTree = "<group>"; };
+		68E1F0E51ECBE313002B6B13 /* foods.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = foods.db; sourceTree = "<group>"; };
+		68E1F0E81ECBE3CF002B6B13 /* BYLoadLocalDBDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYLoadLocalDBDataViewController.h; sourceTree = "<group>"; };
+		68E1F0E91ECBE3CF002B6B13 /* BYLoadLocalDBDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYLoadLocalDBDataViewController.m; sourceTree = "<group>"; };
+		68E1F0EC1ECBE76E002B6B13 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
+		68E1F0ED1ECBE76E002B6B13 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -849,6 +860,8 @@
 			children = (
 				6844C4741E76712C00AA6D0E /* BYCoordinateItem.h */,
 				6844C4751E76712C00AA6D0E /* BYCoordinateItem.m */,
+				68E1F0EC1ECBE76E002B6B13 /* Food.h */,
+				68E1F0ED1ECBE76E002B6B13 /* Food.m */,
 			);
 			path = A;
 			sourceTree = "<group>";
@@ -934,6 +947,7 @@
 				6856B8DD1D6BD9BB00161109 /* MISQuanKTIcon@2x.png */,
 				6856B8E21D6C57F800161109 /* twitterIcon.png */,
 				6899C78F1E55508900FEFAB2 /* tickblue@2x.png */,
+				68E1F0E51ECBE313002B6B13 /* foods.db */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -959,6 +973,8 @@
 				6892DE121E67B0AB00BB9D84 /* BYScrollPagerContentViewController.m */,
 				6844C4701E766EBA00AA6D0E /* BYChartViewController.h */,
 				6844C4711E766EBA00AA6D0E /* BYChartViewController.m */,
+				68E1F0E81ECBE3CF002B6B13 /* BYLoadLocalDBDataViewController.h */,
+				68E1F0E91ECBE3CF002B6B13 /* BYLoadLocalDBDataViewController.m */,
 			);
 			path = A;
 			sourceTree = "<group>";
@@ -1315,6 +1331,7 @@
 				68BDDECD1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@3x.png in Resources */,
 				684CDFE51D94D9F6006316A5 /* MISTabOfficeTableHL@2x.png in Resources */,
 				68BDDEC51DAF6E52005EA1DE /* MISSendNotifiSelectUnckeck@2x.png in Resources */,
+				68E1F0E61ECBE313002B6B13 /* foods.db in Resources */,
 				684CDFE71D94D9F6006316A5 /* MISTabOfficeTableHL@3x.png in Resources */,
 				6899C7901E55508900FEFAB2 /* tickblue@2x.png in Resources */,
 			);
@@ -1353,6 +1370,7 @@
 				68BDDECE1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@3x.png in Resources */,
 				684CDFE61D94D9F6006316A5 /* MISTabOfficeTableHL@2x.png in Resources */,
 				68BDDEC61DAF6E52005EA1DE /* MISSendNotifiSelectUnckeck@2x.png in Resources */,
+				68E1F0E71ECBE313002B6B13 /* foods.db in Resources */,
 				684CDFE81D94D9F6006316A5 /* MISTabOfficeTableHL@3x.png in Resources */,
 				6899C7911E55508900FEFAB2 /* tickblue@2x.png in Resources */,
 			);
@@ -1416,6 +1434,7 @@
 				68BDDE881DAB3DD0005EA1DE /* BYDynamicTree.m in Sources */,
 				684CDFD71D94D3E6006316A5 /* BYEViewController.m in Sources */,
 				6856B8CF1D6AF34900161109 /* UIImage+MultiFormat.m in Sources */,
+				68E1F0EE1ECBE76E002B6B13 /* Food.m in Sources */,
 				6856B8871D6A9CC700161109 /* BYHttpEngine.m in Sources */,
 				6892DE531E67B60B00BB9D84 /* NSString+MISJSON.m in Sources */,
 				6856B8D11D6AF34900161109 /* UIImage+WebP.m in Sources */,
@@ -1427,6 +1446,7 @@
 				68BDDEB51DAC911F005EA1DE /* BYDynamicTreeCell.m in Sources */,
 				68BDDEB11DAC90CB005EA1DE /* BYTableViewCell.m in Sources */,
 				6856B8811D6A9AE200161109 /* AFURLResponseSerialization.m in Sources */,
+				68E1F0EA1ECBE3CF002B6B13 /* BYLoadLocalDBDataViewController.m in Sources */,
 				684CDFBB1D94D217006316A5 /* BYViewController.m in Sources */,
 				681FDEC51E6569ED00DD548B /* BYAppSkipViewController.m in Sources */,
 				6856B85F1D6A97C700161109 /* UIWebView+AFNetworking.m in Sources */,
@@ -1539,6 +1559,7 @@
 				68BDDE891DAB3DD0005EA1DE /* BYDynamicTree.m in Sources */,
 				684CDFD81D94D3E6006316A5 /* BYEViewController.m in Sources */,
 				6856B8D01D6AF34900161109 /* UIImage+MultiFormat.m in Sources */,
+				68E1F0EF1ECBE76E002B6B13 /* Food.m in Sources */,
 				6856B8881D6A9CC700161109 /* BYHttpEngine.m in Sources */,
 				6892DE541E67B60B00BB9D84 /* NSString+MISJSON.m in Sources */,
 				6856B8D21D6AF34900161109 /* UIImage+WebP.m in Sources */,
@@ -1550,6 +1571,7 @@
 				68BDDEB61DAC911F005EA1DE /* BYDynamicTreeCell.m in Sources */,
 				68BDDEB21DAC90CB005EA1DE /* BYTableViewCell.m in Sources */,
 				6856B8821D6A9AE200161109 /* AFURLResponseSerialization.m in Sources */,
+				68E1F0EB1ECBE3CF002B6B13 /* BYLoadLocalDBDataViewController.m in Sources */,
 				684CDFBC1D94D217006316A5 /* BYViewController.m in Sources */,
 				681FDEC61E6569ED00DD548B /* BYAppSkipViewController.m in Sources */,
 				6856B8601D6A97C700161109 /* UIWebView+AFNetworking.m in Sources */,
