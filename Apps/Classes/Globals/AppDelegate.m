@@ -10,6 +10,7 @@
 #import "BYMainViewController.h"
 #import "BYMViewController.h"
 #import <Bugly/Bugly.h>
+#import <AlipaySDK/AlipaySDK.h>
 
 @interface AppDelegate ()
 
@@ -62,6 +63,30 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
 	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
+{
+	if ([url.host isEqualToString:@"safepay"]) {
+		//跳转支付宝钱包进行支付，处理支付结果
+		[[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+			NSLog(@"result = %@",resultDic);
+		}];
+	}
+	
+	return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+	if ([url.host isEqualToString:@"safepay"]) {
+		//跳转支付宝钱包进行支付，处理支付结果
+		[[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+			NSLog(@"result = %@",resultDic);
+		}];
+	}
+	
+	return YES;
 }
 
 @end
