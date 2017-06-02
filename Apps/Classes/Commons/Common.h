@@ -81,4 +81,13 @@
 //控件传值
 #define Image_With_Name(_name) [UIImage imageNamed:_name]
 
+/******************************** Alipay **************************************/
+#define ALIPAY_PARTNERID        @"2088021458178941" //旧版本支付使用
+#define ALIPAY_APPID            @"2016061201504543" //新版本支付使用
+#define ALIPAY_PRIVATEKEY       @"MIICXQIBAAKBgQConZlicoY9QkvNhr6XhYJwsLeNgpiczP7/Je5lokwAFrPTbqNFGS15eXCxGOoqYVrjvZbFkvHVMO6Kq7Zx2fsDyBMl6YIcSyxOllx5IP9j4+MNkJKviQ10ocdrocv4/eSD1FJq/sdSfDT5dmvG+In4tvm6pFLlVOQIlo1qBVcaOQIDAQABAoGAAYyBDjBzHzjurVKhiY7GZfaZmQksEbSoWvukNvbIr++Fc1m+0jGrA0SkTlwmOoFubk0dh28UHZs3dbqiEGWqMpje+4OJiXzW5C2DeBotdkebCJbVFnIZVOMixQI6FgBASkgUxZcr49r40LQsqwoH5r7+L7t3SZoXSrvzrSKZ+ikCQQDcqFoE/uGuz71QYRh5yuqK8cfNMd3mIn148LSrKHuX6a85wKmP8v+N6kClqP8vWiXLaBY6+P+OxVKBs5AFfRx7AkEAw59dG1keYl3V/db4MSvGSezv630xPPPmzSF/Qd4TyxC3h2kSQR+U5zPleJN8pRDgJdtTwxIAZ1WkiuVL2Rsn2wJBALWZF/zkh3gHIBb20d3qUfzn3zfQwn6UBA90ijwSpSTw/XTaSrJdmlSBZZLw8pNV7aTplOIT6r7lRnHYBb9+p+ECQAkWzXeo012UqI2rwEpgk0z6Ake5wGDpoC6lwMjprZfAxhY3jo6SDhQT+DR6/c6ZkyCPKTwmCPjEJOoDL1v+BAMCQQCjVH+qLUw1tzzxtKNPbTgtACxCQkpdQ/p5uaPh/WrZNrciahpz1negG6kyl3yyNxsrs7r1QMAs+3YlssPS8VTo"
+
+#define TEXT_SIGNSTRING         @"dqjq2oV%2B8G19gbuZUB8FtpZ3b5LaErD9wokWn6V71xziQdiFyTNbwvy1dtWTLeiSvVTHwlF6fUQQj9ZG50uKE0IV0JTX5N70u99LJPZrPcaDk5PVzoqn8XYxdBb1LEYFR2kat%2BAapL8%2FgMQZRR7QnYEiY%2BNZiAJdHip9Hqaqhs4%3D"
+
+#define TEXT_OrderInfoEncoded   @"app_id=2016061201504543&biz_content=%7B%22timeout_express%22%3A%2230m%22%2C%22seller_id%22%3A%22%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%2C%22total_amount%22%3A%220.01%22%2C%22subject%22%3A%221%22%2C%22body%22%3A%22%E6%88%91%E6%98%AF%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE%22%2C%22out_trade_no%22%3A%221AF31ZYDKB34RJX%22%7D&charset=utf-8&method=alipay.trade.app.pay&sign_type=RSA&timestamp=2017-06-02%2017%3A00%3A30&version=1.0"
+
 #endif /* Common_h */

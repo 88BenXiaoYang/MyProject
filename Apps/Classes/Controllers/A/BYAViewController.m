@@ -16,6 +16,7 @@
 #import "BYScrollPagerContentViewController.h"
 #import "BYChartViewController.h"
 #import "BYLoadLocalDBDataViewController.h"
+#import "BYPayViewController.h"
 
 @interface BYAViewController ()
 
@@ -80,6 +81,8 @@
 		[self goChartView];
 	} else if (indexPath.row == 7) {
 		[self goLoadLocalDBData];
+	} else if (indexPath.row == 8) {
+		[self goPay];
 	}
 }
 
@@ -90,7 +93,7 @@
 #pragma mark- Private methods
 - (void)initSettingData
 {
-	self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", nil];
+	self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay", nil];
 	
 	[self.table registerClass:[BYDemoListCell class] forCellReuseIdentifier:[BYDemoListCell reuseIdentifier]];
 }
@@ -149,6 +152,13 @@
 	BYLoadLocalDBDataViewController *loadLocalDBDataVC = [[BYLoadLocalDBDataViewController alloc] init];
 	loadLocalDBDataVC.hidesBottomBarWhenPushed = YES;
 	[self.navigationController pushViewController:loadLocalDBDataVC animated:YES];
+}
+
+- (void)goPay
+{
+	BYPayViewController *payVC = [[BYPayViewController alloc] init];
+	payVC.hidesBottomBarWhenPushed = YES;
+	[self.navigationController pushViewController:payVC animated:YES];
 }
 
 #pragma mark- common test methods
