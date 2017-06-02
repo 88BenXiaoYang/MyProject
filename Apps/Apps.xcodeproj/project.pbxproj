@@ -1534,8 +1534,8 @@
 				TargetAttributes = {
 					684B0A3B1D65499700505A9C = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = FJ5FELV34L;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = Z3F649Q24Z;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;
@@ -2013,7 +2013,7 @@
 				CODE_SIGN_ENTITLEMENTS = AppA/AppA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Kebing Mao (VBN29H3VZJ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = FJ5FELV34L;
+				DEVELOPMENT_TEAM = Z3F649Q24Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -2036,10 +2036,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Classes/ThirdSupports/AliAPI",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aspire.ynteacher;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AppA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "15943d94-1f0e-4fe8-b807-07aca7829de1";
-				PROVISIONING_PROFILE_SPECIFIER = YNJXTTeacherDevelopment;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -2050,8 +2050,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppALaunchImage;
 				CODE_SIGN_ENTITLEMENTS = AppA/AppA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Aspire Information Technology (Beijing) Co., Ltd.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = FJ5FELV34L;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z3F649Q24Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -2069,10 +2069,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Classes/ThirdSupports/AliAPI",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aspire.ynteacher;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AppA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1dae47cf-ce61-4d8c-98ae-442e5ee99404";
-				PROVISIONING_PROFILE_SPECIFIER = YNJXTTeacherInhouse;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
