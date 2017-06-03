@@ -34,4 +34,8 @@ typedef void(^BYResponseErrorBlock)(NSError *error);
 			   completionHandler:(BYResponseBlock)completionHandler
 					errorHandler:(BYResponseErrorBlock)errorHandler;
 
++ (void)obtainAppComboOrderNoWithOrderInfo:(NSDictionary *)paramDict
+                         completionHandler:(BYResponseBlock)completionHandler
+                              errorHandler:(BYResponseErrorBlock)errorHandler;
+
 @end

@@ -130,4 +130,61 @@ static AFHTTPSessionManager *sessionManager = nil;
 	[self getObtainDataListWithInterfacePath:interfacePath params:params completionHandler:completionHandler errorHandler:errorHandler];
 }
 
++ (void)obtainAppComboOrderNoWithOrderInfo:(NSDictionary *)paramDict
+                         completionHandler:(BYResponseBlock)completionHandler
+                              errorHandler:(BYResponseErrorBlock)errorHandler
+{
+    [self postWithParams:paramDict serverIP:@"http://payapi.cq.51jiaxiaotong.com" apiName:@"/v1/app/pay/order" completionHandler:^(NSData *responseData) {
+        completionHandler(responseData);
+    } errorHandler:^(NSError *error) {
+        errorHandler(error);
+    }];
+}
+
+//post 方法3
+/**
+ *  传入SEVER_IP的POST方法，对应参数app_key、version
+ *
+ */
++ (void)postWithParams:(NSDictionary *)params
+              serverIP:(NSString *)serverIp
+               apiName:(NSString *)apiName
+     completionHandler:(BYResponseBlock)completionHandler
+          errorHandler:(BYResponseErrorBlock)errorHandler
+{
+    //必带参数
+    NSMutableDictionary* params_ = [NSMutableDictionary dictionaryWithDictionary:params];
+    params_[@"app_key"] = app_key;
+    params_[@"version"] = app_version;
+    NSTimeInterval timeInterval = [[NSDate date] timeIntervalSince1970];
+    params_[@"time"] = [NSString stringWithFormat:@"%f", timeInterval];
+    
+    //排序
+    NSArray* sortedKeys = [params_.allKeys sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        return [obj1 compare:obj2];
+    }];
+    
+    //签名
+    __block NSString* paraString = @"";
+    [sortedKeys enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        NSString* value = params_[obj];
+        paraString = [NSString stringWithFormat:@"%@%@=%@",paraString, obj,  value];
+        if (idx < sortedKeys.count - 1)
+        {
+            paraString = [NSString stringWithFormat:@"%@&", paraString];
+        }
+    }];
+    
+    NSString* sign = [BYUtils stringWithXXTEncrypt:paraString];
+    
+    //把签名加到params
+    params_[@"sign"] = sign;
+    
+    //	[self requestWithParams:params_ apiName:apiName httpMethod:@"POST" serverIP:serverIp  completionHandler:completionHandler errorHandler:errorHandler];      //原生登录用正式SERVER_IP
+    
+    
+    NSString* urlString = [NSString stringWithFormat:@"%@%@", serverIp, apiName];
+    [self postRequestWithInterfacePath:urlString params:params_ completionHandler:completionHandler errorHandler:errorHandler];
+}
+
 @end
