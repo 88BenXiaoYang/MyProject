@@ -3,6 +3,7 @@
 !.gitignore
 
 #ignore Xcode part pros files
+Apps.xcodeproj/.*
 Apps.xcodeproj/project.xcworkspace/
-Apps.xcodeproj/xcuserdata
+Apps.xcodeproj/xcuserdata/
 
