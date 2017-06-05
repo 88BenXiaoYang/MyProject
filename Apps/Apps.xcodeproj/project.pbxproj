@@ -7,12 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		020FFC4E1EE2EF1C005EFDE9 /* WXAPI in Resources */ = {isa = PBXBuildFile; fileRef = 020FFC4D1EE2EF1C005EFDE9 /* WXAPI */; };
-		020FFC4F1EE2EF1C005EFDE9 /* WXAPI in Resources */ = {isa = PBXBuildFile; fileRef = 020FFC4D1EE2EF1C005EFDE9 /* WXAPI */; };
 		020FFC511EE30A05005EFDE9 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 020FFC501EE30A05005EFDE9 /* libWeChatSDK.a */; };
 		020FFC521EE30A1B005EFDE9 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 020FFC501EE30A05005EFDE9 /* libWeChatSDK.a */; };
-		020FFC581EE31A2F005EFDE9 /* WXPay in Resources */ = {isa = PBXBuildFile; fileRef = 020FFC571EE31A2F005EFDE9 /* WXPay */; };
-		020FFC591EE31A2F005EFDE9 /* WXPay in Resources */ = {isa = PBXBuildFile; fileRef = 020FFC571EE31A2F005EFDE9 /* WXPay */; };
 		020FFC5C1EE31ADC005EFDE9 /* WXOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 020FFC5B1EE31ADC005EFDE9 /* WXOrder.m */; };
 		020FFC5D1EE31ADC005EFDE9 /* WXOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 020FFC5B1EE31ADC005EFDE9 /* WXOrder.m */; };
 		681B6BB31EDFEA62006F8CDF /* BYPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6BB21EDFEA62006F8CDF /* BYPayViewController.m */; };
@@ -47,8 +43,10 @@
 		681B6C321EE00250006F8CDF /* RSADataVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C241EE00250006F8CDF /* RSADataVerifier.m */; };
 		681B6C361EE0184A006F8CDF /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C351EE0184A006F8CDF /* Order.m */; };
 		681B6C371EE0184A006F8CDF /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C351EE0184A006F8CDF /* Order.m */; };
-		681B6C3F1EE4F744006F8CDF /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C3E1EE4F744006F8CDF /* WXApiManager.m */; };
-		681B6C401EE4F744006F8CDF /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C3E1EE4F744006F8CDF /* WXApiManager.m */; };
+		681B6C4C1EE535DA006F8CDF /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681B6C471EE535DA006F8CDF /* libWeChatSDK.a */; };
+		681B6C4D1EE535DA006F8CDF /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 681B6C481EE535DA006F8CDF /* README.txt */; };
+		681B6C561EE5363B006F8CDF /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C551EE5363B006F8CDF /* WXApiManager.m */; };
+		681B6C571EE5363B006F8CDF /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C551EE5363B006F8CDF /* WXApiManager.m */; };
 		681FDE9C1E640C8900DD548B /* RM.html in Resources */ = {isa = PBXBuildFile; fileRef = 681FDE9B1E640C8900DD548B /* RM.html */; };
 		681FDE9D1E640C8900DD548B /* RM.html in Resources */ = {isa = PBXBuildFile; fileRef = 681FDE9B1E640C8900DD548B /* RM.html */; };
 		681FDEB81E65542A00DD548B /* BYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDEB71E65542A00DD548B /* BYTableViewController.m */; };
@@ -333,9 +331,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		020FFC4D1EE2EF1C005EFDE9 /* WXAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WXAPI; sourceTree = "<group>"; };
 		020FFC501EE30A05005EFDE9 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = Classes/ThirdSupports/WXAPI/libWeChatSDK.a; sourceTree = SOURCE_ROOT; };
-		020FFC571EE31A2F005EFDE9 /* WXPay */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WXPay; sourceTree = "<group>"; };
 		020FFC5A1EE31ADC005EFDE9 /* WXOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXOrder.h; path = Classes/Models/WXPay/WXOrder.h; sourceTree = SOURCE_ROOT; };
 		020FFC5B1EE31ADC005EFDE9 /* WXOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WXOrder.m; path = Classes/Models/WXPay/WXOrder.m; sourceTree = SOURCE_ROOT; };
 		681B6BB11EDFEA62006F8CDF /* BYPayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYPayViewController.h; sourceTree = "<group>"; };
@@ -437,8 +433,15 @@
 		681B6C241EE00250006F8CDF /* RSADataVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSADataVerifier.m; sourceTree = "<group>"; };
 		681B6C341EE0184A006F8CDF /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
 		681B6C351EE0184A006F8CDF /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
-		681B6C3D1EE4F744006F8CDF /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
-		681B6C3E1EE4F744006F8CDF /* WXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiManager.m; sourceTree = "<group>"; };
+		681B6C471EE535DA006F8CDF /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		681B6C481EE535DA006F8CDF /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		681B6C491EE535DA006F8CDF /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		681B6C4A1EE535DA006F8CDF /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		681B6C4B1EE535DA006F8CDF /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		681B6C4F1EE535F2006F8CDF /* WXOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXOrder.h; sourceTree = "<group>"; };
+		681B6C501EE535F2006F8CDF /* WXOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXOrder.m; sourceTree = "<group>"; };
+		681B6C541EE5363B006F8CDF /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
+		681B6C551EE5363B006F8CDF /* WXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiManager.m; sourceTree = "<group>"; };
 		681FDE9B1E640C8900DD548B /* RM.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RM.html; sourceTree = "<group>"; };
 		681FDEB61E65542A00DD548B /* BYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYTableViewController.h; sourceTree = "<group>"; };
 		681FDEB71E65542A00DD548B /* BYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYTableViewController.m; sourceTree = "<group>"; };
@@ -714,6 +717,7 @@
 				681B6C251EE00250006F8CDF /* libcrypto.a in Frameworks */,
 				684CDF9D1D922EB5006316A5 /* MapKit.framework in Frameworks */,
 				687F587D1D75317400C673D8 /* CoreTelephony.framework in Frameworks */,
+				681B6C4C1EE535DA006F8CDF /* libWeChatSDK.a in Frameworks */,
 				687F58831D75351100C673D8 /* UMMobClick.framework in Frameworks */,
 				684CDFEE1D94F6EC006316A5 /* Masonry.framework in Frameworks */,
 				6856B8661D6A98C400161109 /* SystemConfiguration.framework in Frameworks */,
@@ -887,13 +891,34 @@
 			path = AliPay;
 			sourceTree = "<group>";
 		};
-		681B6C3C1EE4F732006F8CDF /* Tmp */ = {
+		681B6C461EE535DA006F8CDF /* WXAPI */ = {
 			isa = PBXGroup;
 			children = (
-				681B6C3D1EE4F744006F8CDF /* WXApiManager.h */,
-				681B6C3E1EE4F744006F8CDF /* WXApiManager.m */,
+				681B6C471EE535DA006F8CDF /* libWeChatSDK.a */,
+				681B6C481EE535DA006F8CDF /* README.txt */,
+				681B6C491EE535DA006F8CDF /* WechatAuthSDK.h */,
+				681B6C4A1EE535DA006F8CDF /* WXApi.h */,
+				681B6C4B1EE535DA006F8CDF /* WXApiObject.h */,
 			);
-			name = Tmp;
+			path = WXAPI;
+			sourceTree = "<group>";
+		};
+		681B6C4E1EE535F2006F8CDF /* WXPay */ = {
+			isa = PBXGroup;
+			children = (
+				681B6C4F1EE535F2006F8CDF /* WXOrder.h */,
+				681B6C501EE535F2006F8CDF /* WXOrder.m */,
+			);
+			path = WXPay;
+			sourceTree = "<group>";
+		};
+		681B6C531EE5363B006F8CDF /* WXApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				681B6C541EE5363B006F8CDF /* WXApiManager.h */,
+				681B6C551EE5363B006F8CDF /* WXApiManager.m */,
+			);
+			path = WXApiManager;
 			sourceTree = "<group>";
 		};
 		681FDEBA1E655E6200DD548B /* Cells */ = {
@@ -1146,7 +1171,7 @@
 		684B0A801D654A3B00505A9C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				020FFC571EE31A2F005EFDE9 /* WXPay */,
+				681B6C4E1EE535F2006F8CDF /* WXPay */,
 				681B6C331EE0184A006F8CDF /* AliPay */,
 				684B0A811D654A3B00505A9C /* A */,
 				684B0A821D654A3B00505A9C /* B */,
@@ -1187,8 +1212,8 @@
 		684B0A851D654A3B00505A9C /* ThirdSupports */ = {
 			isa = PBXGroup;
 			children = (
-				681B6C3C1EE4F732006F8CDF /* Tmp */,
-				020FFC4D1EE2EF1C005EFDE9 /* WXAPI */,
+				681B6C531EE5363B006F8CDF /* WXApiManager */,
+				681B6C461EE535DA006F8CDF /* WXAPI */,
 				681B6BCA1EE00250006F8CDF /* AliAPI */,
 				6856B8971D6AF34900161109 /* SDWebImage */,
 			);
@@ -1639,16 +1664,15 @@
 				68BDDECB1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@2x.png in Resources */,
 				6856B8DE1D6BD9BB00161109 /* MISQuanKTIcon@2x.png in Resources */,
 				6856B8E31D6C57F800161109 /* twitterIcon.png in Resources */,
-				020FFC4E1EE2EF1C005EFDE9 /* WXAPI in Resources */,
 				684CDFE11D94D9F6006316A5 /* MISTabOfficeTable@2x.png in Resources */,
 				684CDFF21D9527A0006316A5 /* StarGray@2x.png in Resources */,
 				681FDE9C1E640C8900DD548B /* RM.html in Resources */,
 				68BDDECD1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@3x.png in Resources */,
 				684CDFE51D94D9F6006316A5 /* MISTabOfficeTableHL@2x.png in Resources */,
+				681B6C4D1EE535DA006F8CDF /* README.txt in Resources */,
 				68BDDEC51DAF6E52005EA1DE /* MISSendNotifiSelectUnckeck@2x.png in Resources */,
 				68E1F0E61ECBE313002B6B13 /* foods.db in Resources */,
 				684CDFE71D94D9F6006316A5 /* MISTabOfficeTableHL@3x.png in Resources */,
-				020FFC581EE31A2F005EFDE9 /* WXPay in Resources */,
 				6899C7901E55508900FEFAB2 /* tickblue@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1680,7 +1704,6 @@
 				68BDDECC1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@2x.png in Resources */,
 				6856B8DF1D6BD9BB00161109 /* MISQuanKTIcon@2x.png in Resources */,
 				6856B8E41D6C57F800161109 /* twitterIcon.png in Resources */,
-				020FFC4F1EE2EF1C005EFDE9 /* WXAPI in Resources */,
 				684CDFE21D94D9F6006316A5 /* MISTabOfficeTable@2x.png in Resources */,
 				684CDFF31D9527A0006316A5 /* StarGray@2x.png in Resources */,
 				681FDE9D1E640C8900DD548B /* RM.html in Resources */,
@@ -1689,7 +1712,6 @@
 				68BDDEC61DAF6E52005EA1DE /* MISSendNotifiSelectUnckeck@2x.png in Resources */,
 				68E1F0E71ECBE313002B6B13 /* foods.db in Resources */,
 				684CDFE81D94D9F6006316A5 /* MISTabOfficeTableHL@3x.png in Resources */,
-				020FFC591EE31A2F005EFDE9 /* WXPay in Resources */,
 				6899C7911E55508900FEFAB2 /* tickblue@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1737,7 +1759,6 @@
 				681B6BB31EDFEA62006F8CDF /* BYPayViewController.m in Sources */,
 				681B6C291EE00250006F8CDF /* base64.m in Sources */,
 				684CDFDB1D94D539006316A5 /* BYNavigationViewController.m in Sources */,
-				681B6C3F1EE4F744006F8CDF /* WXApiManager.m in Sources */,
 				6844C47A1E76925D00AA6D0E /* BYLineChartView.m in Sources */,
 				6856B8571D6A97C700161109 /* UIButton+AFNetworking.m in Sources */,
 				6856B87B1D6A9AE200161109 /* AFNetworkReachabilityManager.m in Sources */,
@@ -1778,6 +1799,7 @@
 				6856B85F1D6A97C700161109 /* UIWebView+AFNetworking.m in Sources */,
 				684B0A471D65499700505A9C /* ViewController.m in Sources */,
 				6856B8B91D6AF34900161109 /* MKAnnotationView+WebCache.m in Sources */,
+				681B6C561EE5363B006F8CDF /* WXApiManager.m in Sources */,
 				6856B87F1D6A9AE200161109 /* AFURLRequestSerialization.m in Sources */,
 				6892DE511E67B60B00BB9D84 /* NSString+MISEmoji.m in Sources */,
 				6892DE571E67B60B00BB9D84 /* UIActionSheet+Block.m in Sources */,
@@ -1871,7 +1893,6 @@
 				681B6BB41EDFEA62006F8CDF /* BYPayViewController.m in Sources */,
 				681B6C2A1EE00250006F8CDF /* base64.m in Sources */,
 				684CDFDC1D94D539006316A5 /* BYNavigationViewController.m in Sources */,
-				681B6C401EE4F744006F8CDF /* WXApiManager.m in Sources */,
 				6844C47B1E76925D00AA6D0E /* BYLineChartView.m in Sources */,
 				6856B8581D6A97C700161109 /* UIButton+AFNetworking.m in Sources */,
 				6856B87C1D6A9AE200161109 /* AFNetworkReachabilityManager.m in Sources */,
@@ -1912,6 +1933,7 @@
 				6856B8601D6A97C700161109 /* UIWebView+AFNetworking.m in Sources */,
 				684B0A991D654DD900505A9C /* ViewController.m in Sources */,
 				6856B8BA1D6AF34900161109 /* MKAnnotationView+WebCache.m in Sources */,
+				681B6C571EE5363B006F8CDF /* WXApiManager.m in Sources */,
 				6856B8801D6A9AE200161109 /* AFURLRequestSerialization.m in Sources */,
 				6892DE521E67B60B00BB9D84 /* NSString+MISEmoji.m in Sources */,
 				6892DE581E67B60B00BB9D84 /* UIActionSheet+Block.m in Sources */,
