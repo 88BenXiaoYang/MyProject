@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020FFC4E1EE2EF1C005EFDE9 /* WXAPI in Resources */ = {isa = PBXBuildFile; fileRef = 020FFC4D1EE2EF1C005EFDE9 /* WXAPI */; };
+		020FFC4F1EE2EF1C005EFDE9 /* WXAPI in Resources */ = {isa = PBXBuildFile; fileRef = 020FFC4D1EE2EF1C005EFDE9 /* WXAPI */; };
+		020FFC511EE30A05005EFDE9 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 020FFC501EE30A05005EFDE9 /* libWeChatSDK.a */; };
+		020FFC521EE30A1B005EFDE9 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 020FFC501EE30A05005EFDE9 /* libWeChatSDK.a */; };
+		020FFC581EE31A2F005EFDE9 /* WXPay in Resources */ = {isa = PBXBuildFile; fileRef = 020FFC571EE31A2F005EFDE9 /* WXPay */; };
+		020FFC591EE31A2F005EFDE9 /* WXPay in Resources */ = {isa = PBXBuildFile; fileRef = 020FFC571EE31A2F005EFDE9 /* WXPay */; };
+		020FFC5C1EE31ADC005EFDE9 /* WXOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 020FFC5B1EE31ADC005EFDE9 /* WXOrder.m */; };
+		020FFC5D1EE31ADC005EFDE9 /* WXOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 020FFC5B1EE31ADC005EFDE9 /* WXOrder.m */; };
 		681B6BB31EDFEA62006F8CDF /* BYPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6BB21EDFEA62006F8CDF /* BYPayViewController.m */; };
 		681B6BB41EDFEA62006F8CDF /* BYPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6BB21EDFEA62006F8CDF /* BYPayViewController.m */; };
 		681B6BB71EDFF883006F8CDF /* AlipaySDK.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 681B6BB51EDFF883006F8CDF /* AlipaySDK.bundle */; };
@@ -323,6 +331,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		020FFC4D1EE2EF1C005EFDE9 /* WXAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WXAPI; sourceTree = "<group>"; };
+		020FFC501EE30A05005EFDE9 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = Classes/ThirdSupports/WXAPI/libWeChatSDK.a; sourceTree = SOURCE_ROOT; };
+		020FFC571EE31A2F005EFDE9 /* WXPay */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WXPay; sourceTree = "<group>"; };
+		020FFC5A1EE31ADC005EFDE9 /* WXOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXOrder.h; path = Classes/Models/WXPay/WXOrder.h; sourceTree = SOURCE_ROOT; };
+		020FFC5B1EE31ADC005EFDE9 /* WXOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WXOrder.m; path = Classes/Models/WXPay/WXOrder.m; sourceTree = SOURCE_ROOT; };
 		681B6BB11EDFEA62006F8CDF /* BYPayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYPayViewController.h; sourceTree = "<group>"; };
 		681B6BB21EDFEA62006F8CDF /* BYPayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYPayViewController.m; sourceTree = "<group>"; };
 		681B6BB51EDFF883006F8CDF /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
@@ -681,6 +694,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				020FFC511EE30A05005EFDE9 /* libWeChatSDK.a in Frameworks */,
 				681B6C271EE00250006F8CDF /* libssl.a in Frameworks */,
 				681B6BC81EDFFA17006F8CDF /* CoreMotion.framework in Frameworks */,
 				681B6BC51EDFF9F8006F8CDF /* CFNetwork.framework in Frameworks */,
@@ -722,6 +736,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				020FFC521EE30A1B005EFDE9 /* libWeChatSDK.a in Frameworks */,
 				681B6C281EE00250006F8CDF /* libssl.a in Frameworks */,
 				681B6BC91EDFFA21006F8CDF /* CoreMotion.framework in Frameworks */,
 				681B6BC61EDFFA00006F8CDF /* CFNetwork.framework in Frameworks */,
@@ -1118,6 +1133,7 @@
 		684B0A801D654A3B00505A9C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				020FFC571EE31A2F005EFDE9 /* WXPay */,
 				681B6C331EE0184A006F8CDF /* AliPay */,
 				684B0A811D654A3B00505A9C /* A */,
 				684B0A821D654A3B00505A9C /* B */,
@@ -1139,6 +1155,8 @@
 		684B0A821D654A3B00505A9C /* B */ = {
 			isa = PBXGroup;
 			children = (
+				020FFC5A1EE31ADC005EFDE9 /* WXOrder.h */,
+				020FFC5B1EE31ADC005EFDE9 /* WXOrder.m */,
 			);
 			path = B;
 			sourceTree = "<group>";
@@ -1156,6 +1174,7 @@
 		684B0A851D654A3B00505A9C /* ThirdSupports */ = {
 			isa = PBXGroup;
 			children = (
+				020FFC4D1EE2EF1C005EFDE9 /* WXAPI */,
 				681B6BCA1EE00250006F8CDF /* AliAPI */,
 				6856B8971D6AF34900161109 /* SDWebImage */,
 			);
@@ -1335,6 +1354,7 @@
 		6856B86A1D6A9A4A00161109 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				020FFC501EE30A05005EFDE9 /* libWeChatSDK.a */,
 				681B6BC71EDFFA17006F8CDF /* CoreMotion.framework */,
 				681B6BC41EDFF9F8006F8CDF /* CFNetwork.framework */,
 				681B6BC11EDFF9D0006F8CDF /* CoreGraphics.framework */,
@@ -1534,8 +1554,8 @@
 				TargetAttributes = {
 					684B0A3B1D65499700505A9C = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = FJ5FELV34L;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = Z3F649Q24Z;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;
@@ -1557,8 +1577,8 @@
 						TestTargetID = 684B0A3B1D65499700505A9C;
 					};
 					684B0A951D654DD900505A9C = {
-						DevelopmentTeam = FJ5FELV34L;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = Z3F649Q24Z;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -1605,6 +1625,7 @@
 				68BDDECB1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@2x.png in Resources */,
 				6856B8DE1D6BD9BB00161109 /* MISQuanKTIcon@2x.png in Resources */,
 				6856B8E31D6C57F800161109 /* twitterIcon.png in Resources */,
+				020FFC4E1EE2EF1C005EFDE9 /* WXAPI in Resources */,
 				684CDFE11D94D9F6006316A5 /* MISTabOfficeTable@2x.png in Resources */,
 				684CDFF21D9527A0006316A5 /* StarGray@2x.png in Resources */,
 				681FDE9C1E640C8900DD548B /* RM.html in Resources */,
@@ -1613,6 +1634,7 @@
 				68BDDEC51DAF6E52005EA1DE /* MISSendNotifiSelectUnckeck@2x.png in Resources */,
 				68E1F0E61ECBE313002B6B13 /* foods.db in Resources */,
 				684CDFE71D94D9F6006316A5 /* MISTabOfficeTableHL@3x.png in Resources */,
+				020FFC581EE31A2F005EFDE9 /* WXPay in Resources */,
 				6899C7901E55508900FEFAB2 /* tickblue@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1644,6 +1666,7 @@
 				68BDDECC1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@2x.png in Resources */,
 				6856B8DF1D6BD9BB00161109 /* MISQuanKTIcon@2x.png in Resources */,
 				6856B8E41D6C57F800161109 /* twitterIcon.png in Resources */,
+				020FFC4F1EE2EF1C005EFDE9 /* WXAPI in Resources */,
 				684CDFE21D94D9F6006316A5 /* MISTabOfficeTable@2x.png in Resources */,
 				684CDFF31D9527A0006316A5 /* StarGray@2x.png in Resources */,
 				681FDE9D1E640C8900DD548B /* RM.html in Resources */,
@@ -1652,6 +1675,7 @@
 				68BDDEC61DAF6E52005EA1DE /* MISSendNotifiSelectUnckeck@2x.png in Resources */,
 				68E1F0E71ECBE313002B6B13 /* foods.db in Resources */,
 				684CDFE81D94D9F6006316A5 /* MISTabOfficeTableHL@3x.png in Resources */,
+				020FFC591EE31A2F005EFDE9 /* WXPay in Resources */,
 				6899C7911E55508900FEFAB2 /* tickblue@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1670,6 +1694,7 @@
 				6892DE0F1E67B06F00BB9D84 /* BYScrollPagerView.m in Sources */,
 				681B6C361EE0184A006F8CDF /* Order.m in Sources */,
 				68966A4C1E665A97008BE2D9 /* BYDrawImageViewController.m in Sources */,
+				020FFC5C1EE31ADC005EFDE9 /* WXOrder.m in Sources */,
 				6892DE9B1E6D34F200BB9D84 /* MISPinyin.m in Sources */,
 				6856B8C71D6AF34900161109 /* SDWebImageManager.m in Sources */,
 				6892DE971E6D34B200BB9D84 /* Array.c in Sources */,
@@ -1802,6 +1827,7 @@
 				6892DE101E67B06F00BB9D84 /* BYScrollPagerView.m in Sources */,
 				681B6C371EE0184A006F8CDF /* Order.m in Sources */,
 				68966A4D1E665A97008BE2D9 /* BYDrawImageViewController.m in Sources */,
+				020FFC5D1EE31ADC005EFDE9 /* WXOrder.m in Sources */,
 				6892DE9C1E6D34F200BB9D84 /* MISPinyin.m in Sources */,
 				6856B8C81D6AF34900161109 /* SDWebImageManager.m in Sources */,
 				6892DE981E6D34B200BB9D84 /* Array.c in Sources */,
@@ -2008,12 +2034,13 @@
 		684B0A6A1D65499700505A9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppAIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppALaunchImage;
 				CODE_SIGN_ENTITLEMENTS = AppA/AppA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Kebing Mao (VBN29H3VZJ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = FJ5FELV34L;
+				DEVELOPMENT_TEAM = Z3F649Q24Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -2028,6 +2055,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Classes/ThirdSupports/AliAPI",
+					"$(SRCROOT)/Classes/ThirdSupports/WXAPI",
 				);
 				INFOPLIST_FILE = "AppA/appA-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2035,23 +2063,31 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Classes/ThirdSupports/AliAPI",
+					"$(PROJECT_DIR)/Classes/ThirdSupports/WXAPI",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aspire.ynteacher;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AppA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "15943d94-1f0e-4fe8-b807-07aca7829de1";
-				PROVISIONING_PROFILE_SPECIFIER = YNJXTTeacherDevelopment;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
 		};
 		684B0A6B1D65499700505A9C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppAIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppALaunchImage;
 				CODE_SIGN_ENTITLEMENTS = AppA/AppA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Aspire Information Technology (Beijing) Co., Ltd.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = FJ5FELV34L;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z3F649Q24Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -2061,6 +2097,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Classes/ThirdSupports/AliAPI",
+					"$(SRCROOT)/Classes/ThirdSupports/WXAPI",
 				);
 				INFOPLIST_FILE = "AppA/appA-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2068,11 +2105,17 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Classes/ThirdSupports/AliAPI",
+					"$(PROJECT_DIR)/Classes/ThirdSupports/WXAPI",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aspire.ynteacher;
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AppA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1dae47cf-ce61-4d8c-98ae-442e5ee99404";
-				PROVISIONING_PROFILE_SPECIFIER = YNJXTTeacherInhouse;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;
 		};
@@ -2130,7 +2173,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppBIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppBLaunchImage;
 				CODE_SIGN_ENTITLEMENTS = AppB/AppB.entitlements;
-				DEVELOPMENT_TEAM = FJ5FELV34L;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z3F649Q24Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -2148,11 +2192,14 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Classes/ThirdSupports/AliAPI",
+					"$(PROJECT_DIR)/Classes/ThirdSupports/WXAPI",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.AppB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "24ce677a-bbcc-4c82-95a3-01dbdf1c5968";
-				PROVISIONING_PROFILE_SPECIFIER = XcodeWildcardDevelopment;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
 		};
@@ -2162,8 +2209,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppBIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppBLaunchImage;
 				CODE_SIGN_ENTITLEMENTS = AppB/AppB.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = FJ5FELV34L;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z3F649Q24Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -2176,11 +2223,13 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Classes/ThirdSupports/AliAPI",
+					"$(PROJECT_DIR)/Classes/ThirdSupports/WXAPI",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.AppB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b4df0898-36d1-419c-bbce-0faa5b77e24b";
-				PROVISIONING_PROFILE_SPECIFIER = XcodeWildcardInHouse;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;
 		};

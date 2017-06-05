@@ -10,6 +10,10 @@
 #import <AlipaySDK/AlipaySDK.h>
 #import "Order.h"
 #import "RSADataSigner.h"
+#import "WXApi.h"
+#import "BYUtils.h"
+#import "BYHttpEngine.h"
+#import "WXOrder.h"
 
 @interface BYPayViewController ()
 
@@ -45,6 +49,7 @@
 - (void)goWXPay:(UIButton *)sender
 {
 	NSLog(@"微信支付");
+    [self doWXPay];
 }
 
 #pragma mark- Net request
@@ -183,6 +188,129 @@
 			NSLog(@"reslut = %@",resultDic);
 		}];
 	}
+}
+
+- (void)doWXPay
+{
+    NSMutableDictionary *orderInfoDict = [NSMutableDictionary dictionary];
+    orderInfoDict[@"price"] = @(0.01);// 交易总价格 微信支付，金额单位为分
+    orderInfoDict[@"livetime"] = @(1);// 使用期限 单位：月
+    orderInfoDict[@"userId"] = @(4769027);// 用户ID
+    orderInfoDict[@"mobile"] = @"18810047219";// 订购用户手机号
+    orderInfoDict[@"appId"] = @"6111611"; // 应用ID //成长帮手appId:9071052；乐学吧appId:5271404；拍照答疑appId:6111611
+    orderInfoDict[@"prodSubject"] = @"测试"; // 订购商品名称
+    orderInfoDict[@"prodBody"] = @"微信支付测试";    // 商品信息
+    orderInfoDict[@"comboCode"] = @"gl_jt_hjy_dy1"; // 套餐编码
+    orderInfoDict[@"userType"] = @(1);
+    orderInfoDict[@"areaCode"] = @(0);
+    orderInfoDict[@"channel"] = @"2"; // 支付渠道：1（AliPay），2（WXPay）
+    
+    /*
+    //微信支付相关
+    if (![WXApi isWXAppInstalled]) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"您还没有安装微信，请先下载微信客户端" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"去下载", nil];
+        [alertView show];
+        return;
+    }
+    
+    if (![WXApi isWXAppSupportApi]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"您当前的微信版本不支持支付功能" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+        return;
+    }
+     */
+    
+    [BYHttpEngine obtainAppComboOrderNoWithOrderInfo:orderInfoDict completionHandler:^(NSData *responseData) {
+        NSDictionary *dataDict = [responseData JSONObject];
+        
+        NSString *resultState = [dataDict stringValueForKey:@"result"];
+        //成功时，取对应订单号
+        if ([resultState isEqualToString:@"1"]) {
+            NSArray *dataArr = [dataDict arrayValueForKey:@"datalist"];
+            
+            WXOrder *orderM = nil;
+            for (NSDictionary *orderDict in dataArr) {
+                orderM = [WXOrder appComboOrderModelWithDictionary:orderDict];
+            }
+            
+            [self appOrderWithPrePayId:orderM.prepayID];
+            
+        } else {
+        }
+        
+    } errorHandler:^(NSError *error) {
+    }];
+}
+
+- (NSString *)appOrderWithPrePayId:(NSString *)prePayId
+{
+    NSString *parterid;
+    NSString *appid;
+    NSString *appKey;
+    
+    parterid = WXAppPartnerid;
+    appid    = WXAppID;
+    appKey   = WXAPPKey;
+    
+    //调起微信支付
+    PayReq* request    = [[PayReq alloc] init];
+    request.partnerId  = parterid;
+    request.prepayId   = prePayId;
+    request.package    = @"Sign=WXPay";
+    request.nonceStr   = [self generate32BitRandomString];
+    request.timeStamp  =  [[NSDate date] timeIntervalSince1970];
+    
+    NSDictionary *parmDic = @{@"appid":appid,
+                              @"partnerid":request.partnerId,
+                              @"prepayid":request.prepayId,
+                              @"package":request.package,
+                              @"noncestr":request.nonceStr,
+                              @"timestamp":@(request.timeStamp)};
+    
+    request.sign       = [self generateSignWithDictionary:parmDic withAppKey:appKey];
+    [WXApi sendReq:request];
+    //日志输出
+    
+    return @"";
+}
+
+- (NSString *)generate32BitRandomString {
+    NSString *string = [[NSString alloc]init];
+    for (int i = 0; i < 32; i++) {
+        int number = arc4random() % 36;
+        if (number < 10) {
+            int figure = arc4random() % 10;
+            NSString *tempString = [NSString stringWithFormat:@"%d", figure];
+            string = [string stringByAppendingString:tempString];
+        }else {
+            int figure = (arc4random() % 26) + 97;
+            char character = figure;
+            NSString *tempString = [NSString stringWithFormat:@"%c", character];
+            string = [string stringByAppendingString:tempString];
+        }
+    }
+    return string;
+}
+
+- (NSString *)generateSignWithDictionary:(NSDictionary *)dic withAppKey:(NSString *)appKey{
+    //排序
+    NSArray* sortedKeys = [dic.allKeys sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        return [obj1 compare:obj2];
+    }];
+    
+    //签名
+    __block NSString* paraString = @"";
+    [sortedKeys enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        NSString* value = dic[obj];
+        paraString = [NSString stringWithFormat:@"%@%@=%@&",paraString, obj,  value];
+    }];
+    
+    paraString = [NSString stringWithFormat:@"%@key=%@",paraString,appKey];
+    paraString = [[BYUtils md5:paraString] uppercaseString];
+    
+    NSLog(@"%s paraString :%@",__func__,paraString);
+    
+    return paraString;
 }
 
 #pragma mark- Setter and getter

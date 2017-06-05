@@ -89,5 +89,18 @@
 #define TEXT_SIGNSTRING         @"dqjq2oV%2B8G19gbuZUB8FtpZ3b5LaErD9wokWn6V71xziQdiFyTNbwvy1dtWTLeiSvVTHwlF6fUQQj9ZG50uKE0IV0JTX5N70u99LJPZrPcaDk5PVzoqn8XYxdBb1LEYFR2kat%2BAapL8%2FgMQZRR7QnYEiY%2BNZiAJdHip9Hqaqhs4%3D"
 
 #define TEXT_OrderInfoEncoded   @"app_id=2016061201504543&biz_content=%7B%22timeout_express%22%3A%2230m%22%2C%22seller_id%22%3A%22%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%2C%22total_amount%22%3A%220.01%22%2C%22subject%22%3A%221%22%2C%22body%22%3A%22%E6%88%91%E6%98%AF%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE%22%2C%22out_trade_no%22%3A%221AF31ZYDKB34RJX%22%7D&charset=utf-8&method=alipay.trade.app.pay&sign_type=RSA&timestamp=2017-06-02%2017%3A00%3A30&version=1.0"
+/******************************** Alipay **************************************/
+
+/******************************** WXpay **************************************/
+#define WXAppID               @"wxba37c5c57006b455"
+#define WXAppSecret           @"a51ac549069fc1f6a5319187aa108022"
+#define WXAppPartnerid        @"1353983002"
+#define WXAPPKey              @"qwertyuiop1234567890qwertyuiop12"
+/******************************** AWXpay **************************************/
+
+/******************************** 请求加密相关 **************************************/
+#define   app_key                       @"IhNt7ft4GTEkG3KsGX9F/g=="
+#define   app_version                   @"1.3"
+/******************************** 请求加密相关 **************************************/
 
 #endif /* Common_h */

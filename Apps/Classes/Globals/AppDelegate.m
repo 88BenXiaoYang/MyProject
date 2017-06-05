@@ -11,8 +11,9 @@
 #import "BYMViewController.h"
 #import <Bugly/Bugly.h>
 #import <AlipaySDK/AlipaySDK.h>
+#import "WXApi.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <WXApiDelegate>
 
 @end
 
@@ -39,6 +40,9 @@
 	[self.window makeKeyAndVisible];
 	
 	[BYAppStyle setupStyle];
+    
+    //注册微信
+    [WXApi registerApp:WXAppID];
 	
 	return YES;
 }
@@ -67,24 +71,32 @@
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
 {
+    //alipay
 	if ([url.host isEqualToString:@"safepay"]) {
 		//跳转支付宝钱包进行支付，处理支付结果
 		[[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
 			NSLog(@"result = %@",resultDic);
 		}];
 	}
+    
+    //wxpay
+    [WXApi handleOpenURL:url delegate:self];
 	
 	return YES;
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
+    //alipay
 	if ([url.host isEqualToString:@"safepay"]) {
 		//跳转支付宝钱包进行支付，处理支付结果
 		[[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
 			NSLog(@"result = %@",resultDic);
 		}];
 	}
+    
+    //wxpay
+    [WXApi handleOpenURL:url delegate:self];
 	
 	return YES;
 }
