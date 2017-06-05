@@ -7,10 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import "BYMainViewController.h"
-#import "BYMViewController.h"
 #import <Bugly/Bugly.h>
 #import <AlipaySDK/AlipaySDK.h>
+#import <TencentOpenAPI/TencentOAuth.h>
+#import "BYMainViewController.h"
+#import "BYMViewController.h"
 #import "WXApiManager.h"
 #import "WXApi.h"
 
@@ -44,6 +45,9 @@
     
     //注册微信
     [WXApi registerApp:WXAppID];
+	
+	//注册QQ
+	TencentOAuth *tencentAuthor = [[TencentOAuth alloc] initWithAppId:QQAppID andDelegate:nil];
 	
 	return YES;
 }

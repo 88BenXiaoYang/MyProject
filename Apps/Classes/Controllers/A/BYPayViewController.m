@@ -8,17 +8,21 @@
 
 #import "BYPayViewController.h"
 #import <AlipaySDK/AlipaySDK.h>
+#import <TencentOpenAPI/QQApiInterface.h>
 #import "Order.h"
 #import "RSADataSigner.h"
 #import "WXApi.h"
 #import "BYUtils.h"
 #import "BYHttpEngine.h"
 #import "WXOrder.h"
+#import "WXApiRequestHandler.h"
+#import "WXApiResponseHandler.h"
 
 @interface BYPayViewController ()
 
 @property (nonatomic, strong) UIButton *aliPayBtn;
 @property (nonatomic, strong) UIButton *wxPayBtn;
+@property (nonatomic, strong) UIButton *shareBtn;
 
 @end
 
@@ -52,6 +56,123 @@
     [self doWXPay];
 }
 
+- (void)goShare:(UIButton *)sender
+{
+	NSString *shareURL = @"http://www.cqxxt.com/public/cqweb/teachershare/18.html";
+	NSString *title = @"一起回忆那儿时的记忆：哪些是你小时候吃过的！！";
+	NSString *description = @"六月赞歌，莺燕纷飞，花样年华，共享欢乐。";
+	
+	//微信好友分享
+	[self shareWeChatWithUrl:shareURL title:title description:description];
+	
+	//微信朋友圈分享
+//	[self ShareMomentsWithUrl:shareURL title:title description:description];
+	
+	//QQ好友分享
+//	[self shareQQWithUrl:shareURL title:title description:description];
+	
+	//QQ空间分享
+//	[self shareQQZoneWithUrl:shareURL title:title description:description];
+}
+
+//Share Methods
+//微信好友分享
+- (void)shareWeChatWithUrl:(NSString *)url title:(NSString *)title description:(NSString *)description
+{
+	if (![WXApi isWXAppInstalled] || ![WXApi isWXAppSupportApi]) {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"未安装微信或当前版本不支持！" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+		[alert show];
+		return;
+	}
+	
+	[WXApiRequestHandler sendLinkURL:url
+							 TagName:nil
+							   Title:title
+						 Description:description
+						  ThumbImage:Image_With_Name(@"QRSharePImage")
+							 InScene:WXSceneSession];
+}
+
+//微信朋友圈分享
+- (void)ShareMomentsWithUrl:(NSString *)url title:(NSString *)title description:(NSString *)description
+{
+	if (![WXApi isWXAppInstalled] || ![WXApi isWXAppSupportApi]) {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"未安装微信或当前版本不支持！" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+		[alert show];
+		return;
+	}
+	[WXApiRequestHandler sendLinkURL:url
+							 TagName:nil
+							   Title:title
+						 Description:description
+						  ThumbImage:Image_With_Name(@"QRSharePImage")
+							 InScene:WXSceneTimeline];
+}
+
+//QQ好友分享
+- (void)shareQQWithUrl:(NSString *)aUrl title:(NSString *)title description:(NSString *)description
+{
+	UIImage *pic = Image_With_Name(@"QRSharePImage");
+	NSData* data = UIImageJPEGRepresentation(pic, 1);
+	NSURL* url = [NSURL URLWithString:aUrl];
+	
+	QQApiURLObject *shareURLObj = [QQApiURLObject objectWithURL:url
+														  title:title
+													description:description
+											   previewImageData:data
+											  targetContentType:QQApiURLTargetTypeNews];
+	SendMessageToQQReq* req = [SendMessageToQQReq reqWithContent:shareURLObj];
+	QQApiSendResultCode resultCode = [QQApiInterface sendReq:req];
+	[self handleSendResult:resultCode];
+}
+
+//QQ空间分享
+- (void)shareQQZoneWithUrl:(NSString *)aUrl title:(NSString *)title description:(NSString *)description
+{
+	UIImage *pic = Image_With_Name(@"QRSharePImage");
+	NSData* data = UIImageJPEGRepresentation(pic, 1);
+	NSURL* url = [NSURL URLWithString:aUrl];
+	
+	QQApiURLObject *shareURLObj = [QQApiURLObject objectWithURL:url
+														  title:title
+													description:description
+											   previewImageData:data
+											  targetContentType:QQApiURLTargetTypeNews];
+	SendMessageToQQReq* req = [SendMessageToQQReq reqWithContent:shareURLObj];
+	QQApiSendResultCode resultCode = [QQApiInterface SendReqToQZone:req];
+	[self handleSendResult:resultCode];
+}
+
+- (void)handleSendResult:(QQApiSendResultCode)sendResult
+{
+	switch (sendResult)
+	{
+		case EQQAPIQQNOTINSTALLED:
+		case EQQAPIQQNOTSUPPORTAPI:
+		{
+			UIAlertView *msgbox = [[UIAlertView alloc] initWithTitle:@"提示" message:@"未安装手机QQ或当前版本不支持！" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+			[msgbox show];
+			break;
+		}
+		case EQQAPISENDFAILD:
+		{
+			UIAlertView *msgbox = [[UIAlertView alloc] initWithTitle:@"提示" message:@"发送失败！" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+			[msgbox show];
+			break;
+		}
+		case EQQAPIVERSIONNEEDUPDATE:
+		{
+			UIAlertView *msgbox = [[UIAlertView alloc] initWithTitle:@"提示" message:@"当前QQ版本太低，需要更新！" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+			[msgbox show];
+			break;
+		}
+		default:
+		{
+			break;
+		}
+	}
+}
+
 #pragma mark- Net request
 #pragma mark- Private methods
 - (void)initSetting
@@ -64,6 +185,7 @@
 {
 	[self.view addSubview:self.aliPayBtn];
 	[self.view addSubview:self.wxPayBtn];
+	[self.view addSubview:self.shareBtn];
 }
 
 - (NSString *)generateTradeNO
@@ -325,7 +447,7 @@
 - (UIButton *)aliPayBtn
 {
 	if (!_aliPayBtn) {
-		_aliPayBtn = [[UIButton alloc] initWithFrame:CGRectMake(50, 50, 100, 40)];
+		_aliPayBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 50, 100, 40)];
 		[_aliPayBtn setBackgroundColor:WHITE_COLOR];
 		_aliPayBtn.layer.cornerRadius = 5;
 		[_aliPayBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -338,7 +460,7 @@
 - (UIButton *)wxPayBtn
 {
 	if (!_wxPayBtn) {
-		_wxPayBtn = [[UIButton alloc] initWithFrame:CGRectMake(50, 150, 100, 40)];
+		_wxPayBtn = [[UIButton alloc] initWithFrame:CGRectMake(150, 50, 100, 40)];
 		[_wxPayBtn setBackgroundColor:WHITE_COLOR];
 		_wxPayBtn.layer.cornerRadius = 5;
 		[_wxPayBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -346,6 +468,19 @@
 		[_wxPayBtn addTarget:self action:@selector(goWXPay:) forControlEvents:UIControlEventTouchUpInside];
 	}
 	return _wxPayBtn;
+}
+
+- (UIButton *)shareBtn
+{
+	if (!_shareBtn) {
+		_shareBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 150, 100, 40)];
+		[_shareBtn setBackgroundColor:WHITE_COLOR];
+		_shareBtn.layer.cornerRadius = 5;
+		[_shareBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+		[_shareBtn setTitle:@"shareBtn" forState:UIControlStateNormal];
+		[_shareBtn addTarget:self action:@selector(goShare:) forControlEvents:UIControlEventTouchUpInside];
+	}
+	return _shareBtn;
 }
 
 #pragma mark- Square area
