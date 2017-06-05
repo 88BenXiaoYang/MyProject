@@ -48,6 +48,7 @@
 	
 	//注册QQ
 	TencentOAuth *tencentAuthor = [[TencentOAuth alloc] initWithAppId:QQAppID andDelegate:nil];
+    NSLog(@"tencentAuthor %@", tencentAuthor);
 	
 	return YES;
 }

@@ -43,7 +43,6 @@
 		681B6C321EE00250006F8CDF /* RSADataVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C241EE00250006F8CDF /* RSADataVerifier.m */; };
 		681B6C361EE0184A006F8CDF /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C351EE0184A006F8CDF /* Order.m */; };
 		681B6C371EE0184A006F8CDF /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C351EE0184A006F8CDF /* Order.m */; };
-		681B6C4C1EE535DA006F8CDF /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681B6C471EE535DA006F8CDF /* libWeChatSDK.a */; };
 		681B6C4D1EE535DA006F8CDF /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 681B6C481EE535DA006F8CDF /* README.txt */; };
 		681B6C5B1EE5522E006F8CDF /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C5A1EE5522E006F8CDF /* WXApiManager.m */; };
 		681B6C5C1EE5522E006F8CDF /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C5A1EE5522E006F8CDF /* WXApiManager.m */; };
@@ -744,7 +743,6 @@
 				681B6C251EE00250006F8CDF /* libcrypto.a in Frameworks */,
 				684CDF9D1D922EB5006316A5 /* MapKit.framework in Frameworks */,
 				687F587D1D75317400C673D8 /* CoreTelephony.framework in Frameworks */,
-				681B6C4C1EE535DA006F8CDF /* libWeChatSDK.a in Frameworks */,
 				687F58831D75351100C673D8 /* UMMobClick.framework in Frameworks */,
 				684CDFEE1D94F6EC006316A5 /* Masonry.framework in Frameworks */,
 				6856B8661D6A98C400161109 /* SystemConfiguration.framework in Frameworks */,
@@ -1644,7 +1642,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = BXY;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = BY;
 				TargetAttributes = {
 					684B0A3B1D65499700505A9C = {
@@ -2068,8 +2066,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -2112,8 +2112,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -2140,7 +2142,6 @@
 		684B0A6A1D65499700505A9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppAIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppALaunchImage;
 				CODE_SIGN_ENTITLEMENTS = AppA/AppA.entitlements;
@@ -2188,7 +2189,6 @@
 		684B0A6B1D65499700505A9C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppAIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppALaunchImage;
 				CODE_SIGN_ENTITLEMENTS = AppA/AppA.entitlements;
