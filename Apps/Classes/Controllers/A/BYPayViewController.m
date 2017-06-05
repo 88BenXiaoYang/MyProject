@@ -185,7 +185,15 @@
 		
 		// NOTE: 调用支付结果开始支付
 		[[AlipaySDK defaultService] payOrder:orderString fromScheme:appScheme callback:^(NSDictionary *resultDic) {
-			NSLog(@"reslut = %@",resultDic);
+			NSLog(@"Alipay callback reslut = %@",resultDic);
+			//注：客户端若已安装支付宝客户端不走这段代码，需要在AppDelegate的 openURL:(NSURL *)url 里面实现对应支付结果回调操作
+			//客户端若未安装支付宝客户端，才执行这段代码
+			NSString *resultStatusStr = [resultDic objectForKey:@"resultStatus"];
+			if ([resultStatusStr isEqualToString:@"9000"]) {
+				NSString *orderPromptInfo = [NSString stringWithFormat:@"支付宝-网页支付-支付成功!"];
+				UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"支付结果" message:orderPromptInfo delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+				[alert show];
+			}
 		}];
 	}
 }

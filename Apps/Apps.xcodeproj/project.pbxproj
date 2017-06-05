@@ -47,6 +47,8 @@
 		681B6C321EE00250006F8CDF /* RSADataVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C241EE00250006F8CDF /* RSADataVerifier.m */; };
 		681B6C361EE0184A006F8CDF /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C351EE0184A006F8CDF /* Order.m */; };
 		681B6C371EE0184A006F8CDF /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C351EE0184A006F8CDF /* Order.m */; };
+		681B6C3F1EE4F744006F8CDF /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C3E1EE4F744006F8CDF /* WXApiManager.m */; };
+		681B6C401EE4F744006F8CDF /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C3E1EE4F744006F8CDF /* WXApiManager.m */; };
 		681FDE9C1E640C8900DD548B /* RM.html in Resources */ = {isa = PBXBuildFile; fileRef = 681FDE9B1E640C8900DD548B /* RM.html */; };
 		681FDE9D1E640C8900DD548B /* RM.html in Resources */ = {isa = PBXBuildFile; fileRef = 681FDE9B1E640C8900DD548B /* RM.html */; };
 		681FDEB81E65542A00DD548B /* BYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDEB71E65542A00DD548B /* BYTableViewController.m */; };
@@ -435,6 +437,8 @@
 		681B6C241EE00250006F8CDF /* RSADataVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSADataVerifier.m; sourceTree = "<group>"; };
 		681B6C341EE0184A006F8CDF /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
 		681B6C351EE0184A006F8CDF /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
+		681B6C3D1EE4F744006F8CDF /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
+		681B6C3E1EE4F744006F8CDF /* WXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiManager.m; sourceTree = "<group>"; };
 		681FDE9B1E640C8900DD548B /* RM.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RM.html; sourceTree = "<group>"; };
 		681FDEB61E65542A00DD548B /* BYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYTableViewController.h; sourceTree = "<group>"; };
 		681FDEB71E65542A00DD548B /* BYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYTableViewController.m; sourceTree = "<group>"; };
@@ -883,6 +887,15 @@
 			path = AliPay;
 			sourceTree = "<group>";
 		};
+		681B6C3C1EE4F732006F8CDF /* Tmp */ = {
+			isa = PBXGroup;
+			children = (
+				681B6C3D1EE4F744006F8CDF /* WXApiManager.h */,
+				681B6C3E1EE4F744006F8CDF /* WXApiManager.m */,
+			);
+			name = Tmp;
+			sourceTree = "<group>";
+		};
 		681FDEBA1E655E6200DD548B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -1174,6 +1187,7 @@
 		684B0A851D654A3B00505A9C /* ThirdSupports */ = {
 			isa = PBXGroup;
 			children = (
+				681B6C3C1EE4F732006F8CDF /* Tmp */,
 				020FFC4D1EE2EF1C005EFDE9 /* WXAPI */,
 				681B6BCA1EE00250006F8CDF /* AliAPI */,
 				6856B8971D6AF34900161109 /* SDWebImage */,
@@ -1554,8 +1568,8 @@
 				TargetAttributes = {
 					684B0A3B1D65499700505A9C = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = Z3F649Q24Z;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = FJ5FELV34L;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;
@@ -1723,6 +1737,7 @@
 				681B6BB31EDFEA62006F8CDF /* BYPayViewController.m in Sources */,
 				681B6C291EE00250006F8CDF /* base64.m in Sources */,
 				684CDFDB1D94D539006316A5 /* BYNavigationViewController.m in Sources */,
+				681B6C3F1EE4F744006F8CDF /* WXApiManager.m in Sources */,
 				6844C47A1E76925D00AA6D0E /* BYLineChartView.m in Sources */,
 				6856B8571D6A97C700161109 /* UIButton+AFNetworking.m in Sources */,
 				6856B87B1D6A9AE200161109 /* AFNetworkReachabilityManager.m in Sources */,
@@ -1856,6 +1871,7 @@
 				681B6BB41EDFEA62006F8CDF /* BYPayViewController.m in Sources */,
 				681B6C2A1EE00250006F8CDF /* base64.m in Sources */,
 				684CDFDC1D94D539006316A5 /* BYNavigationViewController.m in Sources */,
+				681B6C401EE4F744006F8CDF /* WXApiManager.m in Sources */,
 				6844C47B1E76925D00AA6D0E /* BYLineChartView.m in Sources */,
 				6856B8581D6A97C700161109 /* UIButton+AFNetworking.m in Sources */,
 				6856B87C1D6A9AE200161109 /* AFNetworkReachabilityManager.m in Sources */,
@@ -2038,9 +2054,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppAIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppALaunchImage;
 				CODE_SIGN_ENTITLEMENTS = AppA/AppA.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Kebing Mao (VBN29H3VZJ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kebing Mao (SDGDXRX797)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = Z3F649Q24Z;
+				DEVELOPMENT_TEAM = FJ5FELV34L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -2056,6 +2072,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/Classes/ThirdSupports/AliAPI",
 					"$(SRCROOT)/Classes/ThirdSupports/WXAPI",
+					"$(SRCROOT)/Classes/ThirdSupports/WXAPI/WXApiManager",
 				);
 				INFOPLIST_FILE = "AppA/appA-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2070,10 +2087,10 @@
 					"-Objc",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.AppA;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aspire.cqparent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "a25e152f-9e78-46d4-81c8-19b743307cec";
+				PROVISIONING_PROFILE_SPECIFIER = CQJXTParentDevelopment;
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
@@ -2086,8 +2103,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppALaunchImage;
 				CODE_SIGN_ENTITLEMENTS = AppA/AppA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Aspire Information Technology (Beijing) Co., Ltd.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = Z3F649Q24Z;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = FJ5FELV34L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -2098,6 +2115,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/Classes/ThirdSupports/AliAPI",
 					"$(SRCROOT)/Classes/ThirdSupports/WXAPI",
+					"$(SRCROOT)/Classes/ThirdSupports/WXAPI/WXApiManager",
 				);
 				INFOPLIST_FILE = "AppA/appA-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2111,10 +2129,10 @@
 					"-Objc",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.AppA;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aspire.cqparent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "b52d010a-74a5-44b7-b40d-d4170dc54f2d";
+				PROVISIONING_PROFILE_SPECIFIER = CQJXTParentInhouse;
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;

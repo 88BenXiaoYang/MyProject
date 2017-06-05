@@ -11,9 +11,10 @@
 #import "BYMViewController.h"
 #import <Bugly/Bugly.h>
 #import <AlipaySDK/AlipaySDK.h>
+#import "WXApiManager.h"
 #import "WXApi.h"
 
-@interface AppDelegate () <WXApiDelegate>
+@interface AppDelegate ()
 
 @end
 
@@ -75,12 +76,18 @@
 	if ([url.host isEqualToString:@"safepay"]) {
 		//跳转支付宝钱包进行支付，处理支付结果
 		[[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
-			NSLog(@"result = %@",resultDic);
+			NSLog(@"Alipay reslut = %@",resultDic);
+			NSString *resultStatusStr = [resultDic objectForKey:@"resultStatus"];
+			if ([resultStatusStr isEqualToString:@"9000"]) {
+				NSString *orderPromptInfo = [NSString stringWithFormat:@"支付宝-客户端支付-支付成功!"];
+				UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"支付结果" message:orderPromptInfo delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+				[alert show];
+			}
 		}];
 	}
     
     //wxpay
-    [WXApi handleOpenURL:url delegate:self];
+    [WXApi handleOpenURL:url delegate:[WXApiManager sharedManager]];
 	
 	return YES;
 }
@@ -91,12 +98,18 @@
 	if ([url.host isEqualToString:@"safepay"]) {
 		//跳转支付宝钱包进行支付，处理支付结果
 		[[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
-			NSLog(@"result = %@",resultDic);
+			NSLog(@"Alipay reslut = %@",resultDic);
+			NSString *resultStatusStr = [resultDic objectForKey:@"resultStatus"];
+			if ([resultStatusStr isEqualToString:@"9000"]) {
+				NSString *orderPromptInfo = [NSString stringWithFormat:@"支付宝-客户端支付-支付成功!"];
+				UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"支付结果" message:orderPromptInfo delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+				[alert show];
+			}
 		}];
 	}
     
     //wxpay
-    [WXApi handleOpenURL:url delegate:self];
+    [WXApi handleOpenURL:url delegate:[WXApiManager sharedManager]];
 	
 	return YES;
 }
