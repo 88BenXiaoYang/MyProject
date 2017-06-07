@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		020FFC511EE30A05005EFDE9 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 020FFC501EE30A05005EFDE9 /* libWeChatSDK.a */; };
 		020FFC521EE30A1B005EFDE9 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 020FFC501EE30A05005EFDE9 /* libWeChatSDK.a */; };
 		020FFC5C1EE31ADC005EFDE9 /* WXOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 020FFC5B1EE31ADC005EFDE9 /* WXOrder.m */; };
 		020FFC5D1EE31ADC005EFDE9 /* WXOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 020FFC5B1EE31ADC005EFDE9 /* WXOrder.m */; };
@@ -43,7 +42,6 @@
 		681B6C321EE00250006F8CDF /* RSADataVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C241EE00250006F8CDF /* RSADataVerifier.m */; };
 		681B6C361EE0184A006F8CDF /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C351EE0184A006F8CDF /* Order.m */; };
 		681B6C371EE0184A006F8CDF /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C351EE0184A006F8CDF /* Order.m */; };
-		681B6C4C1EE535DA006F8CDF /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681B6C471EE535DA006F8CDF /* libWeChatSDK.a */; };
 		681B6C4D1EE535DA006F8CDF /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 681B6C481EE535DA006F8CDF /* README.txt */; };
 		681B6C5B1EE5522E006F8CDF /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C5A1EE5522E006F8CDF /* WXApiManager.m */; };
 		681B6C5C1EE5522E006F8CDF /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6C5A1EE5522E006F8CDF /* WXApiManager.m */; };
@@ -61,6 +59,7 @@
 		681B6C871EE55ED2006F8CDF /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 681B6C851EE55ED2006F8CDF /* TencentOpenApi_IOS_Bundle.bundle */; };
 		681B6C891EE55EE3006F8CDF /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 681B6C881EE55EE3006F8CDF /* TencentOpenAPI.framework */; };
 		681B6C8A1EE55EE3006F8CDF /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 681B6C881EE55EE3006F8CDF /* TencentOpenAPI.framework */; };
+		681B6C8B1EE79758006F8CDF /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 020FFC501EE30A05005EFDE9 /* libWeChatSDK.a */; };
 		681FDE9C1E640C8900DD548B /* RM.html in Resources */ = {isa = PBXBuildFile; fileRef = 681FDE9B1E640C8900DD548B /* RM.html */; };
 		681FDE9D1E640C8900DD548B /* RM.html in Resources */ = {isa = PBXBuildFile; fileRef = 681FDE9B1E640C8900DD548B /* RM.html */; };
 		681FDEB81E65542A00DD548B /* BYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDEB71E65542A00DD548B /* BYTableViewController.m */; };
@@ -727,7 +726,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				020FFC511EE30A05005EFDE9 /* libWeChatSDK.a in Frameworks */,
+				681B6C8B1EE79758006F8CDF /* libWeChatSDK.a in Frameworks */,
 				681B6C271EE00250006F8CDF /* libssl.a in Frameworks */,
 				681B6BC81EDFFA17006F8CDF /* CoreMotion.framework in Frameworks */,
 				681B6BC51EDFF9F8006F8CDF /* CFNetwork.framework in Frameworks */,
@@ -744,7 +743,6 @@
 				681B6C251EE00250006F8CDF /* libcrypto.a in Frameworks */,
 				684CDF9D1D922EB5006316A5 /* MapKit.framework in Frameworks */,
 				687F587D1D75317400C673D8 /* CoreTelephony.framework in Frameworks */,
-				681B6C4C1EE535DA006F8CDF /* libWeChatSDK.a in Frameworks */,
 				687F58831D75351100C673D8 /* UMMobClick.framework in Frameworks */,
 				684CDFEE1D94F6EC006316A5 /* Masonry.framework in Frameworks */,
 				6856B8661D6A98C400161109 /* SystemConfiguration.framework in Frameworks */,
