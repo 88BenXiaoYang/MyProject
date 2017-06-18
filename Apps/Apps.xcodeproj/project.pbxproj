@@ -1078,8 +1078,8 @@
 				684B0A791D654A3B00505A9C /* Commons */,
 				684B0A7A1D654A3B00505A9C /* Controllers */,
 				684B0A7D1D654A3B00505A9C /* DBHandler */,
-				684B0A7E1D654A3B00505A9C /* Globals */,
 				684B0A801D654A3B00505A9C /* Models */,
+				684B0A7E1D654A3B00505A9C /* Globals */,
 				684B0A831D654A3B00505A9C /* NetWork */,
 				684B0A851D654A3B00505A9C /* ThirdSupports */,
 				684B0A861D654A3B00505A9C /* Tools */,
@@ -1647,7 +1647,6 @@
 				TargetAttributes = {
 					684B0A3B1D65499700505A9C = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = FJ5FELV34L;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
@@ -2147,7 +2146,7 @@
 				CODE_SIGN_ENTITLEMENTS = AppA/AppA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Kebing Mao (SDGDXRX797)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = FJ5FELV34L;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -2180,8 +2179,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aspire.cqparent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a25e152f-9e78-46d4-81c8-19b743307cec";
-				PROVISIONING_PROFILE_SPECIFIER = CQJXTParentDevelopment;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
@@ -2193,8 +2192,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = AppALaunchImage;
 				CODE_SIGN_ENTITLEMENTS = AppA/AppA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Aspire Information Technology (Beijing) Co., Ltd.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = FJ5FELV34L;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -2221,8 +2220,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aspire.cqparent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b52d010a-74a5-44b7-b40d-d4170dc54f2d";
-				PROVISIONING_PROFILE_SPECIFIER = CQJXTParentInhouse;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;
