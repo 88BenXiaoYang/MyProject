@@ -17,6 +17,7 @@
 #import "BYChartViewController.h"
 #import "BYLoadLocalDBDataViewController.h"
 #import "BYPayViewController.h"
+#import "BYCSViewController.h"
 
 @interface BYAViewController ()
 
@@ -82,8 +83,10 @@
 	} else if (indexPath.row == 7) {
 		[self goLoadLocalDBData];
 	} else if (indexPath.row == 8) {
-		[self goPay];
-	}
+		[self goPayAndShare];
+    } else if (indexPath.row == 9) {
+        [self goCSRequest];
+    }
 }
 
 #pragma mark- Notification methods
@@ -93,7 +96,7 @@
 #pragma mark- Private methods
 - (void)initSettingData
 {
-	self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", nil];
+	self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", nil];
 	
 	[self.table registerClass:[BYDemoListCell class] forCellReuseIdentifier:[BYDemoListCell reuseIdentifier]];
 }
@@ -154,11 +157,18 @@
 	[self.navigationController pushViewController:loadLocalDBDataVC animated:YES];
 }
 
-- (void)goPay
+- (void)goPayAndShare
 {
 	BYPayViewController *payVC = [[BYPayViewController alloc] init];
 	payVC.hidesBottomBarWhenPushed = YES;
 	[self.navigationController pushViewController:payVC animated:YES];
+}
+
+- (void)goCSRequest
+{
+    BYCSViewController *csVC = [[BYCSViewController alloc] init];
+    csVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:csVC animated:YES];
 }
 
 #pragma mark- common test methods

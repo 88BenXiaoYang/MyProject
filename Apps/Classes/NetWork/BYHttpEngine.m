@@ -187,4 +187,13 @@ static AFHTTPSessionManager *sessionManager = nil;
     [self postRequestWithInterfacePath:urlString params:params_ completionHandler:completionHandler errorHandler:errorHandler];
 }
 
++ (void)requestServerDataWithInterface:(NSString *)interface
+                                params:(NSDictionary *)paramsDic
+                     completionHandler:(BYResponseBlock)completionHandler
+                          errorHandler:(BYResponseErrorBlock)errorHandler
+{
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:paramsDic];
+    [self getRequestWithInterfacePath:interface params:params completionHandler:completionHandler errorHandler:errorHandler];
+}
+
 @end

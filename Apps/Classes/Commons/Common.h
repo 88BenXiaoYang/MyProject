@@ -27,7 +27,7 @@
 //屏幕宽、高
 #define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-#define VIEW_HEIGHT (SCREEN_HEIGHT - STATUSBAR_HEIGHT - NavigationBar_HEIGHT)
+#define VIEW_HEIGHT (SCREEN_HEIGHT - STATUSBAR_HEIGHT - NavigationBar_HEIGHT - ToolsBar_HEIGHT)
 #define VIEW_WIDTH SCREEN_WIDTH
 
 //常用颜色

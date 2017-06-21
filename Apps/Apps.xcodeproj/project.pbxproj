@@ -10,6 +10,8 @@
 		020FFC521EE30A1B005EFDE9 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 020FFC501EE30A05005EFDE9 /* libWeChatSDK.a */; };
 		020FFC5C1EE31ADC005EFDE9 /* WXOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 020FFC5B1EE31ADC005EFDE9 /* WXOrder.m */; };
 		020FFC5D1EE31ADC005EFDE9 /* WXOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 020FFC5B1EE31ADC005EFDE9 /* WXOrder.m */; };
+		0289D9611EF611BA0039C6BA /* BYCSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0289D9601EF611BA0039C6BA /* BYCSViewController.m */; };
+		0289D9621EF611BA0039C6BA /* BYCSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0289D9601EF611BA0039C6BA /* BYCSViewController.m */; };
 		681B6BB31EDFEA62006F8CDF /* BYPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6BB21EDFEA62006F8CDF /* BYPayViewController.m */; };
 		681B6BB41EDFEA62006F8CDF /* BYPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6BB21EDFEA62006F8CDF /* BYPayViewController.m */; };
 		681B6BB71EDFF883006F8CDF /* AlipaySDK.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 681B6BB51EDFF883006F8CDF /* AlipaySDK.bundle */; };
@@ -347,6 +349,8 @@
 		020FFC501EE30A05005EFDE9 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = Classes/ThirdSupports/WXAPI/libWeChatSDK.a; sourceTree = SOURCE_ROOT; };
 		020FFC5A1EE31ADC005EFDE9 /* WXOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXOrder.h; path = Classes/Models/WXPay/WXOrder.h; sourceTree = SOURCE_ROOT; };
 		020FFC5B1EE31ADC005EFDE9 /* WXOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WXOrder.m; path = Classes/Models/WXPay/WXOrder.m; sourceTree = SOURCE_ROOT; };
+		0289D95F1EF611BA0039C6BA /* BYCSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCSViewController.h; sourceTree = "<group>"; };
+		0289D9601EF611BA0039C6BA /* BYCSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCSViewController.m; sourceTree = "<group>"; };
 		681B6BB11EDFEA62006F8CDF /* BYPayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYPayViewController.h; sourceTree = "<group>"; };
 		681B6BB21EDFEA62006F8CDF /* BYPayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYPayViewController.m; sourceTree = "<group>"; };
 		681B6BB51EDFF883006F8CDF /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
@@ -1358,6 +1362,8 @@
 				68E1F0E91ECBE3CF002B6B13 /* BYLoadLocalDBDataViewController.m */,
 				681B6BB11EDFEA62006F8CDF /* BYPayViewController.h */,
 				681B6BB21EDFEA62006F8CDF /* BYPayViewController.m */,
+				0289D95F1EF611BA0039C6BA /* BYCSViewController.h */,
+				0289D9601EF611BA0039C6BA /* BYCSViewController.m */,
 			);
 			path = A;
 			sourceTree = "<group>";
@@ -1812,6 +1818,7 @@
 				6892DE551E67B60B00BB9D84 /* NSString+MISPinyin.m in Sources */,
 				6892DE671E67B60B00BB9D84 /* UISwitch+AutoLayout.m in Sources */,
 				6856B8791D6A9AE200161109 /* AFHTTPSessionManager.m in Sources */,
+				0289D9611EF611BA0039C6BA /* BYCSViewController.m in Sources */,
 				6892DE471E67B60B00BB9D84 /* NSArray+MISJSON.m in Sources */,
 				681B6BB31EDFEA62006F8CDF /* BYPayViewController.m in Sources */,
 				681B6C811EE552A6006F8CDF /* WXApiRequestHandler.m in Sources */,
@@ -1951,6 +1958,7 @@
 				6892DE561E67B60B00BB9D84 /* NSString+MISPinyin.m in Sources */,
 				6892DE681E67B60B00BB9D84 /* UISwitch+AutoLayout.m in Sources */,
 				6856B87A1D6A9AE200161109 /* AFHTTPSessionManager.m in Sources */,
+				0289D9621EF611BA0039C6BA /* BYCSViewController.m in Sources */,
 				6892DE481E67B60B00BB9D84 /* NSArray+MISJSON.m in Sources */,
 				681B6BB41EDFEA62006F8CDF /* BYPayViewController.m in Sources */,
 				681B6C821EE552A6006F8CDF /* WXApiRequestHandler.m in Sources */,
