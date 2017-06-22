@@ -14,8 +14,6 @@ typedef NS_ENUM(NSInteger, RequestResultType) {
 	RequestResultTypeJSON
 };
 
-static NSInteger resultType = RequestResultTypeData;
-
 @interface BYCSViewController ()
 
 @property (nonatomic, strong) UIButton *btnData;
@@ -46,7 +44,7 @@ static NSInteger resultType = RequestResultTypeData;
 {
 	NSInteger type = sender.tag;
 	
-    NSString *interFaceString = @"http://localhost:8080/ServletProject/RegisterServlet";
+    NSString *interFaceString = @"http://localhost:8080/webproject/RegisterServlet";
     NSDictionary *paramsDic = @{@"account":@"TestABC",@"password":@"test123456"};
     
     [BYHttpEngine requestServerDataWithInterface:interFaceString params:paramsDic completionHandler:^(NSData *responseData) {
