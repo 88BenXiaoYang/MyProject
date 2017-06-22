@@ -38,4 +38,9 @@ typedef void(^BYResponseErrorBlock)(NSError *error);
                          completionHandler:(BYResponseBlock)completionHandler
                               errorHandler:(BYResponseErrorBlock)errorHandler;
 
++ (void)requestServerDataWithInterface:(NSString *)interface
+                                params:(NSDictionary *)paramsDic
+                     completionHandler:(BYResponseBlock)completionHandler
+                          errorHandler:(BYResponseErrorBlock)errorHandler;
+
 @end
