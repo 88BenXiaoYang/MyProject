@@ -18,6 +18,7 @@
 #import "BYUMEvent.h"
 #import "BYAppStyle.h"
 #import "BYUtils.h"
+#import "BYConstant.h"
 
 #ifndef __OPTIMIZE__
 #define NSLog(...) NSLog(__VA_ARGS__)

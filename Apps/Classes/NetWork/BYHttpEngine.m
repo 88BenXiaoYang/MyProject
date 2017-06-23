@@ -189,11 +189,16 @@ static AFHTTPSessionManager *sessionManager = nil;
 
 + (void)requestServerDataWithInterface:(NSString *)interface
                                 params:(NSDictionary *)paramsDic
+						   requestType:(NSInteger)requestType
                      completionHandler:(BYResponseBlock)completionHandler
                           errorHandler:(BYResponseErrorBlock)errorHandler
 {
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:paramsDic];
-    [self getRequestWithInterfacePath:interface params:params completionHandler:completionHandler errorHandler:errorHandler];
+	if (requestType == RequestTypeGet) {
+		[self getRequestWithInterfacePath:interface params:params completionHandler:completionHandler errorHandler:errorHandler];
+	} else {
+		[self postRequestWithInterfacePath:interface params:params completionHandler:completionHandler errorHandler:errorHandler];
+	}
 }
 
 @end

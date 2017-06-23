@@ -39,7 +39,8 @@ typedef void(^BYResponseErrorBlock)(NSError *error);
                               errorHandler:(BYResponseErrorBlock)errorHandler;
 
 + (void)requestServerDataWithInterface:(NSString *)interface
-                                params:(NSDictionary *)paramsDic
+								params:(NSDictionary *)paramsDic
+						   requestType:(NSInteger)requestType
                      completionHandler:(BYResponseBlock)completionHandler
                           errorHandler:(BYResponseErrorBlock)errorHandler;
 
