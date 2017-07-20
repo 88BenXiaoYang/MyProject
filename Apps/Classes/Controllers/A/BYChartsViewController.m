@@ -7,7 +7,6 @@
 //
 
 #import "BYChartsViewController.h"
-#import "ImportCharts-Bridging-Header.h"
 
 @interface BYChartsViewController ()
 
@@ -35,10 +34,6 @@
 - (void)initSetting
 {
     self.view.backgroundColor = BG_Color;
-    
-    BarChartView *bV = [[BarChartView alloc] initWithFrame:CGRectMake(50, 70, 200, 200)];
-    bV.backgroundColor = [UIColor orangeColor];
-    [self.view addSubview:bV];
 }
 
 #pragma mark- Setter and getter
