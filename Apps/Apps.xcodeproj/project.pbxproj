@@ -80,6 +80,8 @@
 		6844C4771E76712C00AA6D0E /* BYCoordinateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6844C4751E76712C00AA6D0E /* BYCoordinateItem.m */; };
 		6844C47A1E76925D00AA6D0E /* BYLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6844C4791E76925D00AA6D0E /* BYLineChartView.m */; };
 		6844C47B1E76925D00AA6D0E /* BYLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6844C4791E76925D00AA6D0E /* BYLineChartView.m */; };
+		6848CCCF1F1F3D850066D8FE /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6848CCCE1F1F3D850066D8FE /* GCDAsyncSocket.m */; };
+		6848CCD01F1F3D850066D8FE /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6848CCCE1F1F3D850066D8FE /* GCDAsyncSocket.m */; };
 		684B0A471D65499700505A9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684B0A461D65499700505A9C /* ViewController.m */; };
 		684B0A4C1D65499700505A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684B0A4B1D65499700505A9C /* Assets.xcassets */; };
 		684B0A5A1D65499700505A9C /* AppsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 684B0A591D65499700505A9C /* AppsTests.m */; };
@@ -488,6 +490,8 @@
 		6844C4751E76712C00AA6D0E /* BYCoordinateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCoordinateItem.m; sourceTree = "<group>"; };
 		6844C4781E76925D00AA6D0E /* BYLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYLineChartView.h; sourceTree = "<group>"; };
 		6844C4791E76925D00AA6D0E /* BYLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYLineChartView.m; sourceTree = "<group>"; };
+		6848CCCD1F1F3D850066D8FE /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		6848CCCE1F1F3D850066D8FE /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		684B0A3C1D65499700505A9C /* AppA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		684B0A451D65499700505A9C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		684B0A461D65499700505A9C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -987,6 +991,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		6848CCCC1F1F3D850066D8FE /* GCDAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				6848CCCD1F1F3D850066D8FE /* GCDAsyncSocket.h */,
+				6848CCCE1F1F3D850066D8FE /* GCDAsyncSocket.m */,
+			);
+			path = GCDAsyncSocket;
+			sourceTree = "<group>";
+		};
 		684B0A331D65499600505A9C = {
 			isa = PBXGroup;
 			children = (
@@ -1272,6 +1285,7 @@
 				681B6C461EE535DA006F8CDF /* WXAPI */,
 				681B6BCA1EE00250006F8CDF /* AliAPI */,
 				6856B8971D6AF34900161109 /* SDWebImage */,
+				6848CCCC1F1F3D850066D8FE /* GCDAsyncSocket */,
 			);
 			path = ThirdSupports;
 			sourceTree = "<group>";
@@ -1810,6 +1824,7 @@
 				6892DE6F1E67B60B00BB9D84 /* UIView+AutoLayout.m in Sources */,
 				6856B85B1D6A97C700161109 /* UIProgressView+AFNetworking.m in Sources */,
 				6892DE611E67B60B00BB9D84 /* UINavigationBar+Awesome.m in Sources */,
+				6848CCCF1F1F3D850066D8FE /* GCDAsyncSocket.m in Sources */,
 				68966A541E66612B008BE2D9 /* BYSwitchBViewController.m in Sources */,
 				684B0AA81D654F5100505A9C /* BYMViewController.m in Sources */,
 				6892DE691E67B60B00BB9D84 /* UITableView+AutoLayout.m in Sources */,
@@ -1950,6 +1965,7 @@
 				6892DE701E67B60B00BB9D84 /* UIView+AutoLayout.m in Sources */,
 				6856B85C1D6A97C700161109 /* UIProgressView+AFNetworking.m in Sources */,
 				6892DE621E67B60B00BB9D84 /* UINavigationBar+Awesome.m in Sources */,
+				6848CCD01F1F3D850066D8FE /* GCDAsyncSocket.m in Sources */,
 				68966A551E66612B008BE2D9 /* BYSwitchBViewController.m in Sources */,
 				684B0AA91D654F5100505A9C /* BYMViewController.m in Sources */,
 				6892DE6A1E67B60B00BB9D84 /* UITableView+AutoLayout.m in Sources */,
