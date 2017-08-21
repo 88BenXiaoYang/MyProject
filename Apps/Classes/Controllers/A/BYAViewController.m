@@ -20,6 +20,7 @@
 #import "BYCSViewController.h"
 #import "BYAVViewController.h"
 #import "BYChartsViewController.h"
+#import "TmpModel.h"
 
 @interface BYAViewController ()
 
@@ -42,6 +43,7 @@
 	
 	[self initSettingData];
 	[self testHanZiToPinYin];
+    [self objToDictionary];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -198,6 +200,186 @@
 	NSString *hanziStr = @"拼音测试";
 	NSString *pinyinStr = [hanziStr pinyin];
 	NSLog(@"汉字转拼音\n汉字：%@\n拼音：%@", hanziStr, pinyinStr);
+}
+
+- (void)objToDictionary
+{
+    Animal *aniA = [[Animal alloc] init];
+    aniA.type = @11;
+    aniA.animalName = @"cat";
+    
+    Animal *aniB = [[Animal alloc] init];
+    aniB.type = @22;
+    aniB.animalName = @"dog";
+    
+    TmpModel *tpM = [[TmpModel alloc] init];
+    tpM.age = @21;
+    tpM.name = @"xyz";
+    tpM.animals = @[aniA, aniB];
+    
+    NSDictionary *tmpDict = [self customObjToDictionaryWC:tpM];
+    NSLog(@"dictionary detail : %@", tmpDict);
+    NSString *jsonSting = [self dataToJsonStringWithObject:tmpDict];
+    NSLog(@"obj to json string : %@", jsonSting);
+}
+
+- (NSDictionary *)customObjToDictionaryWA:(id)obj
+{
+    NSString *className = NSStringFromClass([obj class]);
+    const char *classN = [className UTF8String];
+    id theClass = objc_getClass(classN);
+    unsigned int count;
+    objc_property_t *props = class_copyPropertyList(theClass, &count);
+    
+    NSMutableArray *propertyNames = [NSMutableArray arrayWithCapacity:count];
+    for (int i = 0; i < count; i++) {
+        objc_property_t property = props[i];
+        NSString *propertyNameString = [[NSString alloc] initWithCString:property_getName(property) encoding:NSUTF8StringEncoding];
+        [propertyNames addObject:propertyNameString];
+    }
+    
+    NSMutableDictionary *kvDict = [NSMutableDictionary dictionaryWithCapacity:count];
+    for (NSString *key in propertyNames) {
+        SEL selector = NSSelectorFromString(key);
+        id value = [obj performSelector:selector];
+        
+        if (value == nil) {
+            value = [NSNull null];
+        }
+        
+        [kvDict setObject:value forKey:key];
+    }
+    
+    return kvDict;
+}
+
+- (NSDictionary *)customObjToDictionaryWB:(id)obj
+{
+    unsigned int propertyCount;
+    Ivar *ivs = class_copyIvarList([obj class], &propertyCount);
+    
+    NSMutableDictionary *kvDict = [NSMutableDictionary dictionaryWithCapacity:propertyCount];
+    
+    NSMutableArray *arrayElements = [NSMutableArray array];
+    
+    //检查是否含有数组属性
+    for (int i = 0; i < propertyCount; i++) {
+        Ivar iv = ivs[i];
+        const char *propertyType = ivar_getTypeEncoding(iv);
+        
+        NSString *propertyTypeString = [[NSString alloc] initWithCString:propertyType encoding:NSUTF8StringEncoding];
+        
+        if ([propertyTypeString containsString:@"NSArray"] || [propertyTypeString containsString:@"NSMutableArray"]) {
+            id value = object_getIvar(obj, iv);
+            [arrayElements addObjectsFromArray:value];
+        }
+    }
+    
+    NSMutableArray *dictElements = [NSMutableArray array];
+    //将自定义对象转换成字典
+    for (id v in arrayElements) {
+        NSDictionary *tpDict = [self customObjToDictionaryWB:v];
+        [dictElements addObject:tpDict];
+    }
+    
+    for (int i = 0; i < propertyCount; i++) {
+        Ivar iv = ivs[i];
+        const char *propertyName = ivar_getName(iv);
+        const char *propertyType = ivar_getTypeEncoding(iv);
+        
+        NSString *propertyNameString = [[NSString alloc] initWithCString:propertyName encoding:NSUTF8StringEncoding];
+        NSString *propertyTypeString = [[NSString alloc] initWithCString:propertyType encoding:NSUTF8StringEncoding];
+        
+        if (![propertyTypeString hasPrefix:@"@"]) {
+            NSNumber *numberValue = [NSNumber numberWithLong:10];
+            [kvDict setObject:numberValue forKey:propertyNameString];
+        } else {
+            id value = object_getIvar(obj, iv);
+            if ([propertyTypeString containsString:@"NSArray"] || [propertyTypeString containsString:@"NSMutableArray"]) {
+                [kvDict setObject:dictElements forKey:propertyNameString];
+            } else {
+                [kvDict setObject:value forKey:propertyNameString];
+            }
+        }
+    }
+    
+    return kvDict;
+}
+
+- (NSDictionary *)customObjToDictionaryWC:(id)obj
+{
+    unsigned int propertyCount;
+    Ivar *ivs = class_copyIvarList([obj class], &propertyCount);
+    unsigned int count;
+    objc_property_t *properties = class_copyPropertyList([obj class], &count);
+    
+    NSMutableDictionary *kvDict = [NSMutableDictionary dictionaryWithCapacity:propertyCount];
+    
+    NSMutableArray *arrayElements = [NSMutableArray array];
+    
+    //检查是否含有数组属性
+    for (int i = 0; i < propertyCount; i++) {
+        Ivar iv = ivs[i];
+        const char *propertyType = ivar_getTypeEncoding(iv);
+        
+        NSString *propertyTypeString = [[NSString alloc] initWithCString:propertyType encoding:NSUTF8StringEncoding];
+        
+        if ([propertyTypeString containsString:@"NSArray"] || [propertyTypeString containsString:@"NSMutableArray"]) {
+            id value = object_getIvar(obj, iv);
+            [arrayElements addObjectsFromArray:value];
+        }
+    }
+    
+    NSMutableArray *dictElements = [NSMutableArray array];
+    //将自定义对象转换成字典
+    for (id v in arrayElements) {
+        NSDictionary *tpDict = [self customObjToDictionaryWC:v];
+        [dictElements addObject:tpDict];
+    }
+    
+    for (int i = 0; i < propertyCount; i++) {
+        //获取属性名称
+        objc_property_t property = properties[i];
+        NSString *propertyNameString = [[NSString alloc] initWithCString:property_getName(property) encoding:NSUTF8StringEncoding];
+        
+        //判断属性类型
+        Ivar iv = ivs[i];
+        const char *propertyType = ivar_getTypeEncoding(iv);
+        NSString *propertyTypeString = [[NSString alloc] initWithCString:propertyType encoding:NSUTF8StringEncoding];
+        
+        if (![propertyTypeString hasPrefix:@"@"]) {
+            NSNumber *numberValue = [NSNumber numberWithInt:00];
+            [kvDict setObject:numberValue forKey:propertyNameString];
+        } else {
+            id value = object_getIvar(obj, iv);
+            if ([propertyTypeString containsString:@"NSArray"] || [propertyTypeString containsString:@"NSMutableArray"]) {
+                [kvDict setObject:dictElements forKey:propertyNameString];
+            } else {
+                [kvDict setObject:value forKey:propertyNameString];
+            }
+        }
+    }
+    
+    return kvDict;
+}
+
+- (NSString *)dataToJsonStringWithObject:(id)object
+{
+    NSString *jsonString = nil;
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:object
+                                                       options:NSJSONWritingPrettyPrinted
+                                                         error:&error];
+    if (! jsonData) {
+        NSLog(@"Got an error: %@", error);
+    } else {
+        jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    }
+    
+    jsonString = [jsonString stringByReplacingOccurrencesOfString:@" " withString:@""];
+    jsonString = [jsonString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    
+    return jsonString;
 }
 
 #pragma mark- Setter and getter
