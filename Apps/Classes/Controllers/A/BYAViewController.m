@@ -42,8 +42,8 @@
 	self.title = @"List"; //set tabBarItem.title and con.title
 	
 	[self initSettingData];
-	[self testHanZiToPinYin];
-    [self objToDictionary];
+	//[self testHanZiToPinYin];
+    //[self objToDictionary];
 }
 
 - (void)didReceiveMemoryWarning {

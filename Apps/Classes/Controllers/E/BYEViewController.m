@@ -10,30 +10,72 @@
 
 @interface BYEViewController ()
 
+@property (nonatomic, strong) UIImageView *customActivityImageView;
+
 @end
 
 @implementation BYEViewController
-
+#pragma mark- Live circle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-	
-	self.title = @"EView";
+    
+    self.title = @"EView";
+    [self.view addSubview:self.customActivityImageView];
+    [self animationA];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark- Overwrite
+#pragma mark- Delegate
+#pragma mark- Notification methods
+#pragma mark- Interface methods
+#pragma mark- Event Response methods
+#pragma mark- Net request
+#pragma mark- Private methods
+- (void)animationA
+{
+    [UIView animateWithDuration:0.03 animations:^{
+        CGFloat degree = 0.04f * M_PI;
+        self.customActivityImageView.transform = CGAffineTransformRotate(self.customActivityImageView.transform, degree);
+    }
+                     completion:^(BOOL finished) {
+                         if (finished) {
+                             CGFloat degree = 0.04f * M_PI;
+                             self.customActivityImageView.transform = CGAffineTransformRotate(self.customActivityImageView.transform, degree);
+                             [self animationA];
+                         }
+                     }];
 }
-*/
+
+- (void)animationB
+{
+    [UIView beginAnimations:@"animationID" context:NULL];
+    [UIView setAnimationDuration:0.1];
+    
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+    
+    [UIView setAnimationRepeatAutoreverses:YES];
+    [UIView setAnimationRepeatCount:5];
+    CGFloat degree = 0.04f * M_PI;
+    self.customActivityImageView.transform = CGAffineTransformRotate(self.customActivityImageView.transform, degree);
+    [UIView commitAnimations];
+}
+
+#pragma mark- Setter and getter
+- (UIImageView *)customActivityImageView
+{
+    if (!_customActivityImageView) {
+        _customActivityImageView = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, 100, 100)];
+        _customActivityImageView.backgroundColor = [UIColor clearColor];
+        _customActivityImageView.image = Image_With_Name(@"refresh_round_arrow");
+    }
+    return _customActivityImageView;
+}
+
+#pragma mark- Square area
 
 @end
