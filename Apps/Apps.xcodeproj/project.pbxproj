@@ -88,6 +88,8 @@
 		6844C4771E76712C00AA6D0E /* BYCoordinateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6844C4751E76712C00AA6D0E /* BYCoordinateItem.m */; };
 		6844C47A1E76925D00AA6D0E /* BYLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6844C4791E76925D00AA6D0E /* BYLineChartView.m */; };
 		6844C47B1E76925D00AA6D0E /* BYLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6844C4791E76925D00AA6D0E /* BYLineChartView.m */; };
+		684552ED1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684552EC1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m */; };
+		684552EE1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684552EC1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m */; };
 		6848CCCF1F1F3D850066D8FE /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6848CCCE1F1F3D850066D8FE /* GCDAsyncSocket.m */; };
 		6848CCD01F1F3D850066D8FE /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6848CCCE1F1F3D850066D8FE /* GCDAsyncSocket.m */; };
 		684B0A471D65499700505A9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684B0A461D65499700505A9C /* ViewController.m */; };
@@ -518,6 +520,8 @@
 		6844C4751E76712C00AA6D0E /* BYCoordinateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCoordinateItem.m; sourceTree = "<group>"; };
 		6844C4781E76925D00AA6D0E /* BYLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYLineChartView.h; sourceTree = "<group>"; };
 		6844C4791E76925D00AA6D0E /* BYLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYLineChartView.m; sourceTree = "<group>"; };
+		684552EB1F4E9D5B00DA4673 /* BYCustomScrollerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCustomScrollerViewController.h; sourceTree = "<group>"; };
+		684552EC1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCustomScrollerViewController.m; sourceTree = "<group>"; };
 		6848CCCD1F1F3D850066D8FE /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		6848CCCE1F1F3D850066D8FE /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		684B0A3C1D65499700505A9C /* AppA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1421,6 +1425,8 @@
 				020E02A51F0D15F40079F318 /* BYAVViewController.m */,
 				02D594621F1FABED00D74FF8 /* BYChartsViewController.h */,
 				02D594631F1FABED00D74FF8 /* BYChartsViewController.m */,
+				684552EB1F4E9D5B00DA4673 /* BYCustomScrollerViewController.h */,
+				684552EC1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m */,
 			);
 			path = A;
 			sourceTree = "<group>";
@@ -1964,6 +1970,7 @@
 				6856B8BD1D6AF34900161109 /* SDImageCache.m in Sources */,
 				6892DE7F1E67B8AE00BB9D84 /* UILabel+AutoLayout.m in Sources */,
 				6856B88B1D6AC0B300161109 /* BYUtils.m in Sources */,
+				684552ED1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m in Sources */,
 				684CDFD31D94D3D2006316A5 /* BYDViewController.m in Sources */,
 				6892DE5F1E67B60B00BB9D84 /* UIImage+MISMask.m in Sources */,
 				6856B8511D6A97C700161109 /* AFImageDownloader.m in Sources */,
@@ -2108,6 +2115,7 @@
 				6856B8BE1D6AF34900161109 /* SDImageCache.m in Sources */,
 				6892DE801E67B8AE00BB9D84 /* UILabel+AutoLayout.m in Sources */,
 				6856B88C1D6AC0B300161109 /* BYUtils.m in Sources */,
+				684552EE1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m in Sources */,
 				684CDFD41D94D3D2006316A5 /* BYDViewController.m in Sources */,
 				6892DE601E67B60B00BB9D84 /* UIImage+MISMask.m in Sources */,
 				6856B8521D6A97C700161109 /* AFImageDownloader.m in Sources */,

@@ -21,6 +21,7 @@
 #import "BYAVViewController.h"
 #import "BYChartsViewController.h"
 #import "TmpModel.h"
+#import "BYCustomScrollerViewController.h"
 
 @interface BYAViewController ()
 
@@ -94,7 +95,9 @@
         [self goAVVC];
     } else if (indexPath.row == 11) {
         [self goChartsVC];
-    }
+	} else if (indexPath.row == 12) {
+		[self goCustomScrollerVC];
+	}
 }
 
 #pragma mark- Notification methods
@@ -104,7 +107,7 @@
 #pragma mark- Private methods
 - (void)initSettingData
 {
-	self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", nil];
+	self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"CustomScroller", nil];
 	
 	[self.table registerClass:[BYDemoListCell class] forCellReuseIdentifier:[BYDemoListCell reuseIdentifier]];
 }
@@ -192,6 +195,14 @@
     chartsVC.title = @"ChartsVC";
     chartsVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:chartsVC animated:YES];
+}
+
+- (void)goCustomScrollerVC
+{
+	BYCustomScrollerViewController *scrollerVC = [[BYCustomScrollerViewController alloc] init];
+	scrollerVC.title = @"customScroller";
+	scrollerVC.hidesBottomBarWhenPushed = YES;
+	[self.navigationController pushViewController:scrollerVC animated:YES];
 }
 
 #pragma mark- common test methods
