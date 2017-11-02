@@ -22,6 +22,7 @@
 #import "BYChartsViewController.h"
 #import "TmpModel.h"
 #import "BYCustomScrollerViewController.h"
+#import "BYJSTOCViewController.h"
 
 @interface BYAViewController ()
 
@@ -97,7 +98,9 @@
         [self goChartsVC];
 	} else if (indexPath.row == 12) {
 		[self goCustomScrollerVC];
-	}
+    } else if (indexPath.row == 13) {
+        [self goJSTOCVC];
+    }
 }
 
 #pragma mark- Notification methods
@@ -107,7 +110,7 @@
 #pragma mark- Private methods
 - (void)initSettingData
 {
-	self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"CustomScroller", nil];
+    self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"CustomScroller", @"JS_TO_OC", nil];
 	
 	[self.table registerClass:[BYDemoListCell class] forCellReuseIdentifier:[BYDemoListCell reuseIdentifier]];
 }
@@ -203,6 +206,14 @@
 	scrollerVC.title = @"customScroller";
 	scrollerVC.hidesBottomBarWhenPushed = YES;
 	[self.navigationController pushViewController:scrollerVC animated:YES];
+}
+
+- (void)goJSTOCVC
+{
+    BYJSTOCViewController *jsTOCVC = [[BYJSTOCViewController alloc] init];
+    jsTOCVC.title = @"js_oc";
+    jsTOCVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:jsTOCVC animated:YES];
 }
 
 #pragma mark- common test methods

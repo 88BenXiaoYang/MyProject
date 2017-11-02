@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>HTML_title</title>
+    </head>
+    <body>
+        <div>
+            <input type="button" value="customProtocol" onclick="customProtocol()">
+        </div>
+        
+        <div>
+            <input type="button" value="loadWeb" onclick="loadWeb()">
+        </div>
+        
+        <div>
+            <input type="button" value="jsToOc_Block" onclick="jsToOcWithBlock('jToWithBlock')">
+        </div>
+        
+        <div>
+            <input type="button" value="jsToOc_ObjectA" onclick="jsOCModel.TestNOParameter()">
+        </div>
+        
+        <div>
+            <input type="button" value="jsToOc_ObjectB" onclick="jsOCModel.TestOneParameter('have')">
+        </div>
+        
+        <div>
+            <input type="button" value="jsToOc_ObjectC" onclick="jsOCModel.TestTowParameterSecondParameter('111', '222')">
+        </div>
+        
+        <div>
+            <input type="button" value="testCoverMethod" onclick="testCoverMethod()">
+        </div>
+        
+        <div>
+            <input type="button" value="jsToOc_VCA" onclick="jsOCVC.jsToOCVCNoArgument()">
+                </div>
+        
+        <div>
+            <input type="button" value="jsToOc_VCB" onclick="jsOCVC.jsToOCVCOneArgument('vcOneArgument')">
+                </div>
+        
+        <div>
+            <input type="button" value="jsToOc_VCC" onclick="jsOCVC.jsToOCVCTwoArgumentArg('vc111', 'vc222')">
+        </div>
+        
+        <div>
+            <input type="button" value="methodInObject" onclick="methodInObject()">
+        </div>
+        
+        <script>
+            function customProtocol() {
+                window.location.href = "customprotocol://path";
+                <!--  window.location.href 改变主窗口的指向，可以自定义协议，指定跳转，如"customprotocol://path"           -->
+            }
+        
+            function loadWeb() {
+                window.location.href = "https://www.baidu.com";
+            }
+        
+        <!--  方法被覆盖，因在OC中注入的方法与<script>标签中声明的方法相同，注入的方法会把<script>标签中相同的方法给覆盖了，导致<script>标签中相同的方法失效  -->
+<!--            function testCoverMethod() {-->
+<!--                window.location.href = @"https://www.sina.com.cn";-->
+<!--            }-->
+        
+        
+        function showAlert(msg) {
+            alert(msg);
+        }
+        
+        function jsParamFunc(arg) {
+            alert(arg);
+        }
+        
+        var methodInObject = function() {
+            jsOCModel.methodInObj({'title': '标题', 'desc': '内容', 'shareUrl': 'http://www.jianshu.com/p/f896d73c670a'});
+        }
+        </script>
+    </body>
+</html>

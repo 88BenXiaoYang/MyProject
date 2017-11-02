@@ -314,6 +314,18 @@
 		68A167391E10D78E002D0732 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A167371E10D77D002D0732 /* libc++.tbd */; };
 		68A1673D1E125CE8002D0732 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A1673C1E125CE8002D0732 /* UIPlaceHolderTextView.m */; };
 		68A1673E1E125CE8002D0732 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A1673C1E125CE8002D0732 /* UIPlaceHolderTextView.m */; };
+		68A69B6C1FAB0FE300082427 /* TestJSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B6B1FAB0FE300082427 /* TestJSObject.m */; };
+		68A69B6D1FAB0FE300082427 /* TestJSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B6B1FAB0FE300082427 /* TestJSObject.m */; };
+		68A69B731FAB100A00082427 /* index1.css in Resources */ = {isa = PBXBuildFile; fileRef = 68A69B6F1FAB100A00082427 /* index1.css */; };
+		68A69B741FAB100A00082427 /* index1.css in Resources */ = {isa = PBXBuildFile; fileRef = 68A69B6F1FAB100A00082427 /* index1.css */; };
+		68A69B751FAB100A00082427 /* index1.html in Resources */ = {isa = PBXBuildFile; fileRef = 68A69B701FAB100A00082427 /* index1.html */; };
+		68A69B761FAB100A00082427 /* index1.html in Resources */ = {isa = PBXBuildFile; fileRef = 68A69B701FAB100A00082427 /* index1.html */; };
+		68A69B771FAB100A00082427 /* index1.js in Resources */ = {isa = PBXBuildFile; fileRef = 68A69B711FAB100A00082427 /* index1.js */; };
+		68A69B781FAB100A00082427 /* index1.js in Resources */ = {isa = PBXBuildFile; fileRef = 68A69B711FAB100A00082427 /* index1.js */; };
+		68A69B791FAB100A00082427 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 68A69B721FAB100A00082427 /* test.html */; };
+		68A69B7A1FAB100A00082427 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 68A69B721FAB100A00082427 /* test.html */; };
+		68A69B7D1FAB109300082427 /* BYJSTOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B7C1FAB109300082427 /* BYJSTOCViewController.m */; };
+		68A69B7E1FAB109300082427 /* BYJSTOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B7C1FAB109300082427 /* BYJSTOCViewController.m */; };
 		68BDDE881DAB3DD0005EA1DE /* BYDynamicTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */; };
 		68BDDE891DAB3DD0005EA1DE /* BYDynamicTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */; };
 		68BDDE9D1DAB78B0005EA1DE /* BYDynamicTreeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE9C1DAB78B0005EA1DE /* BYDynamicTreeData.m */; };
@@ -740,6 +752,15 @@
 		68A167371E10D77D002D0732 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		68A1673B1E125CE8002D0732 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
 		68A1673C1E125CE8002D0732 /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
+		68A69B691FAB0FE300082427 /* JavaScriptOCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptOCDelegate.h; sourceTree = "<group>"; };
+		68A69B6A1FAB0FE300082427 /* TestJSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestJSObject.h; sourceTree = "<group>"; };
+		68A69B6B1FAB0FE300082427 /* TestJSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestJSObject.m; sourceTree = "<group>"; };
+		68A69B6F1FAB100A00082427 /* index1.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = index1.css; sourceTree = "<group>"; };
+		68A69B701FAB100A00082427 /* index1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index1.html; sourceTree = "<group>"; };
+		68A69B711FAB100A00082427 /* index1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index1.js; sourceTree = "<group>"; };
+		68A69B721FAB100A00082427 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		68A69B7B1FAB109300082427 /* BYJSTOCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYJSTOCViewController.h; sourceTree = "<group>"; };
+		68A69B7C1FAB109300082427 /* BYJSTOCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYJSTOCViewController.m; sourceTree = "<group>"; };
 		68BDDE861DAB3DD0005EA1DE /* BYDynamicTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYDynamicTree.h; sourceTree = "<group>"; };
 		68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYDynamicTree.m; sourceTree = "<group>"; };
 		68BDDE9B1DAB78B0005EA1DE /* BYDynamicTreeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYDynamicTreeData.h; sourceTree = "<group>"; };
@@ -1282,6 +1303,7 @@
 		684B0A801D654A3B00505A9C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				68A69B681FAB0FE300082427 /* JSObject */,
 				023FE4E31F4B07710039B65F /* Tmp */,
 				681B6C4E1EE535F2006F8CDF /* WXPay */,
 				681B6C331EE0184A006F8CDF /* AliPay */,
@@ -1375,6 +1397,7 @@
 		684B0A8B1D654A3B00505A9C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				68A69B6E1FAB100A00082427 /* SourceFolder */,
 				02B66AE31F4DD92D0028C17C /* refresh_round_arrow@2x.png */,
 				68BDDEC91DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@2x.png */,
 				68BDDECA1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@3x.png */,
@@ -1427,6 +1450,8 @@
 				02D594631F1FABED00D74FF8 /* BYChartsViewController.m */,
 				684552EB1F4E9D5B00DA4673 /* BYCustomScrollerViewController.h */,
 				684552EC1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m */,
+				68A69B7B1FAB109300082427 /* BYJSTOCViewController.h */,
+				68A69B7C1FAB109300082427 /* BYJSTOCViewController.m */,
 			);
 			path = A;
 			sourceTree = "<group>";
@@ -1608,6 +1633,27 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
+		68A69B681FAB0FE300082427 /* JSObject */ = {
+			isa = PBXGroup;
+			children = (
+				68A69B691FAB0FE300082427 /* JavaScriptOCDelegate.h */,
+				68A69B6A1FAB0FE300082427 /* TestJSObject.h */,
+				68A69B6B1FAB0FE300082427 /* TestJSObject.m */,
+			);
+			path = JSObject;
+			sourceTree = "<group>";
+		};
+		68A69B6E1FAB100A00082427 /* SourceFolder */ = {
+			isa = PBXGroup;
+			children = (
+				68A69B6F1FAB100A00082427 /* index1.css */,
+				68A69B701FAB100A00082427 /* index1.html */,
+				68A69B711FAB100A00082427 /* index1.js */,
+				68A69B721FAB100A00082427 /* test.html */,
+			);
+			path = SourceFolder;
+			sourceTree = "<group>";
+		};
 		68BDDE841DAB3D4C005EA1DE /* CustomControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -1780,12 +1826,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A69B731FAB100A00082427 /* index1.css in Resources */,
 				684CDFF41D9527A0006316A5 /* StarYellow@2x.png in Resources */,
 				684CDFE31D94D9F6006316A5 /* MISTabOfficeTable@3x.png in Resources */,
+				68A69B791FAB100A00082427 /* test.html in Resources */,
 				684B0A4C1D65499700505A9C /* Assets.xcassets in Resources */,
 				684B0AAC1D655A2C00505A9C /* Media.xcassets in Resources */,
+				68A69B771FAB100A00082427 /* index1.js in Resources */,
 				68BDDEC71DAF6E52005EA1DE /* MISSendNotifiSelectUnckeck@3x.png in Resources */,
 				684B0A8F1D654A3B00505A9C /* ReadMe.rtf in Resources */,
+				68A69B751FAB100A00082427 /* index1.html in Resources */,
 				68BDDECB1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@2x.png in Resources */,
 				6856B8DE1D6BD9BB00161109 /* MISQuanKTIcon@2x.png in Resources */,
 				681B6C861EE55ED2006F8CDF /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
@@ -1825,20 +1875,24 @@
 				684CDFF51D9527A0006316A5 /* StarYellow@2x.png in Resources */,
 				684CDFE41D94D9F6006316A5 /* MISTabOfficeTable@3x.png in Resources */,
 				684B0AAD1D655A2C00505A9C /* Media.xcassets in Resources */,
+				68A69B761FAB100A00082427 /* index1.html in Resources */,
 				684B0A9D1D654DD900505A9C /* Assets.xcassets in Resources */,
 				68BDDEC81DAF6E52005EA1DE /* MISSendNotifiSelectUnckeck@3x.png in Resources */,
 				684B0A9E1D654DD900505A9C /* ReadMe.rtf in Resources */,
 				68BDDECC1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@2x.png in Resources */,
 				6856B8DF1D6BD9BB00161109 /* MISQuanKTIcon@2x.png in Resources */,
 				6856B8E41D6C57F800161109 /* twitterIcon.png in Resources */,
+				68A69B781FAB100A00082427 /* index1.js in Resources */,
 				684CDFE21D94D9F6006316A5 /* MISTabOfficeTable@2x.png in Resources */,
 				681B6C871EE55ED2006F8CDF /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				684CDFF31D9527A0006316A5 /* StarGray@2x.png in Resources */,
 				681FDE9D1E640C8900DD548B /* RM.html in Resources */,
 				68BDDECE1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@3x.png in Resources */,
 				684CDFE61D94D9F6006316A5 /* MISTabOfficeTableHL@2x.png in Resources */,
+				68A69B741FAB100A00082427 /* index1.css in Resources */,
 				68BDDEC61DAF6E52005EA1DE /* MISSendNotifiSelectUnckeck@2x.png in Resources */,
 				68E1F0E71ECBE313002B6B13 /* foods.db in Resources */,
+				68A69B7A1FAB100A00082427 /* test.html in Resources */,
 				684CDFE81D94D9F6006316A5 /* MISTabOfficeTableHL@3x.png in Resources */,
 				6899C7911E55508900FEFAB2 /* tickblue@2x.png in Resources */,
 				02B66AE51F4DD92D0028C17C /* refresh_round_arrow@2x.png in Resources */,
@@ -1875,9 +1929,11 @@
 				6856B85D1D6A97C700161109 /* UIRefreshControl+AFNetworking.m in Sources */,
 				6856B8BF1D6AF34900161109 /* SDWebImageCompat.m in Sources */,
 				6856B8C51D6AF34900161109 /* SDWebImageDownloaderOperation.m in Sources */,
+				68A69B7D1FAB109300082427 /* BYJSTOCViewController.m in Sources */,
 				6892DE6F1E67B60B00BB9D84 /* UIView+AutoLayout.m in Sources */,
 				6856B85B1D6A97C700161109 /* UIProgressView+AFNetworking.m in Sources */,
 				6892DE611E67B60B00BB9D84 /* UINavigationBar+Awesome.m in Sources */,
+				68A69B6C1FAB0FE300082427 /* TestJSObject.m in Sources */,
 				6848CCCF1F1F3D850066D8FE /* GCDAsyncSocket.m in Sources */,
 				68966A541E66612B008BE2D9 /* BYSwitchBViewController.m in Sources */,
 				684B0AA81D654F5100505A9C /* BYMViewController.m in Sources */,
@@ -2020,9 +2076,11 @@
 				6856B85E1D6A97C700161109 /* UIRefreshControl+AFNetworking.m in Sources */,
 				6856B8C01D6AF34900161109 /* SDWebImageCompat.m in Sources */,
 				6856B8C61D6AF34900161109 /* SDWebImageDownloaderOperation.m in Sources */,
+				68A69B7E1FAB109300082427 /* BYJSTOCViewController.m in Sources */,
 				6892DE701E67B60B00BB9D84 /* UIView+AutoLayout.m in Sources */,
 				6856B85C1D6A97C700161109 /* UIProgressView+AFNetworking.m in Sources */,
 				6892DE621E67B60B00BB9D84 /* UINavigationBar+Awesome.m in Sources */,
+				68A69B6D1FAB0FE300082427 /* TestJSObject.m in Sources */,
 				6848CCD01F1F3D850066D8FE /* GCDAsyncSocket.m in Sources */,
 				68966A551E66612B008BE2D9 /* BYSwitchBViewController.m in Sources */,
 				684B0AA91D654F5100505A9C /* BYMViewController.m in Sources */,
