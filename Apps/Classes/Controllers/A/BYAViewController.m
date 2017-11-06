@@ -23,6 +23,7 @@
 #import "TmpModel.h"
 #import "BYCustomScrollerViewController.h"
 #import "BYJSTOCViewController.h"
+#import "BYBookMarkViewController.h"
 
 @interface BYAViewController ()
 
@@ -100,6 +101,8 @@
 		[self goCustomScrollerVC];
     } else if (indexPath.row == 13) {
         [self goJSTOCVC];
+    } else if (indexPath.row == 14) {
+        [self goBookMark];
     }
 }
 
@@ -110,7 +113,7 @@
 #pragma mark- Private methods
 - (void)initSettingData
 {
-    self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"CustomScroller", @"JS_TO_OC", nil];
+    self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"CustomScroller", @"JS_TO_OC", @"BookMarkVC", nil];
 	
 	[self.table registerClass:[BYDemoListCell class] forCellReuseIdentifier:[BYDemoListCell reuseIdentifier]];
 }
@@ -214,6 +217,14 @@
     jsTOCVC.title = @"js_oc";
     jsTOCVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:jsTOCVC animated:YES];
+}
+
+- (void)goBookMark
+{
+    BYBookMarkViewController *bookMarkVC = [[BYBookMarkViewController alloc] init];
+    bookMarkVC.title = @"bookMark";
+    bookMarkVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:bookMarkVC animated:YES];
 }
 
 #pragma mark- common test methods

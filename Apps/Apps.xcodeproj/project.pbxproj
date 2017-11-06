@@ -326,6 +326,16 @@
 		68A69B7A1FAB100A00082427 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 68A69B721FAB100A00082427 /* test.html */; };
 		68A69B7D1FAB109300082427 /* BYJSTOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B7C1FAB109300082427 /* BYJSTOCViewController.m */; };
 		68A69B7E1FAB109300082427 /* BYJSTOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B7C1FAB109300082427 /* BYJSTOCViewController.m */; };
+		68A69B9B1FB0470900082427 /* BookMarkContentItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B941FB0470900082427 /* BookMarkContentItemCell.m */; };
+		68A69B9C1FB0470900082427 /* BookMarkContentItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B941FB0470900082427 /* BookMarkContentItemCell.m */; };
+		68A69B9D1FB0470900082427 /* BookMarkItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B961FB0470900082427 /* BookMarkItemModel.m */; };
+		68A69B9E1FB0470900082427 /* BookMarkItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B961FB0470900082427 /* BookMarkItemModel.m */; };
+		68A69B9F1FB0470900082427 /* BookMarkTitleItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B981FB0470900082427 /* BookMarkTitleItemCell.m */; };
+		68A69BA01FB0470900082427 /* BookMarkTitleItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B981FB0470900082427 /* BookMarkTitleItemCell.m */; };
+		68A69BA11FB0470900082427 /* BookMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B9A1FB0470900082427 /* BookMarkView.m */; };
+		68A69BA21FB0470900082427 /* BookMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B9A1FB0470900082427 /* BookMarkView.m */; };
+		68A69BA51FB0474800082427 /* BYBookMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69BA41FB0474800082427 /* BYBookMarkViewController.m */; };
+		68A69BA61FB0474800082427 /* BYBookMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69BA41FB0474800082427 /* BYBookMarkViewController.m */; };
 		68BDDE881DAB3DD0005EA1DE /* BYDynamicTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */; };
 		68BDDE891DAB3DD0005EA1DE /* BYDynamicTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */; };
 		68BDDE9D1DAB78B0005EA1DE /* BYDynamicTreeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE9C1DAB78B0005EA1DE /* BYDynamicTreeData.m */; };
@@ -761,6 +771,16 @@
 		68A69B721FAB100A00082427 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		68A69B7B1FAB109300082427 /* BYJSTOCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYJSTOCViewController.h; sourceTree = "<group>"; };
 		68A69B7C1FAB109300082427 /* BYJSTOCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYJSTOCViewController.m; sourceTree = "<group>"; };
+		68A69B931FB0470900082427 /* BookMarkContentItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMarkContentItemCell.h; sourceTree = "<group>"; };
+		68A69B941FB0470900082427 /* BookMarkContentItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMarkContentItemCell.m; sourceTree = "<group>"; };
+		68A69B951FB0470900082427 /* BookMarkItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMarkItemModel.h; sourceTree = "<group>"; };
+		68A69B961FB0470900082427 /* BookMarkItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMarkItemModel.m; sourceTree = "<group>"; };
+		68A69B971FB0470900082427 /* BookMarkTitleItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMarkTitleItemCell.h; sourceTree = "<group>"; };
+		68A69B981FB0470900082427 /* BookMarkTitleItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMarkTitleItemCell.m; sourceTree = "<group>"; };
+		68A69B991FB0470900082427 /* BookMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMarkView.h; sourceTree = "<group>"; };
+		68A69B9A1FB0470900082427 /* BookMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMarkView.m; sourceTree = "<group>"; };
+		68A69BA31FB0474800082427 /* BYBookMarkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYBookMarkViewController.h; sourceTree = "<group>"; };
+		68A69BA41FB0474800082427 /* BYBookMarkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYBookMarkViewController.m; sourceTree = "<group>"; };
 		68BDDE861DAB3DD0005EA1DE /* BYDynamicTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYDynamicTree.h; sourceTree = "<group>"; };
 		68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYDynamicTree.m; sourceTree = "<group>"; };
 		68BDDE9B1DAB78B0005EA1DE /* BYDynamicTreeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYDynamicTreeData.h; sourceTree = "<group>"; };
@@ -1368,6 +1388,7 @@
 		684B0A871D654A3B00505A9C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				68A69B921FB0470900082427 /* BookMark */,
 				684B0A881D654A3B00505A9C /* A */,
 				684B0A891D654A3B00505A9C /* B */,
 			);
@@ -1452,6 +1473,8 @@
 				684552EC1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m */,
 				68A69B7B1FAB109300082427 /* BYJSTOCViewController.h */,
 				68A69B7C1FAB109300082427 /* BYJSTOCViewController.m */,
+				68A69BA31FB0474800082427 /* BYBookMarkViewController.h */,
+				68A69BA41FB0474800082427 /* BYBookMarkViewController.m */,
 			);
 			path = A;
 			sourceTree = "<group>";
@@ -1652,6 +1675,21 @@
 				68A69B721FAB100A00082427 /* test.html */,
 			);
 			path = SourceFolder;
+			sourceTree = "<group>";
+		};
+		68A69B921FB0470900082427 /* BookMark */ = {
+			isa = PBXGroup;
+			children = (
+				68A69B931FB0470900082427 /* BookMarkContentItemCell.h */,
+				68A69B941FB0470900082427 /* BookMarkContentItemCell.m */,
+				68A69B951FB0470900082427 /* BookMarkItemModel.h */,
+				68A69B961FB0470900082427 /* BookMarkItemModel.m */,
+				68A69B971FB0470900082427 /* BookMarkTitleItemCell.h */,
+				68A69B981FB0470900082427 /* BookMarkTitleItemCell.m */,
+				68A69B991FB0470900082427 /* BookMarkView.h */,
+				68A69B9A1FB0470900082427 /* BookMarkView.m */,
+			);
+			path = BookMark;
 			sourceTree = "<group>";
 		};
 		68BDDE841DAB3D4C005EA1DE /* CustomControl */ = {
@@ -1948,16 +1986,19 @@
 				6892DE471E67B60B00BB9D84 /* NSArray+MISJSON.m in Sources */,
 				681B6BB31EDFEA62006F8CDF /* BYPayViewController.m in Sources */,
 				681B6C811EE552A6006F8CDF /* WXApiRequestHandler.m in Sources */,
+				68A69B9F1FB0470900082427 /* BookMarkTitleItemCell.m in Sources */,
 				681B6C291EE00250006F8CDF /* base64.m in Sources */,
 				684CDFDB1D94D539006316A5 /* BYNavigationViewController.m in Sources */,
 				681B6C5B1EE5522E006F8CDF /* WXApiManager.m in Sources */,
 				6844C47A1E76925D00AA6D0E /* BYLineChartView.m in Sources */,
 				6856B8571D6A97C700161109 /* UIButton+AFNetworking.m in Sources */,
 				6856B87B1D6A9AE200161109 /* AFNetworkReachabilityManager.m in Sources */,
+				68A69BA51FB0474800082427 /* BYBookMarkViewController.m in Sources */,
 				6892DE651E67B60B00BB9D84 /* UISearchBar+AutoLayout.m in Sources */,
 				6844C4721E766EBA00AA6D0E /* BYChartViewController.m in Sources */,
 				6892DE4B1E67B60B00BB9D84 /* NSDictionary+MISJSON.m in Sources */,
 				681B6C311EE00250006F8CDF /* RSADataVerifier.m in Sources */,
+				68A69B9B1FB0470900082427 /* BookMarkContentItemCell.m in Sources */,
 				681B6C2F1EE00250006F8CDF /* RSADataSigner.m in Sources */,
 				6856B8D31D6AF34900161109 /* UIImageView+HighlightedWebCache.m in Sources */,
 				68A1673D1E125CE8002D0732 /* UIPlaceHolderTextView.m in Sources */,
@@ -1983,6 +2024,7 @@
 				020E02A61F0D15F40079F318 /* BYAVViewController.m in Sources */,
 				684CDFCB1D94D3B3006316A5 /* BYBViewController.m in Sources */,
 				68BDDEB51DAC911F005EA1DE /* BYDynamicTreeCell.m in Sources */,
+				68A69B9D1FB0470900082427 /* BookMarkItemModel.m in Sources */,
 				681B6C831EE552A6006F8CDF /* WXApiResponseHandler.m in Sources */,
 				68BDDEB11DAC90CB005EA1DE /* BYTableViewCell.m in Sources */,
 				6856B8811D6A9AE200161109 /* AFURLResponseSerialization.m in Sources */,
@@ -1993,6 +2035,7 @@
 				6856B85F1D6A97C700161109 /* UIWebView+AFNetworking.m in Sources */,
 				684B0A471D65499700505A9C /* ViewController.m in Sources */,
 				6856B8B91D6AF34900161109 /* MKAnnotationView+WebCache.m in Sources */,
+				68A69BA11FB0470900082427 /* BookMarkView.m in Sources */,
 				6856B87F1D6A9AE200161109 /* AFURLRequestSerialization.m in Sources */,
 				023FE4E61F4B07970039B65F /* TmpModel.m in Sources */,
 				6892DE511E67B60B00BB9D84 /* NSString+MISEmoji.m in Sources */,
@@ -2095,16 +2138,19 @@
 				6892DE481E67B60B00BB9D84 /* NSArray+MISJSON.m in Sources */,
 				681B6BB41EDFEA62006F8CDF /* BYPayViewController.m in Sources */,
 				681B6C821EE552A6006F8CDF /* WXApiRequestHandler.m in Sources */,
+				68A69BA01FB0470900082427 /* BookMarkTitleItemCell.m in Sources */,
 				681B6C2A1EE00250006F8CDF /* base64.m in Sources */,
 				684CDFDC1D94D539006316A5 /* BYNavigationViewController.m in Sources */,
 				681B6C5C1EE5522E006F8CDF /* WXApiManager.m in Sources */,
 				6844C47B1E76925D00AA6D0E /* BYLineChartView.m in Sources */,
 				6856B8581D6A97C700161109 /* UIButton+AFNetworking.m in Sources */,
 				6856B87C1D6A9AE200161109 /* AFNetworkReachabilityManager.m in Sources */,
+				68A69BA61FB0474800082427 /* BYBookMarkViewController.m in Sources */,
 				6892DE661E67B60B00BB9D84 /* UISearchBar+AutoLayout.m in Sources */,
 				6844C4731E766EBA00AA6D0E /* BYChartViewController.m in Sources */,
 				6892DE4C1E67B60B00BB9D84 /* NSDictionary+MISJSON.m in Sources */,
 				681B6C321EE00250006F8CDF /* RSADataVerifier.m in Sources */,
+				68A69B9C1FB0470900082427 /* BookMarkContentItemCell.m in Sources */,
 				681B6C301EE00250006F8CDF /* RSADataSigner.m in Sources */,
 				6856B8D41D6AF34900161109 /* UIImageView+HighlightedWebCache.m in Sources */,
 				68A1673E1E125CE8002D0732 /* UIPlaceHolderTextView.m in Sources */,
@@ -2130,6 +2176,7 @@
 				020E02A71F0D15F40079F318 /* BYAVViewController.m in Sources */,
 				684CDFCC1D94D3B3006316A5 /* BYBViewController.m in Sources */,
 				68BDDEB61DAC911F005EA1DE /* BYDynamicTreeCell.m in Sources */,
+				68A69B9E1FB0470900082427 /* BookMarkItemModel.m in Sources */,
 				681B6C841EE552A6006F8CDF /* WXApiResponseHandler.m in Sources */,
 				68BDDEB21DAC90CB005EA1DE /* BYTableViewCell.m in Sources */,
 				6856B8821D6A9AE200161109 /* AFURLResponseSerialization.m in Sources */,
@@ -2140,6 +2187,7 @@
 				6856B8601D6A97C700161109 /* UIWebView+AFNetworking.m in Sources */,
 				684B0A991D654DD900505A9C /* ViewController.m in Sources */,
 				6856B8BA1D6AF34900161109 /* MKAnnotationView+WebCache.m in Sources */,
+				68A69BA21FB0470900082427 /* BookMarkView.m in Sources */,
 				6856B8801D6A9AE200161109 /* AFURLRequestSerialization.m in Sources */,
 				023FE4E71F4B07970039B65F /* TmpModel.m in Sources */,
 				6892DE521E67B60B00BB9D84 /* NSString+MISEmoji.m in Sources */,
