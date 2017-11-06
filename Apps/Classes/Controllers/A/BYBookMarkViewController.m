@@ -38,7 +38,7 @@
     for (int i = 0; i < self.titleArray.count; i ++) {
         UIView *tmpV = [[UIView alloc] init];
         tmpV.backgroundColor = [UIColor whiteColor];
-        UILabel *contentLab = [[UILabel alloc] initWithFrame:CGRectMake(50, 60, SCREEN_WIDTH, 40)];
+        UILabel *contentLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 60, SCREEN_WIDTH, 40)];
         contentLab.text = [NSString stringWithFormat:@"page_content : %zd", i];
         contentLab.textColor = [UIColor redColor];
         contentLab.textAlignment = NSTextAlignmentCenter;
@@ -53,10 +53,11 @@
     self.bookMarkView.delegate = self;
     self.bookMarkView.dataSource = self;
     
-    self.bookMarkView.bookMarkTitleView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 40);
+    //note mini_height:50 !!!
+    self.bookMarkView.bookMarkTitleView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 50);
     [self.view addSubview:self.bookMarkView.bookMarkTitleView];
     
-    self.bookMarkView.bookMarkContentView.frame = CGRectMake(0, 40, SCREEN_WIDTH, SCREEN_HEIGHT - 40);
+    self.bookMarkView.bookMarkContentView.frame = CGRectMake(0, 50, SCREEN_WIDTH, SCREEN_HEIGHT - 50);
     [self.view addSubview:self.bookMarkView.bookMarkContentView];
     
     [self.bookMarkView reloadData];
