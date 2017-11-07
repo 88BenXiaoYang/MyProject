@@ -7,3 +7,4 @@ Apps.xcodeproj/.*
 Apps.xcodeproj/project.xcworkspace/
 Apps.xcodeproj/xcuserdata/
 *.xcuserstate
+*.DS_Store
