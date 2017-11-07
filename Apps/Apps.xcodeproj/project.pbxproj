@@ -92,6 +92,8 @@
 		6844C4771E76712C00AA6D0E /* BYCoordinateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6844C4751E76712C00AA6D0E /* BYCoordinateItem.m */; };
 		6844C47A1E76925D00AA6D0E /* BYLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6844C4791E76925D00AA6D0E /* BYLineChartView.m */; };
 		6844C47B1E76925D00AA6D0E /* BYLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6844C4791E76925D00AA6D0E /* BYLineChartView.m */; };
+		684552ED1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684552EC1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m */; };
+		684552EE1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684552EC1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m */; };
 		6848CCCF1F1F3D850066D8FE /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6848CCCE1F1F3D850066D8FE /* GCDAsyncSocket.m */; };
 		6848CCD01F1F3D850066D8FE /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6848CCCE1F1F3D850066D8FE /* GCDAsyncSocket.m */; };
 		684B0A471D65499700505A9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684B0A461D65499700505A9C /* ViewController.m */; };
@@ -316,6 +318,28 @@
 		68A167391E10D78E002D0732 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A167371E10D77D002D0732 /* libc++.tbd */; };
 		68A1673D1E125CE8002D0732 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A1673C1E125CE8002D0732 /* UIPlaceHolderTextView.m */; };
 		68A1673E1E125CE8002D0732 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A1673C1E125CE8002D0732 /* UIPlaceHolderTextView.m */; };
+		68A69B6C1FAB0FE300082427 /* TestJSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B6B1FAB0FE300082427 /* TestJSObject.m */; };
+		68A69B6D1FAB0FE300082427 /* TestJSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B6B1FAB0FE300082427 /* TestJSObject.m */; };
+		68A69B731FAB100A00082427 /* index1.css in Resources */ = {isa = PBXBuildFile; fileRef = 68A69B6F1FAB100A00082427 /* index1.css */; };
+		68A69B741FAB100A00082427 /* index1.css in Resources */ = {isa = PBXBuildFile; fileRef = 68A69B6F1FAB100A00082427 /* index1.css */; };
+		68A69B751FAB100A00082427 /* index1.html in Resources */ = {isa = PBXBuildFile; fileRef = 68A69B701FAB100A00082427 /* index1.html */; };
+		68A69B761FAB100A00082427 /* index1.html in Resources */ = {isa = PBXBuildFile; fileRef = 68A69B701FAB100A00082427 /* index1.html */; };
+		68A69B771FAB100A00082427 /* index1.js in Resources */ = {isa = PBXBuildFile; fileRef = 68A69B711FAB100A00082427 /* index1.js */; };
+		68A69B781FAB100A00082427 /* index1.js in Resources */ = {isa = PBXBuildFile; fileRef = 68A69B711FAB100A00082427 /* index1.js */; };
+		68A69B791FAB100A00082427 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 68A69B721FAB100A00082427 /* test.html */; };
+		68A69B7A1FAB100A00082427 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 68A69B721FAB100A00082427 /* test.html */; };
+		68A69B7D1FAB109300082427 /* BYJSTOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B7C1FAB109300082427 /* BYJSTOCViewController.m */; };
+		68A69B7E1FAB109300082427 /* BYJSTOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B7C1FAB109300082427 /* BYJSTOCViewController.m */; };
+		68A69B9B1FB0470900082427 /* BookMarkContentItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B941FB0470900082427 /* BookMarkContentItemCell.m */; };
+		68A69B9C1FB0470900082427 /* BookMarkContentItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B941FB0470900082427 /* BookMarkContentItemCell.m */; };
+		68A69B9D1FB0470900082427 /* BookMarkItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B961FB0470900082427 /* BookMarkItemModel.m */; };
+		68A69B9E1FB0470900082427 /* BookMarkItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B961FB0470900082427 /* BookMarkItemModel.m */; };
+		68A69B9F1FB0470900082427 /* BookMarkTitleItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B981FB0470900082427 /* BookMarkTitleItemCell.m */; };
+		68A69BA01FB0470900082427 /* BookMarkTitleItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B981FB0470900082427 /* BookMarkTitleItemCell.m */; };
+		68A69BA11FB0470900082427 /* BookMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B9A1FB0470900082427 /* BookMarkView.m */; };
+		68A69BA21FB0470900082427 /* BookMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B9A1FB0470900082427 /* BookMarkView.m */; };
+		68A69BA51FB0474800082427 /* BYBookMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69BA41FB0474800082427 /* BYBookMarkViewController.m */; };
+		68A69BA61FB0474800082427 /* BYBookMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69BA41FB0474800082427 /* BYBookMarkViewController.m */; };
 		68BDDE881DAB3DD0005EA1DE /* BYDynamicTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */; };
 		68BDDE891DAB3DD0005EA1DE /* BYDynamicTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */; };
 		68BDDE9D1DAB78B0005EA1DE /* BYDynamicTreeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE9C1DAB78B0005EA1DE /* BYDynamicTreeData.m */; };
@@ -526,6 +550,8 @@
 		6844C4751E76712C00AA6D0E /* BYCoordinateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCoordinateItem.m; sourceTree = "<group>"; };
 		6844C4781E76925D00AA6D0E /* BYLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYLineChartView.h; sourceTree = "<group>"; };
 		6844C4791E76925D00AA6D0E /* BYLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYLineChartView.m; sourceTree = "<group>"; };
+		684552EB1F4E9D5B00DA4673 /* BYCustomScrollerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCustomScrollerViewController.h; sourceTree = "<group>"; };
+		684552EC1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCustomScrollerViewController.m; sourceTree = "<group>"; };
 		6848CCCD1F1F3D850066D8FE /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		6848CCCE1F1F3D850066D8FE /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		684B0A3C1D65499700505A9C /* AppA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -744,6 +770,25 @@
 		68A167371E10D77D002D0732 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		68A1673B1E125CE8002D0732 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
 		68A1673C1E125CE8002D0732 /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
+		68A69B691FAB0FE300082427 /* JavaScriptOCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptOCDelegate.h; sourceTree = "<group>"; };
+		68A69B6A1FAB0FE300082427 /* TestJSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestJSObject.h; sourceTree = "<group>"; };
+		68A69B6B1FAB0FE300082427 /* TestJSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestJSObject.m; sourceTree = "<group>"; };
+		68A69B6F1FAB100A00082427 /* index1.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = index1.css; sourceTree = "<group>"; };
+		68A69B701FAB100A00082427 /* index1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index1.html; sourceTree = "<group>"; };
+		68A69B711FAB100A00082427 /* index1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index1.js; sourceTree = "<group>"; };
+		68A69B721FAB100A00082427 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		68A69B7B1FAB109300082427 /* BYJSTOCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYJSTOCViewController.h; sourceTree = "<group>"; };
+		68A69B7C1FAB109300082427 /* BYJSTOCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYJSTOCViewController.m; sourceTree = "<group>"; };
+		68A69B931FB0470900082427 /* BookMarkContentItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMarkContentItemCell.h; sourceTree = "<group>"; };
+		68A69B941FB0470900082427 /* BookMarkContentItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMarkContentItemCell.m; sourceTree = "<group>"; };
+		68A69B951FB0470900082427 /* BookMarkItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMarkItemModel.h; sourceTree = "<group>"; };
+		68A69B961FB0470900082427 /* BookMarkItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMarkItemModel.m; sourceTree = "<group>"; };
+		68A69B971FB0470900082427 /* BookMarkTitleItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMarkTitleItemCell.h; sourceTree = "<group>"; };
+		68A69B981FB0470900082427 /* BookMarkTitleItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMarkTitleItemCell.m; sourceTree = "<group>"; };
+		68A69B991FB0470900082427 /* BookMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMarkView.h; sourceTree = "<group>"; };
+		68A69B9A1FB0470900082427 /* BookMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMarkView.m; sourceTree = "<group>"; };
+		68A69BA31FB0474800082427 /* BYBookMarkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYBookMarkViewController.h; sourceTree = "<group>"; };
+		68A69BA41FB0474800082427 /* BYBookMarkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYBookMarkViewController.m; sourceTree = "<group>"; };
 		68BDDE861DAB3DD0005EA1DE /* BYDynamicTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYDynamicTree.h; sourceTree = "<group>"; };
 		68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYDynamicTree.m; sourceTree = "<group>"; };
 		68BDDE9B1DAB78B0005EA1DE /* BYDynamicTreeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYDynamicTreeData.h; sourceTree = "<group>"; };
@@ -1295,6 +1340,7 @@
 		684B0A801D654A3B00505A9C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				68A69B681FAB0FE300082427 /* JSObject */,
 				023FE4E31F4B07710039B65F /* Tmp */,
 				681B6C4E1EE535F2006F8CDF /* WXPay */,
 				681B6C331EE0184A006F8CDF /* AliPay */,
@@ -1360,6 +1406,7 @@
 		684B0A871D654A3B00505A9C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				68A69B921FB0470900082427 /* BookMark */,
 				684B0A881D654A3B00505A9C /* A */,
 				684B0A891D654A3B00505A9C /* B */,
 			);
@@ -1389,6 +1436,7 @@
 		684B0A8B1D654A3B00505A9C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				68A69B6E1FAB100A00082427 /* SourceFolder */,
 				02B66AE31F4DD92D0028C17C /* refresh_round_arrow@2x.png */,
 				68BDDEC91DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@2x.png */,
 				68BDDECA1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@3x.png */,
@@ -1441,6 +1489,12 @@
 				02D594631F1FABED00D74FF8 /* BYChartsViewController.m */,
 				02C0F08A1F6EA2AC0031C5C5 /* BYRCDemoViewController.h */,
 				02C0F08B1F6EA2AC0031C5C5 /* BYRCDemoViewController.m */,
+				684552EB1F4E9D5B00DA4673 /* BYCustomScrollerViewController.h */,
+				684552EC1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m */,
+				68A69B7B1FAB109300082427 /* BYJSTOCViewController.h */,
+				68A69B7C1FAB109300082427 /* BYJSTOCViewController.m */,
+				68A69BA31FB0474800082427 /* BYBookMarkViewController.h */,
+				68A69BA41FB0474800082427 /* BYBookMarkViewController.m */,
 			);
 			path = A;
 			sourceTree = "<group>";
@@ -1622,6 +1676,42 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
+		68A69B681FAB0FE300082427 /* JSObject */ = {
+			isa = PBXGroup;
+			children = (
+				68A69B691FAB0FE300082427 /* JavaScriptOCDelegate.h */,
+				68A69B6A1FAB0FE300082427 /* TestJSObject.h */,
+				68A69B6B1FAB0FE300082427 /* TestJSObject.m */,
+			);
+			path = JSObject;
+			sourceTree = "<group>";
+		};
+		68A69B6E1FAB100A00082427 /* SourceFolder */ = {
+			isa = PBXGroup;
+			children = (
+				68A69B6F1FAB100A00082427 /* index1.css */,
+				68A69B701FAB100A00082427 /* index1.html */,
+				68A69B711FAB100A00082427 /* index1.js */,
+				68A69B721FAB100A00082427 /* test.html */,
+			);
+			path = SourceFolder;
+			sourceTree = "<group>";
+		};
+		68A69B921FB0470900082427 /* BookMark */ = {
+			isa = PBXGroup;
+			children = (
+				68A69B931FB0470900082427 /* BookMarkContentItemCell.h */,
+				68A69B941FB0470900082427 /* BookMarkContentItemCell.m */,
+				68A69B951FB0470900082427 /* BookMarkItemModel.h */,
+				68A69B961FB0470900082427 /* BookMarkItemModel.m */,
+				68A69B971FB0470900082427 /* BookMarkTitleItemCell.h */,
+				68A69B981FB0470900082427 /* BookMarkTitleItemCell.m */,
+				68A69B991FB0470900082427 /* BookMarkView.h */,
+				68A69B9A1FB0470900082427 /* BookMarkView.m */,
+			);
+			path = BookMark;
+			sourceTree = "<group>";
+		};
 		68BDDE841DAB3D4C005EA1DE /* CustomControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -1794,12 +1884,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A69B731FAB100A00082427 /* index1.css in Resources */,
 				684CDFF41D9527A0006316A5 /* StarYellow@2x.png in Resources */,
 				684CDFE31D94D9F6006316A5 /* MISTabOfficeTable@3x.png in Resources */,
+				68A69B791FAB100A00082427 /* test.html in Resources */,
 				684B0A4C1D65499700505A9C /* Assets.xcassets in Resources */,
 				684B0AAC1D655A2C00505A9C /* Media.xcassets in Resources */,
+				68A69B771FAB100A00082427 /* index1.js in Resources */,
 				68BDDEC71DAF6E52005EA1DE /* MISSendNotifiSelectUnckeck@3x.png in Resources */,
 				684B0A8F1D654A3B00505A9C /* ReadMe.rtf in Resources */,
+				68A69B751FAB100A00082427 /* index1.html in Resources */,
 				68BDDECB1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@2x.png in Resources */,
 				6856B8DE1D6BD9BB00161109 /* MISQuanKTIcon@2x.png in Resources */,
 				681B6C861EE55ED2006F8CDF /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
@@ -1839,20 +1933,24 @@
 				684CDFF51D9527A0006316A5 /* StarYellow@2x.png in Resources */,
 				684CDFE41D94D9F6006316A5 /* MISTabOfficeTable@3x.png in Resources */,
 				684B0AAD1D655A2C00505A9C /* Media.xcassets in Resources */,
+				68A69B761FAB100A00082427 /* index1.html in Resources */,
 				684B0A9D1D654DD900505A9C /* Assets.xcassets in Resources */,
 				68BDDEC81DAF6E52005EA1DE /* MISSendNotifiSelectUnckeck@3x.png in Resources */,
 				684B0A9E1D654DD900505A9C /* ReadMe.rtf in Resources */,
 				68BDDECC1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@2x.png in Resources */,
 				6856B8DF1D6BD9BB00161109 /* MISQuanKTIcon@2x.png in Resources */,
 				6856B8E41D6C57F800161109 /* twitterIcon.png in Resources */,
+				68A69B781FAB100A00082427 /* index1.js in Resources */,
 				684CDFE21D94D9F6006316A5 /* MISTabOfficeTable@2x.png in Resources */,
 				681B6C871EE55ED2006F8CDF /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				684CDFF31D9527A0006316A5 /* StarGray@2x.png in Resources */,
 				681FDE9D1E640C8900DD548B /* RM.html in Resources */,
 				68BDDECE1DAF6E5B005EA1DE /* MISSendNotifiSelectCkecked@3x.png in Resources */,
 				684CDFE61D94D9F6006316A5 /* MISTabOfficeTableHL@2x.png in Resources */,
+				68A69B741FAB100A00082427 /* index1.css in Resources */,
 				68BDDEC61DAF6E52005EA1DE /* MISSendNotifiSelectUnckeck@2x.png in Resources */,
 				68E1F0E71ECBE313002B6B13 /* foods.db in Resources */,
+				68A69B7A1FAB100A00082427 /* test.html in Resources */,
 				684CDFE81D94D9F6006316A5 /* MISTabOfficeTableHL@3x.png in Resources */,
 				6899C7911E55508900FEFAB2 /* tickblue@2x.png in Resources */,
 				02B66AE51F4DD92D0028C17C /* refresh_round_arrow@2x.png in Resources */,
@@ -1889,9 +1987,11 @@
 				6856B85D1D6A97C700161109 /* UIRefreshControl+AFNetworking.m in Sources */,
 				6856B8BF1D6AF34900161109 /* SDWebImageCompat.m in Sources */,
 				6856B8C51D6AF34900161109 /* SDWebImageDownloaderOperation.m in Sources */,
+				68A69B7D1FAB109300082427 /* BYJSTOCViewController.m in Sources */,
 				6892DE6F1E67B60B00BB9D84 /* UIView+AutoLayout.m in Sources */,
 				6856B85B1D6A97C700161109 /* UIProgressView+AFNetworking.m in Sources */,
 				6892DE611E67B60B00BB9D84 /* UINavigationBar+Awesome.m in Sources */,
+				68A69B6C1FAB0FE300082427 /* TestJSObject.m in Sources */,
 				6848CCCF1F1F3D850066D8FE /* GCDAsyncSocket.m in Sources */,
 				68966A541E66612B008BE2D9 /* BYSwitchBViewController.m in Sources */,
 				684B0AA81D654F5100505A9C /* BYMViewController.m in Sources */,
@@ -1907,16 +2007,19 @@
 				6892DE471E67B60B00BB9D84 /* NSArray+MISJSON.m in Sources */,
 				681B6BB31EDFEA62006F8CDF /* BYPayViewController.m in Sources */,
 				681B6C811EE552A6006F8CDF /* WXApiRequestHandler.m in Sources */,
+				68A69B9F1FB0470900082427 /* BookMarkTitleItemCell.m in Sources */,
 				681B6C291EE00250006F8CDF /* base64.m in Sources */,
 				684CDFDB1D94D539006316A5 /* BYNavigationViewController.m in Sources */,
 				681B6C5B1EE5522E006F8CDF /* WXApiManager.m in Sources */,
 				6844C47A1E76925D00AA6D0E /* BYLineChartView.m in Sources */,
 				6856B8571D6A97C700161109 /* UIButton+AFNetworking.m in Sources */,
 				6856B87B1D6A9AE200161109 /* AFNetworkReachabilityManager.m in Sources */,
+				68A69BA51FB0474800082427 /* BYBookMarkViewController.m in Sources */,
 				6892DE651E67B60B00BB9D84 /* UISearchBar+AutoLayout.m in Sources */,
 				6844C4721E766EBA00AA6D0E /* BYChartViewController.m in Sources */,
 				6892DE4B1E67B60B00BB9D84 /* NSDictionary+MISJSON.m in Sources */,
 				681B6C311EE00250006F8CDF /* RSADataVerifier.m in Sources */,
+				68A69B9B1FB0470900082427 /* BookMarkContentItemCell.m in Sources */,
 				681B6C2F1EE00250006F8CDF /* RSADataSigner.m in Sources */,
 				6856B8D31D6AF34900161109 /* UIImageView+HighlightedWebCache.m in Sources */,
 				68A1673D1E125CE8002D0732 /* UIPlaceHolderTextView.m in Sources */,
@@ -1942,6 +2045,7 @@
 				020E02A61F0D15F40079F318 /* BYAVViewController.m in Sources */,
 				684CDFCB1D94D3B3006316A5 /* BYBViewController.m in Sources */,
 				68BDDEB51DAC911F005EA1DE /* BYDynamicTreeCell.m in Sources */,
+				68A69B9D1FB0470900082427 /* BookMarkItemModel.m in Sources */,
 				681B6C831EE552A6006F8CDF /* WXApiResponseHandler.m in Sources */,
 				68BDDEB11DAC90CB005EA1DE /* BYTableViewCell.m in Sources */,
 				6856B8811D6A9AE200161109 /* AFURLResponseSerialization.m in Sources */,
@@ -1952,6 +2056,7 @@
 				6856B85F1D6A97C700161109 /* UIWebView+AFNetworking.m in Sources */,
 				684B0A471D65499700505A9C /* ViewController.m in Sources */,
 				6856B8B91D6AF34900161109 /* MKAnnotationView+WebCache.m in Sources */,
+				68A69BA11FB0470900082427 /* BookMarkView.m in Sources */,
 				6856B87F1D6A9AE200161109 /* AFURLRequestSerialization.m in Sources */,
 				023FE4E61F4B07970039B65F /* TmpModel.m in Sources */,
 				6892DE511E67B60B00BB9D84 /* NSString+MISEmoji.m in Sources */,
@@ -1986,6 +2091,7 @@
 				6856B8BD1D6AF34900161109 /* SDImageCache.m in Sources */,
 				6892DE7F1E67B8AE00BB9D84 /* UILabel+AutoLayout.m in Sources */,
 				6856B88B1D6AC0B300161109 /* BYUtils.m in Sources */,
+				684552ED1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m in Sources */,
 				684CDFD31D94D3D2006316A5 /* BYDViewController.m in Sources */,
 				6892DE5F1E67B60B00BB9D84 /* UIImage+MISMask.m in Sources */,
 				6856B8511D6A97C700161109 /* AFImageDownloader.m in Sources */,
@@ -2035,9 +2141,11 @@
 				6856B85E1D6A97C700161109 /* UIRefreshControl+AFNetworking.m in Sources */,
 				6856B8C01D6AF34900161109 /* SDWebImageCompat.m in Sources */,
 				6856B8C61D6AF34900161109 /* SDWebImageDownloaderOperation.m in Sources */,
+				68A69B7E1FAB109300082427 /* BYJSTOCViewController.m in Sources */,
 				6892DE701E67B60B00BB9D84 /* UIView+AutoLayout.m in Sources */,
 				6856B85C1D6A97C700161109 /* UIProgressView+AFNetworking.m in Sources */,
 				6892DE621E67B60B00BB9D84 /* UINavigationBar+Awesome.m in Sources */,
+				68A69B6D1FAB0FE300082427 /* TestJSObject.m in Sources */,
 				6848CCD01F1F3D850066D8FE /* GCDAsyncSocket.m in Sources */,
 				68966A551E66612B008BE2D9 /* BYSwitchBViewController.m in Sources */,
 				684B0AA91D654F5100505A9C /* BYMViewController.m in Sources */,
@@ -2053,16 +2161,19 @@
 				6892DE481E67B60B00BB9D84 /* NSArray+MISJSON.m in Sources */,
 				681B6BB41EDFEA62006F8CDF /* BYPayViewController.m in Sources */,
 				681B6C821EE552A6006F8CDF /* WXApiRequestHandler.m in Sources */,
+				68A69BA01FB0470900082427 /* BookMarkTitleItemCell.m in Sources */,
 				681B6C2A1EE00250006F8CDF /* base64.m in Sources */,
 				684CDFDC1D94D539006316A5 /* BYNavigationViewController.m in Sources */,
 				681B6C5C1EE5522E006F8CDF /* WXApiManager.m in Sources */,
 				6844C47B1E76925D00AA6D0E /* BYLineChartView.m in Sources */,
 				6856B8581D6A97C700161109 /* UIButton+AFNetworking.m in Sources */,
 				6856B87C1D6A9AE200161109 /* AFNetworkReachabilityManager.m in Sources */,
+				68A69BA61FB0474800082427 /* BYBookMarkViewController.m in Sources */,
 				6892DE661E67B60B00BB9D84 /* UISearchBar+AutoLayout.m in Sources */,
 				6844C4731E766EBA00AA6D0E /* BYChartViewController.m in Sources */,
 				6892DE4C1E67B60B00BB9D84 /* NSDictionary+MISJSON.m in Sources */,
 				681B6C321EE00250006F8CDF /* RSADataVerifier.m in Sources */,
+				68A69B9C1FB0470900082427 /* BookMarkContentItemCell.m in Sources */,
 				681B6C301EE00250006F8CDF /* RSADataSigner.m in Sources */,
 				6856B8D41D6AF34900161109 /* UIImageView+HighlightedWebCache.m in Sources */,
 				68A1673E1E125CE8002D0732 /* UIPlaceHolderTextView.m in Sources */,
@@ -2088,6 +2199,7 @@
 				020E02A71F0D15F40079F318 /* BYAVViewController.m in Sources */,
 				684CDFCC1D94D3B3006316A5 /* BYBViewController.m in Sources */,
 				68BDDEB61DAC911F005EA1DE /* BYDynamicTreeCell.m in Sources */,
+				68A69B9E1FB0470900082427 /* BookMarkItemModel.m in Sources */,
 				681B6C841EE552A6006F8CDF /* WXApiResponseHandler.m in Sources */,
 				68BDDEB21DAC90CB005EA1DE /* BYTableViewCell.m in Sources */,
 				6856B8821D6A9AE200161109 /* AFURLResponseSerialization.m in Sources */,
@@ -2098,6 +2210,7 @@
 				6856B8601D6A97C700161109 /* UIWebView+AFNetworking.m in Sources */,
 				684B0A991D654DD900505A9C /* ViewController.m in Sources */,
 				6856B8BA1D6AF34900161109 /* MKAnnotationView+WebCache.m in Sources */,
+				68A69BA21FB0470900082427 /* BookMarkView.m in Sources */,
 				6856B8801D6A9AE200161109 /* AFURLRequestSerialization.m in Sources */,
 				023FE4E71F4B07970039B65F /* TmpModel.m in Sources */,
 				6892DE521E67B60B00BB9D84 /* NSString+MISEmoji.m in Sources */,
@@ -2132,6 +2245,7 @@
 				6856B8BE1D6AF34900161109 /* SDImageCache.m in Sources */,
 				6892DE801E67B8AE00BB9D84 /* UILabel+AutoLayout.m in Sources */,
 				6856B88C1D6AC0B300161109 /* BYUtils.m in Sources */,
+				684552EE1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m in Sources */,
 				684CDFD41D94D3D2006316A5 /* BYDViewController.m in Sources */,
 				6892DE601E67B60B00BB9D84 /* UIImage+MISMask.m in Sources */,
 				6856B8521D6A97C700161109 /* AFImageDownloader.m in Sources */,

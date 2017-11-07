@@ -21,7 +21,13 @@
 #import "BYAVViewController.h"
 #import "BYChartsViewController.h"
 #import "TmpModel.h"
+<<<<<<< HEAD
 #import "BYRCDemoViewController.h"
+=======
+#import "BYCustomScrollerViewController.h"
+#import "BYJSTOCViewController.h"
+#import "BYBookMarkViewController.h"
+>>>>>>> 411636de0a770277efa3b1af4cd2fe9a15ea3550
 
 @interface BYAViewController ()
 
@@ -95,8 +101,17 @@
         [self goAVVC];
     } else if (indexPath.row == 11) {
         [self goChartsVC];
+<<<<<<< HEAD
     } else if (indexPath.row == 12) {
         [self goRCDemoVC];
+=======
+	} else if (indexPath.row == 12) {
+		[self goCustomScrollerVC];
+    } else if (indexPath.row == 13) {
+        [self goJSTOCVC];
+    } else if (indexPath.row == 14) {
+        [self goBookMark];
+>>>>>>> 411636de0a770277efa3b1af4cd2fe9a15ea3550
     }
 }
 
@@ -107,7 +122,11 @@
 #pragma mark- Private methods
 - (void)initSettingData
 {
+<<<<<<< HEAD
 	self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"RCDemo", nil];
+=======
+    self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"CustomScroller", @"JS_TO_OC", @"BookMarkVC", nil];
+>>>>>>> 411636de0a770277efa3b1af4cd2fe9a15ea3550
 	
 	[self.table registerClass:[BYDemoListCell class] forCellReuseIdentifier:[BYDemoListCell reuseIdentifier]];
 }
@@ -197,12 +216,37 @@
     [self.navigationController pushViewController:chartsVC animated:YES];
 }
 
+<<<<<<< HEAD
 - (void)goRCDemoVC
 {
     BYRCDemoViewController *rcDemoVC = [[BYRCDemoViewController alloc] init];
     rcDemoVC.title = @"RCDemo";
     rcDemoVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:rcDemoVC animated:YES];
+=======
+- (void)goCustomScrollerVC
+{
+	BYCustomScrollerViewController *scrollerVC = [[BYCustomScrollerViewController alloc] init];
+	scrollerVC.title = @"customScroller";
+	scrollerVC.hidesBottomBarWhenPushed = YES;
+	[self.navigationController pushViewController:scrollerVC animated:YES];
+}
+
+- (void)goJSTOCVC
+{
+    BYJSTOCViewController *jsTOCVC = [[BYJSTOCViewController alloc] init];
+    jsTOCVC.title = @"js_oc";
+    jsTOCVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:jsTOCVC animated:YES];
+}
+
+- (void)goBookMark
+{
+    BYBookMarkViewController *bookMarkVC = [[BYBookMarkViewController alloc] init];
+    bookMarkVC.title = @"bookMark";
+    bookMarkVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:bookMarkVC animated:YES];
+>>>>>>> 411636de0a770277efa3b1af4cd2fe9a15ea3550
 }
 
 #pragma mark- common test methods
