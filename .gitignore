@@ -1,3 +1,4 @@
 #ignore system files
 .*
 !.gitignore
+*.DS_Store
