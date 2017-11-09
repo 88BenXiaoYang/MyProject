@@ -8,6 +8,7 @@
 
 #import "BYNavigationTitleViewController.h"
 #import "BYNavigationTitleView.h"
+#import "BYCustomMaskView.h"
 
 @interface BYNavigationTitleViewController ()
 
@@ -21,6 +22,12 @@
     [super viewDidLoad];
     
     self.navigationTitleView = [[BYNavigationTitleView alloc] initWithFrame:CGRectMake(0, 0, 200, 44)];
+    
+    self.navigationTitleView.navigationTitleViewBlock = ^{
+        BYCustomMaskView *maskV = [[BYCustomMaskView alloc] init];
+        [maskV showMaskView];
+    };
+    
     self.navigationTitleView.backgroundColor = [UIColor blueColor];
     self.navigationItem.titleView = self.navigationTitleView;
 }

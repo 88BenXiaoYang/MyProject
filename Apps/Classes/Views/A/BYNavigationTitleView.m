@@ -13,6 +13,7 @@
 @property (nonatomic, strong) UIImageView *iconImageView;
 @property (nonatomic, strong) UILabel *titleLab;
 @property (nonatomic, strong) UIImageView *indicateImageView;
+@property (nonatomic, strong) UIButton *showBtn;
 
 @end
 
@@ -38,6 +39,13 @@
 #pragma mark- Notification methods
 #pragma mark- Interface methods
 #pragma mark- Event Response methods
+- (void)showContentDetail:(UIButton *)sender
+{
+    if (self.navigationTitleViewBlock) {
+        self.navigationTitleViewBlock();
+    }
+}
+
 #pragma mark- Net request
 #pragma mark- Private methods
 - (void)prepare
@@ -45,6 +53,7 @@
     [self addSubview:self.iconImageView];
     [self addSubview:self.titleLab];
     [self addSubview:self.indicateImageView];
+    [self addSubview:self.showBtn];
 }
 
 - (void)placeSubViews
@@ -66,6 +75,10 @@
         make.right.equalTo(self).offset(-10);
         make.size.mas_equalTo(CGSizeMake(30, 30));
         make.centerY.equalTo(self);
+    }];
+    
+    [self.showBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self);
     }];
 }
 
@@ -95,6 +108,15 @@
         _indicateImageView.backgroundColor = [UIColor purpleColor];
     }
     return _indicateImageView;
+}
+
+- (UIButton *)showBtn
+{
+    if (!_showBtn) {
+        _showBtn = [[UIButton alloc] init];
+        [_showBtn addTarget:self action:@selector(showContentDetail:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _showBtn;
 }
 
 @end

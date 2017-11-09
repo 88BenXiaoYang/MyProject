@@ -10,4 +10,6 @@
 
 @interface BYNavigationTitleView : UIView
 
+@property (nonatomic,   copy) void(^navigationTitleViewBlock)(void);
+
 @end

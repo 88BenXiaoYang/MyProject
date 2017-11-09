@@ -344,6 +344,8 @@
 		68A69BE21FB2A61900082427 /* BYNavigationTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69BE01FB2A61900082427 /* BYNavigationTitleViewController.m */; };
 		68A69BE51FB2A6F900082427 /* BYNavigationTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69BE41FB2A6F900082427 /* BYNavigationTitleView.m */; };
 		68A69BE61FB2A6F900082427 /* BYNavigationTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69BE41FB2A6F900082427 /* BYNavigationTitleView.m */; };
+		68A69BF11FB3FE8B00082427 /* BYCustomMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69BF01FB3FE8A00082427 /* BYCustomMaskView.m */; };
+		68A69BF21FB3FE8B00082427 /* BYCustomMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69BF01FB3FE8A00082427 /* BYCustomMaskView.m */; };
 		68BDDE881DAB3DD0005EA1DE /* BYDynamicTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */; };
 		68BDDE891DAB3DD0005EA1DE /* BYDynamicTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */; };
 		68BDDE9D1DAB78B0005EA1DE /* BYDynamicTreeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE9C1DAB78B0005EA1DE /* BYDynamicTreeData.m */; };
@@ -797,6 +799,8 @@
 		68A69BE01FB2A61900082427 /* BYNavigationTitleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYNavigationTitleViewController.m; sourceTree = "<group>"; };
 		68A69BE31FB2A6F900082427 /* BYNavigationTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYNavigationTitleView.h; sourceTree = "<group>"; };
 		68A69BE41FB2A6F900082427 /* BYNavigationTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYNavigationTitleView.m; sourceTree = "<group>"; };
+		68A69BEF1FB3FE8A00082427 /* BYCustomMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYCustomMaskView.h; sourceTree = "<group>"; };
+		68A69BF01FB3FE8A00082427 /* BYCustomMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYCustomMaskView.m; sourceTree = "<group>"; };
 		68BDDE861DAB3DD0005EA1DE /* BYDynamicTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYDynamicTree.h; sourceTree = "<group>"; };
 		68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYDynamicTree.m; sourceTree = "<group>"; };
 		68BDDE9B1DAB78B0005EA1DE /* BYDynamicTreeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYDynamicTreeData.h; sourceTree = "<group>"; };
@@ -1432,6 +1436,8 @@
 				6844C4791E76925D00AA6D0E /* BYLineChartView.m */,
 				68A69BE31FB2A6F900082427 /* BYNavigationTitleView.h */,
 				68A69BE41FB2A6F900082427 /* BYNavigationTitleView.m */,
+				68A69BEF1FB3FE8A00082427 /* BYCustomMaskView.h */,
+				68A69BF01FB3FE8A00082427 /* BYCustomMaskView.m */,
 			);
 			path = A;
 			sourceTree = "<group>";
@@ -2104,6 +2110,7 @@
 				687F588A1D75385500C673D8 /* BYUMEvent.m in Sources */,
 				6856B8BD1D6AF34900161109 /* SDImageCache.m in Sources */,
 				6892DE7F1E67B8AE00BB9D84 /* UILabel+AutoLayout.m in Sources */,
+				68A69BF11FB3FE8B00082427 /* BYCustomMaskView.m in Sources */,
 				6856B88B1D6AC0B300161109 /* BYUtils.m in Sources */,
 				684552ED1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m in Sources */,
 				684CDFD31D94D3D2006316A5 /* BYDViewController.m in Sources */,
@@ -2260,6 +2267,7 @@
 				687F588B1D75385500C673D8 /* BYUMEvent.m in Sources */,
 				6856B8BE1D6AF34900161109 /* SDImageCache.m in Sources */,
 				6892DE801E67B8AE00BB9D84 /* UILabel+AutoLayout.m in Sources */,
+				68A69BF21FB3FE8B00082427 /* BYCustomMaskView.m in Sources */,
 				6856B88C1D6AC0B300161109 /* BYUtils.m in Sources */,
 				684552EE1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m in Sources */,
 				684CDFD41D94D3D2006316A5 /* BYDViewController.m in Sources */,
