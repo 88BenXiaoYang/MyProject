@@ -340,6 +340,10 @@
 		68A69BA21FB0470900082427 /* BookMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69B9A1FB0470900082427 /* BookMarkView.m */; };
 		68A69BA51FB0474800082427 /* BYBookMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69BA41FB0474800082427 /* BYBookMarkViewController.m */; };
 		68A69BA61FB0474800082427 /* BYBookMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69BA41FB0474800082427 /* BYBookMarkViewController.m */; };
+		68A69BE11FB2A61900082427 /* BYNavigationTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69BE01FB2A61900082427 /* BYNavigationTitleViewController.m */; };
+		68A69BE21FB2A61900082427 /* BYNavigationTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69BE01FB2A61900082427 /* BYNavigationTitleViewController.m */; };
+		68A69BE51FB2A6F900082427 /* BYNavigationTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69BE41FB2A6F900082427 /* BYNavigationTitleView.m */; };
+		68A69BE61FB2A6F900082427 /* BYNavigationTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A69BE41FB2A6F900082427 /* BYNavigationTitleView.m */; };
 		68BDDE881DAB3DD0005EA1DE /* BYDynamicTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */; };
 		68BDDE891DAB3DD0005EA1DE /* BYDynamicTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */; };
 		68BDDE9D1DAB78B0005EA1DE /* BYDynamicTreeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDDE9C1DAB78B0005EA1DE /* BYDynamicTreeData.m */; };
@@ -789,6 +793,10 @@
 		68A69B9A1FB0470900082427 /* BookMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMarkView.m; sourceTree = "<group>"; };
 		68A69BA31FB0474800082427 /* BYBookMarkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYBookMarkViewController.h; sourceTree = "<group>"; };
 		68A69BA41FB0474800082427 /* BYBookMarkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYBookMarkViewController.m; sourceTree = "<group>"; };
+		68A69BDF1FB2A61900082427 /* BYNavigationTitleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYNavigationTitleViewController.h; sourceTree = "<group>"; };
+		68A69BE01FB2A61900082427 /* BYNavigationTitleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYNavigationTitleViewController.m; sourceTree = "<group>"; };
+		68A69BE31FB2A6F900082427 /* BYNavigationTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYNavigationTitleView.h; sourceTree = "<group>"; };
+		68A69BE41FB2A6F900082427 /* BYNavigationTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYNavigationTitleView.m; sourceTree = "<group>"; };
 		68BDDE861DAB3DD0005EA1DE /* BYDynamicTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYDynamicTree.h; sourceTree = "<group>"; };
 		68BDDE871DAB3DD0005EA1DE /* BYDynamicTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYDynamicTree.m; sourceTree = "<group>"; };
 		68BDDE9B1DAB78B0005EA1DE /* BYDynamicTreeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYDynamicTreeData.h; sourceTree = "<group>"; };
@@ -1422,6 +1430,8 @@
 				6844C46D1E766E1800AA6D0E /* BYBaseCoordinateView.m */,
 				6844C4781E76925D00AA6D0E /* BYLineChartView.h */,
 				6844C4791E76925D00AA6D0E /* BYLineChartView.m */,
+				68A69BE31FB2A6F900082427 /* BYNavigationTitleView.h */,
+				68A69BE41FB2A6F900082427 /* BYNavigationTitleView.m */,
 			);
 			path = A;
 			sourceTree = "<group>";
@@ -1495,6 +1505,8 @@
 				68A69B7C1FAB109300082427 /* BYJSTOCViewController.m */,
 				68A69BA31FB0474800082427 /* BYBookMarkViewController.h */,
 				68A69BA41FB0474800082427 /* BYBookMarkViewController.m */,
+				68A69BDF1FB2A61900082427 /* BYNavigationTitleViewController.h */,
+				68A69BE01FB2A61900082427 /* BYNavigationTitleViewController.m */,
 			);
 			path = A;
 			sourceTree = "<group>";
@@ -1982,6 +1994,7 @@
 				6892DE831E67B95B00BB9D84 /* UIImage+BYCircleImage.m in Sources */,
 				6856B84F1D6A97C700161109 /* AFAutoPurgingImageCache.m in Sources */,
 				6892DE591E67B60B00BB9D84 /* UIAlertView+Block.m in Sources */,
+				68A69BE51FB2A6F900082427 /* BYNavigationTitleView.m in Sources */,
 				6892DE6D1E67B60B00BB9D84 /* UITextView+AutoLayout.m in Sources */,
 				6856B8591D6A97C700161109 /* UIImageView+AFNetworking.m in Sources */,
 				6856B85D1D6A97C700161109 /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -2068,6 +2081,7 @@
 				681B6C661EE5524E006F8CDF /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
 				684CDFC31D94D36A006316A5 /* BYMainViewController.m in Sources */,
 				681FDEC11E6561B800DD548B /* BYLayoutViewController.m in Sources */,
+				68A69BE11FB2A61900082427 /* BYNavigationTitleViewController.m in Sources */,
 				6856B8CB1D6AF34900161109 /* UIButton+WebCache.m in Sources */,
 				6856B8E81D6D68FB00161109 /* BYConstant.m in Sources */,
 				6844C46E1E766E1800AA6D0E /* BYBaseCoordinateView.m in Sources */,
@@ -2136,6 +2150,7 @@
 				6892DE841E67B95B00BB9D84 /* UIImage+BYCircleImage.m in Sources */,
 				6856B8501D6A97C700161109 /* AFAutoPurgingImageCache.m in Sources */,
 				6892DE5A1E67B60B00BB9D84 /* UIAlertView+Block.m in Sources */,
+				68A69BE61FB2A6F900082427 /* BYNavigationTitleView.m in Sources */,
 				6892DE6E1E67B60B00BB9D84 /* UITextView+AutoLayout.m in Sources */,
 				6856B85A1D6A97C700161109 /* UIImageView+AFNetworking.m in Sources */,
 				6856B85E1D6A97C700161109 /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -2222,6 +2237,7 @@
 				681B6C671EE5524E006F8CDF /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
 				684CDFC41D94D36A006316A5 /* BYMainViewController.m in Sources */,
 				681FDEC21E6561B800DD548B /* BYLayoutViewController.m in Sources */,
+				68A69BE21FB2A61900082427 /* BYNavigationTitleViewController.m in Sources */,
 				6856B8CC1D6AF34900161109 /* UIButton+WebCache.m in Sources */,
 				6856B8E91D6D68FB00161109 /* BYConstant.m in Sources */,
 				6844C46F1E766E1800AA6D0E /* BYBaseCoordinateView.m in Sources */,
