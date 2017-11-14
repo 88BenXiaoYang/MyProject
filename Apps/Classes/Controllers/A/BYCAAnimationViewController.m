@@ -62,7 +62,7 @@
     //add animation
     CATransition *animation = [CATransition animation];
     animation.type = @"cube"; //类型
-    animation.subtype = dir;//方向 default -> fromRight
+    animation.subtype = dir;//方向 subtype:default -> fromBottomToTop
     animation.duration = 0.5;
     [self.contentImageView.layer addAnimation:animation forKey:nil];
 }
