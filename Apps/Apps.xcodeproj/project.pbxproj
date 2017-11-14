@@ -74,6 +74,8 @@
 		681B6C891EE55EE3006F8CDF /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 681B6C881EE55EE3006F8CDF /* TencentOpenAPI.framework */; };
 		681B6C8A1EE55EE3006F8CDF /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 681B6C881EE55EE3006F8CDF /* TencentOpenAPI.framework */; };
 		681B6C8B1EE79758006F8CDF /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 020FFC501EE30A05005EFDE9 /* libWeChatSDK.a */; };
+		681CE0421FB9A7100082EC1B /* BYCAAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681CE0411FB9A7100082EC1B /* BYCAAnimationViewController.m */; };
+		681CE0431FB9A7100082EC1B /* BYCAAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681CE0411FB9A7100082EC1B /* BYCAAnimationViewController.m */; };
 		681FDE9C1E640C8900DD548B /* RM.html in Resources */ = {isa = PBXBuildFile; fileRef = 681FDE9B1E640C8900DD548B /* RM.html */; };
 		681FDE9D1E640C8900DD548B /* RM.html in Resources */ = {isa = PBXBuildFile; fileRef = 681FDE9B1E640C8900DD548B /* RM.html */; };
 		681FDEB81E65542A00DD548B /* BYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDEB71E65542A00DD548B /* BYTableViewController.m */; };
@@ -539,6 +541,8 @@
 		681B6C801EE552A6006F8CDF /* WXApiResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiResponseHandler.m; sourceTree = "<group>"; };
 		681B6C851EE55ED2006F8CDF /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
 		681B6C881EE55EE3006F8CDF /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		681CE0401FB9A7100082EC1B /* BYCAAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYCAAnimationViewController.h; sourceTree = "<group>"; };
+		681CE0411FB9A7100082EC1B /* BYCAAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYCAAnimationViewController.m; sourceTree = "<group>"; };
 		681FDE9B1E640C8900DD548B /* RM.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RM.html; sourceTree = "<group>"; };
 		681FDEB61E65542A00DD548B /* BYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYTableViewController.h; sourceTree = "<group>"; };
 		681FDEB71E65542A00DD548B /* BYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYTableViewController.m; sourceTree = "<group>"; };
@@ -1513,6 +1517,8 @@
 				68A69BA41FB0474800082427 /* BYBookMarkViewController.m */,
 				68A69BDF1FB2A61900082427 /* BYNavigationTitleViewController.h */,
 				68A69BE01FB2A61900082427 /* BYNavigationTitleViewController.m */,
+				681CE0401FB9A7100082EC1B /* BYCAAnimationViewController.h */,
+				681CE0411FB9A7100082EC1B /* BYCAAnimationViewController.m */,
 			);
 			path = A;
 			sourceTree = "<group>";
@@ -1984,6 +1990,7 @@
 			files = (
 				6856B8C11D6AF34900161109 /* SDWebImageDecoder.m in Sources */,
 				6892DE451E67B60B00BB9D84 /* MISCategories.m in Sources */,
+				681CE0421FB9A7100082EC1B /* BYCAAnimationViewController.m in Sources */,
 				6856B8D71D6AF34900161109 /* UIView+WebCacheOperation.m in Sources */,
 				681B6C681EE5524E006F8CDF /* WXMediaMessage+messageConstruct.m in Sources */,
 				681B6C641EE5524E006F8CDF /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */,
@@ -2141,6 +2148,7 @@
 			files = (
 				6856B8C21D6AF34900161109 /* SDWebImageDecoder.m in Sources */,
 				6892DE461E67B60B00BB9D84 /* MISCategories.m in Sources */,
+				681CE0431FB9A7100082EC1B /* BYCAAnimationViewController.m in Sources */,
 				6856B8D81D6AF34900161109 /* UIView+WebCacheOperation.m in Sources */,
 				681B6C691EE5524E006F8CDF /* WXMediaMessage+messageConstruct.m in Sources */,
 				681B6C651EE5524E006F8CDF /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */,

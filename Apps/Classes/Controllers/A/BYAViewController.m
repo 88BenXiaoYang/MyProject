@@ -26,6 +26,7 @@
 #import "BYJSTOCViewController.h"
 #import "BYBookMarkViewController.h"
 #import "BYNavigationTitleViewController.h"
+#import "BYCAAnimationViewController.h"
 
 @interface BYAViewController ()
 
@@ -109,6 +110,8 @@
         [self goBookMark];
     } else if (indexPath.row == 16) {
         [self goNavigationTitle];
+    } else if (indexPath.row == 17) {
+        [self goCAAnimation];
     }
 }
 
@@ -119,7 +122,7 @@
 #pragma mark- Private methods
 - (void)initSettingData
 {
-    self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"RCDemo", @"CustomScroller", @"JS_TO_OC", @"BookMarkVC", @"NaviTitleView", nil];
+    self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"RCDemo", @"CustomScroller", @"JS_TO_OC", @"BookMarkVC", @"NaviTitleView", @"Animation", nil];
 	
 	[self.table registerClass:[BYDemoListCell class] forCellReuseIdentifier:[BYDemoListCell reuseIdentifier]];
 }
@@ -247,6 +250,14 @@
     navigationTitleVC.title = @"navigationTitleView";
     navigationTitleVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:navigationTitleVC animated:YES];
+}
+
+- (void)goCAAnimation
+{
+    BYCAAnimationViewController *caAnimationVC = [[BYCAAnimationViewController alloc] init];
+    caAnimationVC.title = @"Animation";
+    caAnimationVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:caAnimationVC animated:YES];
 }
 
 #pragma mark- common test methods
