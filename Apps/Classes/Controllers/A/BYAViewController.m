@@ -27,6 +27,7 @@
 #import "BYBookMarkViewController.h"
 #import "BYNavigationTitleViewController.h"
 #import "BYCAAnimationViewController.h"
+#import "BYMethodSwizzlingViewController.h"
 
 @interface BYAViewController ()
 
@@ -112,6 +113,8 @@
         [self goNavigationTitle];
     } else if (indexPath.row == 17) {
         [self goCAAnimation];
+    } else if (indexPath.row == 18) {
+        [self goMethodSwizzling];
     }
 }
 
@@ -122,7 +125,7 @@
 #pragma mark- Private methods
 - (void)initSettingData
 {
-    self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"RCDemo", @"CustomScroller", @"JS_TO_OC", @"BookMarkVC", @"NaviTitleView", @"Animation", nil];
+    self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"RCDemo", @"CustomScroller", @"JS_TO_OC", @"BookMarkVC", @"NaviTitleView", @"Animation", @"MethodSwizzling", nil];
 	
 	[self.table registerClass:[BYDemoListCell class] forCellReuseIdentifier:[BYDemoListCell reuseIdentifier]];
 }
@@ -258,6 +261,14 @@
     caAnimationVC.title = @"Animation";
     caAnimationVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:caAnimationVC animated:YES];
+}
+
+- (void)goMethodSwizzling
+{
+    BYMethodSwizzlingViewController *methodSwizzlingVC = [[BYMethodSwizzlingViewController alloc] init];
+    methodSwizzlingVC.title = @"MethodSwizzling";
+    methodSwizzlingVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:methodSwizzlingVC animated:YES];
 }
 
 #pragma mark- common test methods
