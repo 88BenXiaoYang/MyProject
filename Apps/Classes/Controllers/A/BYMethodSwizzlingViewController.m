@@ -57,7 +57,8 @@
     CGPoint destPoint = [self.aView convertPoint:originalPoint fromView:[UIApplication sharedApplication].keyWindow];
     NSLog(@"dest : point :\n x : %f \n y : %f", destPoint.x, destPoint.y);
     
-    if (destPoint.x > CGRectGetWidth(self.aView.frame)) {
+    if (!CGRectContainsPoint(self.aView.frame, destPoint)) {
+        NSLog(@"### the point beyond the yeild after convert ###");
         destPoint.x = destPoint.x - CGRectGetWidth(self.aView.frame);
     }
     
