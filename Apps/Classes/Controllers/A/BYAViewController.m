@@ -25,6 +25,10 @@
 #import "BYCustomScrollerViewController.h"
 #import "BYJSTOCViewController.h"
 #import "BYBookMarkViewController.h"
+#import "BYNavigationTitleViewController.h"
+#import "BYCAAnimationViewController.h"
+#import "BYMethodSwizzlingViewController.h"
+#import "BYADScrollerViewController.h"
 
 @interface BYAViewController ()
 
@@ -107,6 +111,13 @@
     } else if (indexPath.row == 15) {
         [self goBookMark];
     } else if (indexPath.row == 16) {
+        [self goNavigationTitle];
+    } else if (indexPath.row == 17) {
+        [self goCAAnimation];
+    } else if (indexPath.row == 18) {
+        [self goMethodSwizzling];
+    } else if (indexPath.row == 19) {
+        [self goADView];
     }
 }
 
@@ -117,7 +128,7 @@
 #pragma mark- Private methods
 - (void)initSettingData
 {
-    self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"RCDemo", @"CustomScroller", @"JS_TO_OC", @"BookMarkVC", @"CustomizeNaviTitleView", nil];
+    self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"RCDemo", @"CustomScroller", @"JS_TO_OC", @"BookMarkVC", @"NaviTitleView", @"Animation", @"MethodSwizzling", @"goADView", nil];
 	
 	[self.table registerClass:[BYDemoListCell class] forCellReuseIdentifier:[BYDemoListCell reuseIdentifier]];
 }
@@ -237,6 +248,38 @@
     bookMarkVC.title = @"bookMark";
     bookMarkVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:bookMarkVC animated:YES];
+}
+
+- (void)goNavigationTitle
+{
+    BYNavigationTitleViewController *navigationTitleVC = [[BYNavigationTitleViewController alloc] init];
+    navigationTitleVC.title = @"navigationTitleView";
+    navigationTitleVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:navigationTitleVC animated:YES];
+}
+
+- (void)goCAAnimation
+{
+    BYCAAnimationViewController *caAnimationVC = [[BYCAAnimationViewController alloc] init];
+    caAnimationVC.title = @"Animation";
+    caAnimationVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:caAnimationVC animated:YES];
+}
+
+- (void)goMethodSwizzling
+{
+    BYMethodSwizzlingViewController *methodSwizzlingVC = [[BYMethodSwizzlingViewController alloc] init];
+    methodSwizzlingVC.title = @"MethodSwizzling";
+    methodSwizzlingVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:methodSwizzlingVC animated:YES];
+}
+
+- (void)goADView
+{
+    BYADScrollerViewController *adVC = [[BYADScrollerViewController alloc] init];
+    adVC.title = @"adView";
+    adVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:adVC animated:YES];
 }
 
 #pragma mark- common test methods
