@@ -30,6 +30,12 @@
 		02A777D81FC1CD4A00637A4B /* BYADAView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A777D61FC1CD4A00637A4B /* BYADAView.m */; };
 		02B66AE41F4DD92D0028C17C /* refresh_round_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02B66AE31F4DD92D0028C17C /* refresh_round_arrow@2x.png */; };
 		02B66AE51F4DD92D0028C17C /* refresh_round_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02B66AE31F4DD92D0028C17C /* refresh_round_arrow@2x.png */; };
+		02BBBC6D1FFE70150002EBBD /* BYSectionTypeACell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02BBBC6C1FFE70150002EBBD /* BYSectionTypeACell.m */; };
+		02BBBC6E1FFE70150002EBBD /* BYSectionTypeACell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02BBBC6C1FFE70150002EBBD /* BYSectionTypeACell.m */; };
+		02BBBC711FFE702A0002EBBD /* BYSectionTypeCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02BBBC701FFE702A0002EBBD /* BYSectionTypeCCell.m */; };
+		02BBBC721FFE702A0002EBBD /* BYSectionTypeCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02BBBC701FFE702A0002EBBD /* BYSectionTypeCCell.m */; };
+		02BBBC751FFE70560002EBBD /* BYSectionTypeDCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02BBBC741FFE70560002EBBD /* BYSectionTypeDCell.m */; };
+		02BBBC761FFE70560002EBBD /* BYSectionTypeDCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02BBBC741FFE70560002EBBD /* BYSectionTypeDCell.m */; };
 		02C0F0861F6EA1E00031C5C5 /* RTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C0F0831F6EA1E00031C5C5 /* RTLabel.m */; };
 		02C0F0871F6EA1E00031C5C5 /* RTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C0F0831F6EA1E00031C5C5 /* RTLabel.m */; };
 		02C0F08C1F6EA2AC0031C5C5 /* BYRCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C0F08B1F6EA2AC0031C5C5 /* BYRCDemoViewController.m */; };
@@ -441,6 +447,12 @@
 		02A777D51FC1CD4A00637A4B /* BYADAView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYADAView.h; sourceTree = "<group>"; };
 		02A777D61FC1CD4A00637A4B /* BYADAView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYADAView.m; sourceTree = "<group>"; };
 		02B66AE31F4DD92D0028C17C /* refresh_round_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refresh_round_arrow@2x.png"; sourceTree = "<group>"; };
+		02BBBC6B1FFE70150002EBBD /* BYSectionTypeACell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYSectionTypeACell.h; sourceTree = "<group>"; };
+		02BBBC6C1FFE70150002EBBD /* BYSectionTypeACell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYSectionTypeACell.m; sourceTree = "<group>"; };
+		02BBBC6F1FFE702A0002EBBD /* BYSectionTypeCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYSectionTypeCCell.h; sourceTree = "<group>"; };
+		02BBBC701FFE702A0002EBBD /* BYSectionTypeCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYSectionTypeCCell.m; sourceTree = "<group>"; };
+		02BBBC731FFE70560002EBBD /* BYSectionTypeDCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYSectionTypeDCell.h; sourceTree = "<group>"; };
+		02BBBC741FFE70560002EBBD /* BYSectionTypeDCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYSectionTypeDCell.m; sourceTree = "<group>"; };
 		02C0F0821F6EA1E00031C5C5 /* RTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLabel.h; sourceTree = "<group>"; };
 		02C0F0831F6EA1E00031C5C5 /* RTLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLabel.m; sourceTree = "<group>"; };
 		02C0F08A1F6EA2AC0031C5C5 /* BYRCDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYRCDemoViewController.h; sourceTree = "<group>"; };
@@ -1143,6 +1155,12 @@
 			children = (
 				681FDEBB1E655E9C00DD548B /* BYDemoListCell.h */,
 				681FDEBC1E655E9C00DD548B /* BYDemoListCell.m */,
+				02BBBC6B1FFE70150002EBBD /* BYSectionTypeACell.h */,
+				02BBBC6C1FFE70150002EBBD /* BYSectionTypeACell.m */,
+				02BBBC6F1FFE702A0002EBBD /* BYSectionTypeCCell.h */,
+				02BBBC701FFE702A0002EBBD /* BYSectionTypeCCell.m */,
+				02BBBC731FFE70560002EBBD /* BYSectionTypeDCell.h */,
+				02BBBC741FFE70560002EBBD /* BYSectionTypeDCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -2090,6 +2108,7 @@
 				68A69B9F1FB0470900082427 /* BookMarkTitleItemCell.m in Sources */,
 				021B02C51FCA8ECB00D3DA68 /* CommonCarouselView.m in Sources */,
 				681B6C291EE00250006F8CDF /* base64.m in Sources */,
+				02BBBC711FFE702A0002EBBD /* BYSectionTypeCCell.m in Sources */,
 				021B02C91FCC44B800D3DA68 /* SGFocusImageFrame.m in Sources */,
 				684CDFDB1D94D539006316A5 /* BYNavigationViewController.m in Sources */,
 				681B6C5B1EE5522E006F8CDF /* WXApiManager.m in Sources */,
@@ -2112,6 +2131,7 @@
 				6856B88F1D6AC16400161109 /* MISBase64.m in Sources */,
 				684B0A931D654D6400505A9C /* AppDelegate.m in Sources */,
 				6892DE5B1E67B60B00BB9D84 /* UIImage+MISColor.m in Sources */,
+				02BBBC6D1FFE70150002EBBD /* BYSectionTypeACell.m in Sources */,
 				684B0A941D654D6400505A9C /* main.m in Sources */,
 				6856B8CD1D6AF34900161109 /* UIImage+GIF.m in Sources */,
 				68BDDE881DAB3DD0005EA1DE /* BYDynamicTree.m in Sources */,
@@ -2162,6 +2182,7 @@
 				681B6C2B1EE00250006F8CDF /* NSDataEx.m in Sources */,
 				6856B8BB1D6AF34900161109 /* NSData+ImageContentType.m in Sources */,
 				681FDEB81E65542A00DD548B /* BYTableViewController.m in Sources */,
+				02BBBC751FFE70560002EBBD /* BYSectionTypeDCell.m in Sources */,
 				684CDFCF1D94D3C6006316A5 /* BYCViewController.m in Sources */,
 				684CDFEB1D94DE9B006316A5 /* BYAppStyle.m in Sources */,
 				6856B8531D6A97C700161109 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -2255,6 +2276,7 @@
 				68A69BA01FB0470900082427 /* BookMarkTitleItemCell.m in Sources */,
 				021B02C61FCA8ECB00D3DA68 /* CommonCarouselView.m in Sources */,
 				681B6C2A1EE00250006F8CDF /* base64.m in Sources */,
+				02BBBC721FFE702A0002EBBD /* BYSectionTypeCCell.m in Sources */,
 				021B02CA1FCC44B800D3DA68 /* SGFocusImageFrame.m in Sources */,
 				684CDFDC1D94D539006316A5 /* BYNavigationViewController.m in Sources */,
 				681B6C5C1EE5522E006F8CDF /* WXApiManager.m in Sources */,
@@ -2277,6 +2299,7 @@
 				6856B8901D6AC16400161109 /* MISBase64.m in Sources */,
 				684B0A971D654DD900505A9C /* AppDelegate.m in Sources */,
 				6892DE5C1E67B60B00BB9D84 /* UIImage+MISColor.m in Sources */,
+				02BBBC6E1FFE70150002EBBD /* BYSectionTypeACell.m in Sources */,
 				684B0A981D654DD900505A9C /* main.m in Sources */,
 				6856B8CE1D6AF34900161109 /* UIImage+GIF.m in Sources */,
 				68BDDE891DAB3DD0005EA1DE /* BYDynamicTree.m in Sources */,
@@ -2327,6 +2350,7 @@
 				681B6C2C1EE00250006F8CDF /* NSDataEx.m in Sources */,
 				6856B8BC1D6AF34900161109 /* NSData+ImageContentType.m in Sources */,
 				681FDEB91E65542A00DD548B /* BYTableViewController.m in Sources */,
+				02BBBC761FFE70560002EBBD /* BYSectionTypeDCell.m in Sources */,
 				684CDFD01D94D3C6006316A5 /* BYCViewController.m in Sources */,
 				684CDFEC1D94DE9B006316A5 /* BYAppStyle.m in Sources */,
 				6856B8541D6A97C700161109 /* AFNetworkActivityIndicatorManager.m in Sources */,
