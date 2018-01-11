@@ -18,6 +18,8 @@
 		021B02CA1FCC44B800D3DA68 /* SGFocusImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 021B02C81FCC44B800D3DA68 /* SGFocusImageFrame.m */; };
 		021B02CD1FCC475B00D3DA68 /* SGFocusImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 021B02CB1FCC475B00D3DA68 /* SGFocusImageItem.m */; };
 		021B02CE1FCC475B00D3DA68 /* SGFocusImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 021B02CB1FCC475B00D3DA68 /* SGFocusImageItem.m */; };
+		0221253D2007BBC4006C5ACF /* MISChooseAppComboPayTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0221253B2007BBC4006C5ACF /* MISChooseAppComboPayTypeCell.m */; };
+		022125402007BC51006C5ACF /* MISNoReuseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0221253E2007BC50006C5ACF /* MISNoReuseTableViewCell.m */; };
 		023FE4E61F4B07970039B65F /* TmpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 023FE4E51F4B07970039B65F /* TmpModel.m */; };
 		023FE4E71F4B07970039B65F /* TmpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 023FE4E51F4B07970039B65F /* TmpModel.m */; };
 		0289D9611EF611BA0039C6BA /* BYCSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0289D9601EF611BA0039C6BA /* BYCSViewController.m */; };
@@ -436,6 +438,10 @@
 		021B02C81FCC44B800D3DA68 /* SGFocusImageFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGFocusImageFrame.m; sourceTree = "<group>"; };
 		021B02CB1FCC475B00D3DA68 /* SGFocusImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGFocusImageItem.m; sourceTree = "<group>"; };
 		021B02CC1FCC475B00D3DA68 /* SGFocusImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGFocusImageItem.h; sourceTree = "<group>"; };
+		0221253B2007BBC4006C5ACF /* MISChooseAppComboPayTypeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MISChooseAppComboPayTypeCell.m; sourceTree = "<group>"; };
+		0221253C2007BBC4006C5ACF /* MISChooseAppComboPayTypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MISChooseAppComboPayTypeCell.h; sourceTree = "<group>"; };
+		0221253E2007BC50006C5ACF /* MISNoReuseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MISNoReuseTableViewCell.m; sourceTree = "<group>"; };
+		0221253F2007BC51006C5ACF /* MISNoReuseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MISNoReuseTableViewCell.h; sourceTree = "<group>"; };
 		023FE4E41F4B07970039B65F /* TmpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmpModel.h; sourceTree = "<group>"; };
 		023FE4E51F4B07970039B65F /* TmpModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TmpModel.m; sourceTree = "<group>"; };
 		0289D95F1EF611BA0039C6BA /* BYCSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCSViewController.h; sourceTree = "<group>"; };
@@ -942,6 +948,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0221253A2007BBC4006C5ACF /* TP */ = {
+			isa = PBXGroup;
+			children = (
+				0221253B2007BBC4006C5ACF /* MISChooseAppComboPayTypeCell.m */,
+				0221253C2007BBC4006C5ACF /* MISChooseAppComboPayTypeCell.h */,
+			);
+			path = TP;
+			sourceTree = "<group>";
+		};
 		023FE4E31F4B07710039B65F /* Tmp */ = {
 			isa = PBXGroup;
 			children = (
@@ -1262,6 +1277,7 @@
 		684B0A751D654A3B00505A9C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0221253A2007BBC4006C5ACF /* TP */,
 				68A1673A1E125C9A002D0732 /* CustomView */,
 				68BDDE841DAB3D4C005EA1DE /* CustomControl */,
 				684CDFB41D94D1DD006316A5 /* BaseControllers */,
@@ -1621,6 +1637,8 @@
 		684CDFB41D94D1DD006316A5 /* BaseControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0221253F2007BC51006C5ACF /* MISNoReuseTableViewCell.h */,
+				0221253E2007BC50006C5ACF /* MISNoReuseTableViewCell.m */,
 				684CDFB91D94D217006316A5 /* BYViewController.h */,
 				684CDFBA1D94D217006316A5 /* BYViewController.m */,
 				684CDFBD1D94D346006316A5 /* BYTabBarController.h */,
@@ -2088,6 +2106,7 @@
 				68A69B7D1FAB109300082427 /* BYJSTOCViewController.m in Sources */,
 				6892DE6F1E67B60B00BB9D84 /* UIView+AutoLayout.m in Sources */,
 				6856B85B1D6A97C700161109 /* UIProgressView+AFNetworking.m in Sources */,
+				0221253D2007BBC4006C5ACF /* MISChooseAppComboPayTypeCell.m in Sources */,
 				6892DE611E67B60B00BB9D84 /* UINavigationBar+Awesome.m in Sources */,
 				68A69B6C1FAB0FE300082427 /* TestJSObject.m in Sources */,
 				6848CCCF1F1F3D850066D8FE /* GCDAsyncSocket.m in Sources */,
@@ -2200,6 +2219,7 @@
 				684552ED1F4E9D5B00DA4673 /* BYCustomScrollerViewController.m in Sources */,
 				684CDFD31D94D3D2006316A5 /* BYDViewController.m in Sources */,
 				6892DE5F1E67B60B00BB9D84 /* UIImage+MISMask.m in Sources */,
+				022125402007BC51006C5ACF /* MISNoReuseTableViewCell.m in Sources */,
 				6856B8511D6A97C700161109 /* AFImageDownloader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

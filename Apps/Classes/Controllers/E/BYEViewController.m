@@ -20,6 +20,10 @@ typedef NS_ENUM(NSInteger, HomeSectionType) {
     HomeSectionTypeF
 };
 
+static NSString *cellAIdentifier = @"cellAIdentifier";
+static NSString *cellBIdentifier = @"cellBIdentifier";
+static NSString *cellCIdentifier = @"cellCIdentifier";
+
 @interface BYEViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UIImageView *customActivityImageView;
@@ -73,8 +77,6 @@ typedef NS_ENUM(NSInteger, HomeSectionType) {
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell;
-    
     NSMutableDictionary *itemDic = [self.sectionData objectAtIndex:indexPath.section];
     
     NSInteger sectionType = [itemDic[@"sectionType"] integerValue];
@@ -82,45 +84,48 @@ typedef NS_ENUM(NSInteger, HomeSectionType) {
     switch (sectionType) {
         case HomeSectionTypeA:
             {
-                cell = [[BYSectionTypeACell alloc] init];
+                BYSectionTypeACell *cell = [tableView dequeueReusableCellWithIdentifier:cellAIdentifier];
                 cell.backgroundColor = [UIColor purpleColor];
+                return cell;
             }
             break;
         case HomeSectionTypeB:
             {
-                cell = [[BYSectionTypeCCell alloc] init];
+                BYSectionTypeCCell *cell = [tableView dequeueReusableCellWithIdentifier:cellCIdentifier];
                 cell.backgroundColor = [UIColor orangeColor];
+                return cell;
             }
             break;
         case HomeSectionTypeC:
             {
-                cell = [[BYSectionTypeDCell alloc] init];
+                BYSectionTypeDCell *cell = [tableView dequeueReusableCellWithIdentifier:cellCIdentifier];
                 cell.backgroundColor = [UIColor redColor];
+                return cell;
             }
             break;
         case HomeSectionTypeD:
             {
-                cell = [[BYSectionTypeACell alloc] init];
-                cell.backgroundColor = [UIColor greenColor];
+//                cell = [[BYSectionTypeACell alloc] init];
+//                cell.backgroundColor = [UIColor greenColor];
             }
             break;
         case HomeSectionTypeE:
             {
-                cell = [[BYSectionTypeCCell alloc] init];
-                cell.backgroundColor = [UIColor yellowColor];
+//                cell = [[BYSectionTypeCCell alloc] init];
+//                cell.backgroundColor = [UIColor yellowColor];
             }
             break;
         case HomeSectionTypeF:
             {
-                cell = [[BYSectionTypeDCell alloc] init];
-                cell.backgroundColor = [UIColor blueColor];
+//                cell = [[BYSectionTypeDCell alloc] init];
+//                cell.backgroundColor = [UIColor blueColor];
             }
             break;
             
         default:
             break;
     }
-    return cell;
+    return nil;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -257,9 +262,9 @@ typedef NS_ENUM(NSInteger, HomeSectionType) {
         
         _tableView.backgroundColor = BG_Color;
         
-        [_tableView registerClass:[BYSectionTypeACell class] forCellReuseIdentifier:@"cellA"];
-        [_tableView registerClass:[BYSectionTypeCCell class] forCellReuseIdentifier:@"cellC"];
-        [_tableView registerClass:[BYSectionTypeDCell class] forCellReuseIdentifier:@"cellD"];
+        [_tableView registerClass:[BYSectionTypeACell class] forCellReuseIdentifier:cellAIdentifier];
+        [_tableView registerClass:[BYSectionTypeCCell class] forCellReuseIdentifier:cellBIdentifier];
+        [_tableView registerClass:[BYSectionTypeDCell class] forCellReuseIdentifier:cellCIdentifier];
     }
     return _tableView;
 }
