@@ -67,6 +67,14 @@
 #define BFont(__SIZE) [UIFont boldSystemFontOfSize:__SIZE]//system bold font with size
 #define Font(__NAME, __SIZE) [UIFont fontWithName:__NAME size:__SIZE] //font with name and size
 
+//1个像素大小
+#define MIS_ONE_PX (1.0f / [UIScreen mainScreen].scale)
+
+#define IMAGE_WITH_NAME(_NAME) [UIImage imageNamed:_NAME]
+
+// 家长版通用色调
+#define Parent_Common_Color UIColorFromRGB(0x4c95f9)
+
 //友盟统计
 #if KAppA
 #define UMENG_APP_KEY            @"53c4d96456240b5ded0d409c" //teacher
