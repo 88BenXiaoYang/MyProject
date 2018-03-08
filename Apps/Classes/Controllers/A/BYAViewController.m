@@ -29,6 +29,7 @@
 #import "BYCAAnimationViewController.h"
 #import "BYMethodSwizzlingViewController.h"
 #import "BYADScrollerViewController.h"
+#import "BYFiltrateViewController.h"
 
 @interface BYAViewController ()
 
@@ -118,6 +119,8 @@
         [self goMethodSwizzling];
     } else if (indexPath.row == 19) {
         [self goADView];
+    } else if (indexPath.row == 20) {
+        [self goFiltrateVC];
     }
 }
 
@@ -128,7 +131,7 @@
 #pragma mark- Private methods
 - (void)initSettingData
 {
-    self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"RCDemo", @"CustomScroller", @"JS_TO_OC", @"BookMarkVC", @"NaviTitleView", @"Animation", @"MethodSwizzling", @"goADView", nil];
+    self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"RCDemo", @"CustomScroller", @"JS_TO_OC", @"BookMarkVC", @"NaviTitleView", @"Animation", @"MethodSwizzling", @"goADView", @"filtrateVC", nil];
 	
 	[self.table registerClass:[BYDemoListCell class] forCellReuseIdentifier:[BYDemoListCell reuseIdentifier]];
 }
@@ -280,6 +283,14 @@
     adVC.title = @"adView";
     adVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:adVC animated:YES];
+}
+
+- (void)goFiltrateVC
+{
+    BYFiltrateViewController *filtrateVC = [[BYFiltrateViewController alloc] init];
+    filtrateVC.title = @"filtrateVC";
+    filtrateVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:filtrateVC animated:YES];
 }
 
 #pragma mark- common test methods
