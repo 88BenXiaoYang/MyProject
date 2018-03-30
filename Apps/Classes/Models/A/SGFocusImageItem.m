@@ -24,4 +24,9 @@
     return self;
 }
 
+- (void)setTag:(NSInteger)tag
+{
+    self.contentImageView.tag = kSGFocusItemCommonTag + tag;
+}
+
 @end

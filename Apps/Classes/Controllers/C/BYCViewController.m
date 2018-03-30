@@ -51,22 +51,22 @@
  */
 
 /** 在发送请求之前，决定是否跳转 */
-- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
-{
-	MISLogFunc
-	MISLog(@"****************");
-	if ([navigationAction.request.URL.host.lowercaseString isEqualToString:@"www.baidu.com"]) {
-		NSString *js = @"window.alert('test test');";
-		[self.webView evaluateJavaScript:js completionHandler:^(id _Nullable result, NSError * _Nullable error) {
-			NSLog(@"加载JS数据");
-			NSLog(@"load js error detail : result :%@\n error : %@", result, error);
-		}];
-		decisionHandler(WKNavigationActionPolicyAllow);
-		return;
-	}
-	
-	decisionHandler(WKNavigationActionPolicyCancel);
-}
+//- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
+//{
+//    MISLogFunc
+//    MISLog(@"****************");
+//    if ([navigationAction.request.URL.host.lowercaseString isEqualToString:@"www.baidu.com"]) {
+//        NSString *js = @"window.alert('test test');";
+//        [self.webView evaluateJavaScript:js completionHandler:^(id _Nullable result, NSError * _Nullable error) {
+//            NSLog(@"加载JS数据");
+//            NSLog(@"load js error detail : result :%@\n error : %@", result, error);
+//        }];
+//        decisionHandler(WKNavigationActionPolicyAllow);
+//        return;
+//    }
+//
+//    decisionHandler(WKNavigationActionPolicyCancel);
+//}
 
 /** 在收到响应后，决定是否跳转 */
 //- (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler
@@ -188,7 +188,9 @@
 
 - (void)loadData
 {
-	NSURL *url = [NSURL URLWithString:@"https://www.baidu.com"];
+    //text :@"http://47.93.233.74/firstIndex.html"
+    NSString *urlString = @"http://www.baidu.com";
+	NSURL *url = [NSURL URLWithString:urlString];
 	NSURLRequest *request = [NSURLRequest requestWithURL:url];
 	[self.webView loadRequest:request];
 }
