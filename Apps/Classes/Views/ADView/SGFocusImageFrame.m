@@ -120,13 +120,18 @@ static CGFloat SWITCH_FOCUS_PICTURE_INTERVAL = 5.0; //switch interval time(滚�
     _scrollView.contentSize = CGSizeMake(_scrollView.frame.size.width * imageItems.count, _scrollView.frame.size.height);
     for (int i = 0; i < imageItems.count; i++) {
         SGFocusImageItem *item = [imageItems objectAtIndex:i];
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * _scrollView.frame.size.width+space, space, _scrollView.frame.size.width-space*2, _scrollView.frame.size.height-2*space-size.height)];
+        item.contentImageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * _scrollView.frame.size.width+space+15, space, _scrollView.frame.size.width-space*2-30, _scrollView.frame.size.height-2*space-size.height)];
+        item.contentViewFrame = item.contentImageView.frame;
+        item.tag = i;
         //test
 //        [imageView setImage:[UIImage imageNamed:item.image]];
         //加载图片
 //        [imageView setImageWithURL:[NSURL URLWithString:item.image] placeholderImage:[UIImage imageNamed:@"tiantu_logo_1.png"]];
-        imageView.backgroundColor = item.color;
-        [_scrollView addSubview:imageView];
+        item.contentImageView.backgroundColor = item.color;
+        item.contentImageView.layer.cornerRadius = 5;
+        item.contentImageView.layer.masksToBounds = YES;
+        
+        [_scrollView addSubview:item.contentImageView];
     }
     if ([imageItems count]>1)
     {
@@ -184,13 +189,17 @@ static CGFloat SWITCH_FOCUS_PICTURE_INTERVAL = 5.0; //switch interval time(滚�
     if ([imageItems count]>=3)
     {
         if (targetX >= ITEM_WIDTH * ([imageItems count] -1)) {
+            // index : 0
             targetX = ITEM_WIDTH;
             [_scrollView setContentOffset:CGPointMake(targetX, 0) animated:NO];
-        }
-        else if(targetX <= 0)
-        {
+//            [self updateItemContentView:0];
+        } else if(targetX <= 0) {
+            // index : 4
             targetX = ITEM_WIDTH *([imageItems count]-2);
             [_scrollView setContentOffset:CGPointMake(targetX, 0) animated:NO];
+//            [self updateItemContentView:4];
+        } else {
+            
         }
     }
     NSInteger page = (_scrollView.contentOffset.x+ITEM_WIDTH/2.0) / ITEM_WIDTH;
@@ -245,6 +254,31 @@ static CGFloat SWITCH_FOCUS_PICTURE_INTERVAL = 5.0; //switch interval time(滚�
         [self moveToTargetPosition:0];
     }
     [self scrollViewDidScroll:_scrollView];
+}
+
+- (void)updateItemContentView:(NSInteger)tag
+{
+    NSArray *imageItems = objc_getAssociatedObject(self, (__bridge const void *)SG_FOCUS_ITEM_ASS_KEY);
+    NSInteger currentIndex = kSGFocusItemCommonTag + tag;
+    for (UIImageView *imgV in _scrollView.subviews) {
+        NSInteger index = imgV.tag - kSGFocusItemCommonTag;
+        SGFocusImageItem *item = imageItems[index];
+        NSInteger imgVTag = imgV.tag;
+        if (imgVTag == currentIndex) {
+            CGRect frame = item.contentViewFrame;
+            frame.origin.x = frame.origin.x + frame.size.width * 0.1;
+            frame.size.width = frame.size.width * 0.8;
+            imgV.frame = frame;
+            
+//            imgV.transform = CGAffineTransformScale(imgV.transform, 0.8, 1);
+        } else {
+            CGRect frame = item.contentViewFrame;
+            frame.origin.x = frame.origin.x - frame.size.width * 0.1;
+            frame.size.width = frame.size.width + frame.size.width * 0.2;
+            imgV.frame = frame;
+//            imgV.transform = CGAffineTransformScale(imgV.transform, 1, 1);
+        }
+    }
 }
 
 @end

@@ -30,6 +30,7 @@
 #import "BYMethodSwizzlingViewController.h"
 #import "BYADScrollerViewController.h"
 #import "MasonryPracticeAViewController.h"
+#import "BYFiltrateViewController.h"
 
 @interface BYAViewController ()
 
@@ -121,6 +122,7 @@
         [self goADView];
     } else if (indexPath.row == 20) {
         [self goMasonryVC];
+        // [self goFiltrateVC];
     }
 }
 
@@ -131,7 +133,8 @@
 #pragma mark- Private methods
 - (void)initSettingData
 {
-    self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"RCDemo", @"CustomScroller", @"JS_TO_OC", @"BookMarkVC", @"NaviTitleView", @"Animation", @"MethodSwizzling", @"goADView", @"Masonry", nil];
+    // self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"RCDemo", @"CustomScroller", @"JS_TO_OC", @"BookMarkVC", @"NaviTitleView", @"Animation", @"MethodSwizzling", @"goADView", @"Masonry", nil];
+    self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"RCDemo", @"CustomScroller", @"JS_TO_OC", @"BookMarkVC", @"NaviTitleView", @"Animation", @"MethodSwizzling", @"goADView", @"filtrateVC & shortcutKey", nil];
 	
 	[self.table registerClass:[BYDemoListCell class] forCellReuseIdentifier:[BYDemoListCell reuseIdentifier]];
 }
@@ -290,6 +293,14 @@
     masonryVC.title = @"masonryVC";
     masonryVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:masonryVC animated:YES];
+}
+
+- (void)goFiltrateVC
+{
+    BYFiltrateViewController *filtrateVC = [[BYFiltrateViewController alloc] init];
+    filtrateVC.title = @"filtrateVC";
+    filtrateVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:filtrateVC animated:YES];
 }
 
 #pragma mark- common test methods

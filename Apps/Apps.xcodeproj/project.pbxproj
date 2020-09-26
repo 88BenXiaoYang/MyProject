@@ -47,6 +47,7 @@
 		02D594651F1FABED00D74FF8 /* BYChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D594631F1FABED00D74FF8 /* BYChartsViewController.m */; };
 		68062CF81FBBE2450029C317 /* BYMethodSwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68062CF71FBBE2450029C317 /* BYMethodSwizzlingViewController.m */; };
 		68062CF91FBBE2450029C317 /* BYMethodSwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68062CF71FBBE2450029C317 /* BYMethodSwizzlingViewController.m */; };
+		6813AEFD20511A5C009FB094 /* QLActivityFiltrateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6813AEFC20511A5C009FB094 /* QLActivityFiltrateView.m */; };
 		681B6BB31EDFEA62006F8CDF /* BYPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6BB21EDFEA62006F8CDF /* BYPayViewController.m */; };
 		681B6BB41EDFEA62006F8CDF /* BYPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B6BB21EDFEA62006F8CDF /* BYPayViewController.m */; };
 		681B6BB71EDFF883006F8CDF /* AlipaySDK.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 681B6BB51EDFF883006F8CDF /* AlipaySDK.bundle */; };
@@ -99,6 +100,8 @@
 		681B6C8B1EE79758006F8CDF /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 020FFC501EE30A05005EFDE9 /* libWeChatSDK.a */; };
 		681CE0421FB9A7100082EC1B /* BYCAAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681CE0411FB9A7100082EC1B /* BYCAAnimationViewController.m */; };
 		681CE0431FB9A7100082EC1B /* BYCAAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681CE0411FB9A7100082EC1B /* BYCAAnimationViewController.m */; };
+		681D0F86202AF7A70096A534 /* BYFiltrateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681D0F85202AF7A70096A534 /* BYFiltrateViewController.m */; };
+		681D0F87202AF7A70096A534 /* BYFiltrateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681D0F85202AF7A70096A534 /* BYFiltrateViewController.m */; };
 		681FDE9C1E640C8900DD548B /* RM.html in Resources */ = {isa = PBXBuildFile; fileRef = 681FDE9B1E640C8900DD548B /* RM.html */; };
 		681FDE9D1E640C8900DD548B /* RM.html in Resources */ = {isa = PBXBuildFile; fileRef = 681FDE9B1E640C8900DD548B /* RM.html */; };
 		681FDEB81E65542A00DD548B /* BYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FDEB71E65542A00DD548B /* BYTableViewController.m */; };
@@ -470,6 +473,8 @@
 		02D594631F1FABED00D74FF8 /* BYChartsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYChartsViewController.m; sourceTree = "<group>"; };
 		68062CF61FBBE2450029C317 /* BYMethodSwizzlingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYMethodSwizzlingViewController.h; sourceTree = "<group>"; };
 		68062CF71FBBE2450029C317 /* BYMethodSwizzlingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYMethodSwizzlingViewController.m; sourceTree = "<group>"; };
+		6813AEFB20511A5B009FB094 /* QLActivityFiltrateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLActivityFiltrateView.h; sourceTree = "<group>"; };
+		6813AEFC20511A5C009FB094 /* QLActivityFiltrateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLActivityFiltrateView.m; sourceTree = "<group>"; };
 		681B6BB11EDFEA62006F8CDF /* BYPayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYPayViewController.h; sourceTree = "<group>"; };
 		681B6BB21EDFEA62006F8CDF /* BYPayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYPayViewController.m; sourceTree = "<group>"; };
 		681B6BB51EDFF883006F8CDF /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
@@ -592,6 +597,8 @@
 		681B6C881EE55EE3006F8CDF /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		681CE0401FB9A7100082EC1B /* BYCAAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYCAAnimationViewController.h; sourceTree = "<group>"; };
 		681CE0411FB9A7100082EC1B /* BYCAAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYCAAnimationViewController.m; sourceTree = "<group>"; };
+		681D0F84202AF7A70096A534 /* BYFiltrateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYFiltrateViewController.h; sourceTree = "<group>"; };
+		681D0F85202AF7A70096A534 /* BYFiltrateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYFiltrateViewController.m; sourceTree = "<group>"; };
 		681FDE9B1E640C8900DD548B /* RM.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RM.html; sourceTree = "<group>"; };
 		681FDEB61E65542A00DD548B /* BYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYTableViewController.h; sourceTree = "<group>"; };
 		681FDEB71E65542A00DD548B /* BYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYTableViewController.m; sourceTree = "<group>"; };
@@ -1513,6 +1520,8 @@
 		684B0A881D654A3B00505A9C /* A */ = {
 			isa = PBXGroup;
 			children = (
+				6813AEFB20511A5B009FB094 /* QLActivityFiltrateView.h */,
+				6813AEFC20511A5C009FB094 /* QLActivityFiltrateView.m */,
 				6892DE0D1E67B06F00BB9D84 /* BYScrollPagerView.h */,
 				6892DE0E1E67B06F00BB9D84 /* BYScrollPagerView.m */,
 				6844C46C1E766E1800AA6D0E /* BYBaseCoordinateView.h */,
@@ -1608,6 +1617,8 @@
 				02A777D11FC1CBCB00637A4B /* BYADDetailViewController.m */,
 				02455ECB21C948E200662E7F /* MasonryPracticeAViewController.h */,
 				02455ECC21C948E200662E7F /* MasonryPracticeAViewController.m */,
+				681D0F84202AF7A70096A534 /* BYFiltrateViewController.h */,
+				681D0F85202AF7A70096A534 /* BYFiltrateViewController.m */,
 			);
 			path = A;
 			sourceTree = "<group>";
@@ -1936,8 +1947,9 @@
 				TargetAttributes = {
 					684B0A3B1D65499700505A9C = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = Z3F649Q24Z;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;
@@ -2093,6 +2105,7 @@
 				681B6C361EE0184A006F8CDF /* Order.m in Sources */,
 				68966A4C1E665A97008BE2D9 /* BYDrawImageViewController.m in Sources */,
 				020FFC5C1EE31ADC005EFDE9 /* WXOrder.m in Sources */,
+				6813AEFD20511A5C009FB094 /* QLActivityFiltrateView.m in Sources */,
 				6892DE9B1E6D34F200BB9D84 /* MISPinyin.m in Sources */,
 				6856B8C71D6AF34900161109 /* SDWebImageManager.m in Sources */,
 				6892DE971E6D34B200BB9D84 /* Array.c in Sources */,
@@ -2102,6 +2115,7 @@
 				6856B84F1D6A97C700161109 /* AFAutoPurgingImageCache.m in Sources */,
 				6892DE591E67B60B00BB9D84 /* UIAlertView+Block.m in Sources */,
 				68A69BE51FB2A6F900082427 /* BYNavigationTitleView.m in Sources */,
+				681D0F86202AF7A70096A534 /* BYFiltrateViewController.m in Sources */,
 				6892DE6D1E67B60B00BB9D84 /* UITextView+AutoLayout.m in Sources */,
 				6856B8591D6A97C700161109 /* UIImageView+AFNetworking.m in Sources */,
 				6856B85D1D6A97C700161109 /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -2384,6 +2398,7 @@
 				6856B8561D6A97C700161109 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				6892DE6C1E67B60B00BB9D84 /* UITextField+AutoLayout.m in Sources */,
 				68966A511E666116008BE2D9 /* BYSwitchAViewController.m in Sources */,
+				681D0F87202AF7A70096A534 /* BYFiltrateViewController.m in Sources */,
 				6892DE781E67B86900BB9D84 /* UIButton+AutoLayout.m in Sources */,
 				6892DE641E67B60B00BB9D84 /* UIScrollView+AutoLayout.m in Sources */,
 				687F588B1D75385500C673D8 /* BYUMEvent.m in Sources */,
@@ -2510,7 +2525,8 @@
 				CODE_SIGN_ENTITLEMENTS = AppA/AppA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Kebing Mao (SDGDXRX797)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3F649Q24Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -2541,7 +2557,7 @@
 					"-Objc",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aspire.cqparent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aspire.cqparenttest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2562,7 +2578,8 @@
 				CODE_SIGN_ENTITLEMENTS = AppA/AppA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Aspire Information Technology (Beijing) Co., Ltd.";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3F649Q24Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -2587,7 +2604,7 @@
 					"-Objc",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aspire.cqparent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aspire.cqparenttest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
