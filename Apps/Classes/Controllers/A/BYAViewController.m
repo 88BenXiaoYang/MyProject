@@ -29,6 +29,7 @@
 #import "BYCAAnimationViewController.h"
 #import "BYMethodSwizzlingViewController.h"
 #import "BYADScrollerViewController.h"
+#import "MasonryPracticeAViewController.h"
 
 @interface BYAViewController ()
 
@@ -118,6 +119,8 @@
         [self goMethodSwizzling];
     } else if (indexPath.row == 19) {
         [self goADView];
+    } else if (indexPath.row == 20) {
+        [self goMasonryVC];
     }
 }
 
@@ -128,7 +131,7 @@
 #pragma mark- Private methods
 - (void)initSettingData
 {
-    self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"RCDemo", @"CustomScroller", @"JS_TO_OC", @"BookMarkVC", @"NaviTitleView", @"Animation", @"MethodSwizzling", @"goADView", nil];
+    self.demoList = [NSMutableArray arrayWithObjects:@"按钮元素布局", @"应用跳转到AppStore", @"CheckBox", @"BezierPathImg", @"SwitchUI", @"ScrollPagerView", @"ChartView", @"LoadLocalDBData", @"Pay&Share", @"c/s_request", @"A/V", @"ChartsVC", @"RCDemo", @"CustomScroller", @"JS_TO_OC", @"BookMarkVC", @"NaviTitleView", @"Animation", @"MethodSwizzling", @"goADView", @"Masonry", nil];
 	
 	[self.table registerClass:[BYDemoListCell class] forCellReuseIdentifier:[BYDemoListCell reuseIdentifier]];
 }
@@ -280,6 +283,13 @@
     adVC.title = @"adView";
     adVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:adVC animated:YES];
+}
+
+- (void)goMasonryVC {
+    MasonryPracticeAViewController *masonryVC = [[MasonryPracticeAViewController alloc] init];
+    masonryVC.title = @"masonryVC";
+    masonryVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:masonryVC animated:YES];
 }
 
 #pragma mark- common test methods

@@ -22,6 +22,7 @@
 		022125402007BC51006C5ACF /* MISNoReuseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0221253E2007BC50006C5ACF /* MISNoReuseTableViewCell.m */; };
 		023FE4E61F4B07970039B65F /* TmpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 023FE4E51F4B07970039B65F /* TmpModel.m */; };
 		023FE4E71F4B07970039B65F /* TmpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 023FE4E51F4B07970039B65F /* TmpModel.m */; };
+		02455ECD21C948E200662E7F /* MasonryPracticeAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02455ECC21C948E200662E7F /* MasonryPracticeAViewController.m */; };
 		0289D9611EF611BA0039C6BA /* BYCSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0289D9601EF611BA0039C6BA /* BYCSViewController.m */; };
 		0289D9621EF611BA0039C6BA /* BYCSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0289D9601EF611BA0039C6BA /* BYCSViewController.m */; };
 		02A777CE1FC1C22C00637A4B /* BYADScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A777CD1FC1C22C00637A4B /* BYADScrollerViewController.m */; };
@@ -444,6 +445,8 @@
 		0221253F2007BC51006C5ACF /* MISNoReuseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MISNoReuseTableViewCell.h; sourceTree = "<group>"; };
 		023FE4E41F4B07970039B65F /* TmpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmpModel.h; sourceTree = "<group>"; };
 		023FE4E51F4B07970039B65F /* TmpModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TmpModel.m; sourceTree = "<group>"; };
+		02455ECB21C948E200662E7F /* MasonryPracticeAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryPracticeAViewController.h; sourceTree = "<group>"; };
+		02455ECC21C948E200662E7F /* MasonryPracticeAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryPracticeAViewController.m; sourceTree = "<group>"; };
 		0289D95F1EF611BA0039C6BA /* BYCSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCSViewController.h; sourceTree = "<group>"; };
 		0289D9601EF611BA0039C6BA /* BYCSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCSViewController.m; sourceTree = "<group>"; };
 		02A777CC1FC1C22C00637A4B /* BYADScrollerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYADScrollerViewController.h; sourceTree = "<group>"; };
@@ -1603,6 +1606,8 @@
 				02A777CD1FC1C22C00637A4B /* BYADScrollerViewController.m */,
 				02A777D01FC1CBCB00637A4B /* BYADDetailViewController.h */,
 				02A777D11FC1CBCB00637A4B /* BYADDetailViewController.m */,
+				02455ECB21C948E200662E7F /* MasonryPracticeAViewController.h */,
+				02455ECC21C948E200662E7F /* MasonryPracticeAViewController.m */,
 			);
 			path = A;
 			sourceTree = "<group>";
@@ -2076,6 +2081,7 @@
 			files = (
 				68062CF81FBBE2450029C317 /* BYMethodSwizzlingViewController.m in Sources */,
 				021B02CD1FCC475B00D3DA68 /* SGFocusImageItem.m in Sources */,
+				02455ECD21C948E200662E7F /* MasonryPracticeAViewController.m in Sources */,
 				6856B8C11D6AF34900161109 /* SDWebImageDecoder.m in Sources */,
 				6892DE451E67B60B00BB9D84 /* MISCategories.m in Sources */,
 				681CE0421FB9A7100082EC1B /* BYCAAnimationViewController.m in Sources */,
